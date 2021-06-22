@@ -132,7 +132,7 @@ Az aloldal megjeleníti az összes üzletben kapható kisállat adatait lista fo
 
 ---
 
-**_Felszerelések_**
+## _**4. Felszerelések**_
 
 ---
 

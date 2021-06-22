@@ -173,7 +173,7 @@ Az aloldal megjeleníti az összes felszerelés adatait lista formátumban. Ezek
 - A törlést követően frissül a listaoldal, ahol a már törölt felszerelés nem érhető el.
 ---
 
-**_Állateledelek_**
+## _**5. Állateledelek**_
 
 ---
 

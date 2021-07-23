@@ -1,0 +1,27 @@
+<div>
+    <table class="table table-striped">
+        <thead>
+            <th>#</th>
+            <th>Név</th>
+            <th>Kategória</th>
+            <th>Ár</th>
+            <th>Kapható</th>
+        </thead>
+        <tfoot>
+            <th>#</th>
+            <th>Név</th>
+            <th>Kategória</th>
+            <th>Ár</th>
+            <th>Kapható</th>
+        </tfoot>
+        <tbody>
+            <tr *ngFor="let animal of animalList | async">
+                <td>{{animal._id}}</td>
+                <td>{{animal.name}}</td>
+                <td>{{animal.category}}</td>
+                <td>{{animal.price}}</td>
+                <td>{{animal.active}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

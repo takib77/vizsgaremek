@@ -1,0 +1,74 @@
+{
+    "animals": [
+        {
+            "_id": "123ab",
+            "name": "Hörcsög",
+            "category": "Rágcsáló",
+            "description": "Apró rágcsáló",
+            "img": "...",
+            "price": 900,
+            "active": true
+        },
+        {
+            "_id": "123ac",
+            "name": "Tengerimalac",
+            "category": "Rágcsáló",
+            "description": "Rágcsáló",
+            "img": "...",
+            "price": 1100,
+            "active": true
+        }
+    ],
+    "products": [
+        {
+            "_id": "456tzu",
+            "name": "széna",
+            "goodFor": "Hörcsög, Tengerimalac",
+            "price": 300,
+            "weight": 200,
+            "active": true,
+            "organic": true
+        },
+        {
+            "_id": "456tzi",
+            "name": "magkeverék",
+            "goodFor": "Hörcsög",
+            "weight": 1000,
+            "price": 500,
+            "active": false,
+            "organic": true
+        },
+        {
+            "_id": "888mmm",
+            "name": "ketrec",
+            "goodFor": "Hörcsög",
+            "size": "20*20*10",
+            "material": "acél",
+            "price": 2200,
+            "active": true
+        },
+        {
+            "_id": "888nnn",
+            "name": "etetőtál",
+            "goodFor": "Hörcsög, Tengerimalac",
+            "size": "20*15*15",
+            "material": "fa",
+            "price": 500,
+            "active": true
+        }
+    ],
+    "list": [
+        "csincsilla",
+        "egér",
+        "mókus",
+        "nyúl",
+        "patkány",
+        "sün",
+        "vadászgörény",
+        "kanári",
+        "papagáj",
+        "degu",
+        "teknős",
+        "kaméleon"
+    ]
+}

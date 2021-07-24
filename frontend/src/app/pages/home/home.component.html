@@ -1,0 +1,38 @@
+<div class="row">
+    <h1>Kategóriák</h1>
+    <p>Üzletünkben a következő kategóriákban találhat házi kedvencet és a hozzájuk tartozó felszereléseket,
+        tárolókat és eledeleket.
+    </p>
+</div>
+<div class="row">
+    <div *ngFor="let text of cardData" class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" [id]="text.id">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#'+text.target" aria-expanded="false" [attr.aria-controls]="text.target">
+                    {{text.category}}
+                </button>
+            </h2>
+            <div [id]="text.target" class="accordion-collapse collapse" [attr.aria-labelledby]="text.id"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p class="card-text">{{text.description}}</p>
+                    <div *ngFor="let card of cardData" class="col-4 p-3">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{card.category}}</h5>
+                                        <p class="card-text">{{card.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

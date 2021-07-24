@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './common/navigation/navigation.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { DataTableComponent } from './common/data-table/data-table.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     SidebarComponent,
-    DataTableComponent
+    DataTableComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -12,25 +12,29 @@ export class HomeComponent implements OnInit {
       category: 'Rágcsálók',
       description: 'Hörcsögök, tengerimalacok, egerek..',
       id: 'flush-headingOne',
-      target: 'flush-collapseOne'
+      target: 'flush-collapseOne',
+      img: 'assets/img/250.png'
     },
     {
       category: 'Hüllők',
       description: 'Kaméleon, teknős...',
       id: 'flush-headingTwo',
-      target: 'flush-collapseTwo'
+      target: 'flush-collapseTwo',
+      img: 'assets/img/250.png'
     },
     {
       category: 'Halak',
       description: 'Akváriumba tartható édesvizi halak...',
       id: 'flush-headingThree',
-      target: 'flush-collapseThree'
+      target: 'flush-collapseThree',
+      img: 'assets/img/250.png'
     },
     {
       category: 'Madarak',
       description: 'Papagájok, kanárik és más tollassok...',
       id: 'flush-headingFour',
-      target: 'flush-collapseFour'
+      target: 'flush-collapseFour',
+      img: 'assets/img/250.png'
     }
   ]
 

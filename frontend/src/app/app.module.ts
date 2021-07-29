@@ -8,7 +8,14 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './common/navigation/navigation.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { DataTableComponent } from './common/data-table/data-table.component';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './page/home/home.component';
+import { SortPipe } from './pipe/sort.pipe';
+import { SearchPipe } from './pipe/search.pipe';
+import { UsersComponent } from './page/users/users.component';
+import { ProductsComponent } from './page/products/products.component';
+import { OrdersComponent } from './page/orders/orders.component';
+import { AnimalsComponent } from './page/animals/animals.component';
+import { LoginComponent } from './page/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +23,14 @@ import { HomeComponent } from './pages/home/home.component';
     NavigationComponent,
     SidebarComponent,
     DataTableComponent,
-    HomeComponent
+    HomeComponent,
+    SortPipe,
+    SearchPipe,
+    UsersComponent,
+    ProductsComponent,
+    OrdersComponent,
+    AnimalsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

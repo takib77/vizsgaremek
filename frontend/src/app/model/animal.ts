@@ -1,7 +1,8 @@
 export class Animal {
-    _id: string | number = 0;
+    id: string | number = 0;
     name?: string;
     category?: string;
+    subCategory?: string;
     description?: string;
     img?: string;
     price?: number

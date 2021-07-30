@@ -6,7 +6,7 @@ import { ConfigService } from './config.service';
 @Injectable({
   providedIn: 'root'
 })
-export class BaseService<T extends { _id: string | number }> {
+export class BaseService<T extends { id: string | number }> {
 
   entity: string = '';
 
@@ -19,8 +19,8 @@ export class BaseService<T extends { _id: string | number }> {
     return this.http.get<T[]>(`${this.config.apiUrl}${this.entity}`);
   }
 
-  get(_id: string | number): Observable<T> {
-    return this.http.get<T>(`${this.config.apiUrl}${this.entity}/${_id}`)
+  get(id: string | number): Observable<T> {
+    return this.http.get<T>(`${this.config.apiUrl}${this.entity}/${id}`)
   }
 
   create(entity: T): Observable<T> {
@@ -28,11 +28,11 @@ export class BaseService<T extends { _id: string | number }> {
   }
 
   update(entity: T): Observable<T> {
-    return this.http.patch<T>(`${this.config.apiUrl}${this.entity}/${entity._id}`, entity)
+    return this.http.patch<T>(`${this.config.apiUrl}${this.entity}/${entity.id}`, entity)
   }
 
-  delete(_id: string | number): Observable<T> {
-    return this.http.delete<T>(`${this.config.apiUrl}${this.entity}/${_id}`)
+  delete(entity: T): Observable<T> {
+    return this.http.delete<T>(`${this.config.apiUrl}${this.entity}/${entity.id}`)
   }
 
 }

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Product } from 'src/app/model/product';
+import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-products',
@@ -7,7 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  productsList$: Observable<Product[]> = this.productservice.getAll();
+  productsTable: IDataDisplayer[] = this.config.productsTable;
+  productsTitle: string = 'Termékek listája';
+
+  constructor(
+    private productservice: ProductService,
+    private config: ConfigService
+  ) { }
 
   ngOnInit(): void {
   }

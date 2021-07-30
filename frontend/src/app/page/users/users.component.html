@@ -1,36 +1,42 @@
-<div class="row m-1">
-    <h1>Vásárlók listája</h1>
-</div>
-<div class="row m-1">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>NÉV</th>
-                <th>EMAIL</th>
-                <th>JELSZÓ</th>
-                <th>JOGOSULTSÁG</th>
-                <th>MŰVELETEK</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let user of userList$ | async">
-                <td>{{user.id}}</td>
-                <td>{{user.firstName}} {{user.lastName}}</td>
-                <td>{{user.email}}</td>
-                <td>{{user.password}}</td>
-                <td>{{user.role}}</td>
-                <td>
-                    <div class="button-group">
-                        <button class="btn btn-primary" [routerLink]="[user.id]">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="btn btn-danger" (click)="deleteUser(user)">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<!-- <div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        {{tableTitle}}
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th *ngFor="let table of usersTable">{{table.title}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of userList$ | async">
+                    <td>{{user.id}}</td>
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.password}}</td>
+                    <td>{{user.role}}</td>
+                    <td>
+                        <div class="button-group">
+                            <button class="btn btn-primary" [routerLink]="[user.id]">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger" (click)="deleteUser(user)">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th *ngFor="let table of usersTable">{{table.title}}</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div> -->
+<app-data-table [tableColumns]="usersTable" [list$]="usersList$" [tableTitle]="usersTitle">
+</app-data-table>

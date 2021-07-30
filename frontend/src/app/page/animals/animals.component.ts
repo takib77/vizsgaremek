@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Animal } from 'src/app/model/animal';
+import { AnimalService } from 'src/app/service/animal.service';
+import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-animals',
@@ -7,7 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnimalsComponent implements OnInit {
 
-  constructor() { }
+  animalsList$: Observable<Animal[]> = this.animalservice.getAll();
+  animalsTable: IDataDisplayer[] = this.config.animalsTable;
+  animalsTitle: string = 'Kisállatok listája';
+
+  constructor(
+    private animalservice: AnimalService,
+    private config: ConfigService
+  ) { }
 
   ngOnInit(): void {
   }

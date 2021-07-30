@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from 'src/app/model/user';
+import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
@@ -10,21 +11,23 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class UsersComponent implements OnInit {
 
-  userList$: Observable<User[]> = this.userservice.getAll();
+  usersList$: Observable<User[]> = this.userservice.getAll();
+  usersTable: IDataDisplayer[] = this.config.usersTable;
+  usersTitle: string = 'Vásárlók listája';
 
   constructor(
-    private userservice: UserService
+    private userservice: UserService,
+    private config: ConfigService
   ) { }
 
   ngOnInit(): void {
   }
 
-  deleteUser(user: User): void {
-    if (confirm(`Biztos hogy törli a \"${user.firstName} ${user.lastName}\" nevű vásárlót?`))
+  delUser(user: User): void {
+    if (confirm(`Biztos hogy törli?`))
       this.userservice.delete(user).subscribe(() => {
-        this.userList$ = this.userservice.getAll()
-      })
-
+        this.usersList$ = this.userservice.getAll()
+      });
   }
 
 }

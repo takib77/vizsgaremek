@@ -1,27 +1,39 @@
-<div>
-    <table class="table table-striped">
-        <thead>
-            <th>#</th>
-            <th>Név</th>
-            <th>Kategória</th>
-            <th>Ár</th>
-            <th>Kapható</th>
-        </thead>
-        <tfoot>
-            <th>#</th>
-            <th>Név</th>
-            <th>Kategória</th>
-            <th>Ár</th>
-            <th>Kapható</th>
-        </tfoot>
-        <tbody>
-            <tr *ngFor="let animal of animalList | async">
-                <td>{{animal.id}}</td>
-                <td>{{animal.name}}</td>
-                <td>{{animal.category}}</td>
-                <td>{{animal.price}}</td>
-                <td>{{animal.active}}</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        {{tableTitle}}
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th *ngFor="let table of tableColumns">{{table.title}}</th>
+                    <th>MŰVELETEK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let entity of list$ | async">
+                    <td *ngFor="let key of tableColumns">
+                        <span>
+                            {{entity[key.key]}}
+                        </span>
+                    </td>
+                    <div class="button-group">
+                        <button class="btn btn-primary" [routerLink]="[entity.id]">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th *ngFor="let table of tableColumns">{{table.title}}</th>
+                    <th>MŰVELETEK</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </div>

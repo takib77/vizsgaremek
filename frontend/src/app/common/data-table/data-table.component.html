@@ -7,25 +7,32 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th *ngFor="let table of tableColumns">{{table.title}}</th>
+                    <th *ngFor="let table of tableColumns " (click)="onColumnSelect(table.key)">
+                        {{table.title}}
+                    </th>
                     <th>MŰVELETEK</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let entity of list$ | async">
-                    <td *ngFor="let key of tableColumns">
-                        <span>
-                            {{entity[key.key]}}
+                <tr *ngFor="let entity of list$ | async | search: filterKey: phrase | sort: columnKey: sortDir">
+                    <td *ngFor="let item of tableColumns">
+                        <span *ngIf="!item.htmlOutput; else elseBlock">
+                            {{ entity[item.key] | xPipe:item.pipes:item.pipeArgs }}
                         </span>
+                        <ng-template #elseBlock>
+                            <span [innerHTML]="item.htmlOutput(entity[item.key])"></span>
+                        </ng-template>
                     </td>
-                    <div class="button-group">
-                        <button class="btn btn-primary" [routerLink]="[entity.id]">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                        <button class="btn btn-danger">
-                            <i class="fas fa-trash"></i>
-                        </button>
-                    </div>
+                    <td>
+                        <div class="btn-group">
+                            <button (click)="onSelectEntity(entity)" class="btn btn-primary">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button (click)="onDeleteEntity(entity)" class="btn btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
             <tfoot>

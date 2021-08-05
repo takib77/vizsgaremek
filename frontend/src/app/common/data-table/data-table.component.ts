@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { IDataDisplayer, ConfigService } from 'src/app/service/config.service';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { IDataDisplayer } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-data-table',
@@ -10,15 +10,33 @@ import { IDataDisplayer, ConfigService } from 'src/app/service/config.service';
 export class DataTableComponent<T extends { [propname: string]: any }> implements OnInit {
 
   @Input() tableColumns: IDataDisplayer[] = [];
-  @Input() list$: Observable<T[]> | null = null;
+  @Input() list$: Observable<T[]> = of([]);
   @Input() tableTitle: string = '';
+  @Input() filterKey: string = '';
+  phrase: string = '';
 
-  constructor(
-    private config: ConfigService,
-  ) { }
+  @Output() selectEntity: EventEmitter<T> = new EventEmitter<T>();
+  @Output() deleteEntity: EventEmitter<T> = new EventEmitter<T>();
 
+  columnKey: string = '';
+  sortDir: number = -1;
+
+  constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelectEntity(entity: T): void {
+    this.deleteEntity.emit(entity);
+  }
+
+  onDeleteEntity(entity: T): void {
+    this.deleteEntity.emit(entity);
+  }
+
+  onColumnSelect(key: string): void {
+    this.columnKey = key;
+    this.sortDir = this.sortDir * (-1);
   }
 
 }

@@ -1,7 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { registerLocaleData } from '@angular/common';
+import localeHu from '@angular/common/locales/hu';
+
+registerLocaleData(localeHu);
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +20,7 @@ import { ProductsComponent } from './page/products/products.component';
 import { OrdersComponent } from './page/orders/orders.component';
 import { AnimalsComponent } from './page/animals/animals.component';
 import { LoginComponent } from './page/login/login.component';
+import { XPipePipe } from './pipe/x-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -31,6 +36,7 @@ import { LoginComponent } from './page/login/login.component';
     OrdersComponent,
     AnimalsComponent,
     LoginComponent,
+    XPipePipe,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,9 @@ import { LoginComponent } from './page/login/login.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'hu-HU' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

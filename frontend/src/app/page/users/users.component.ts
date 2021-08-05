@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
@@ -17,17 +18,22 @@ export class UsersComponent implements OnInit {
 
   constructor(
     private userservice: UserService,
-    private config: ConfigService
+    private config: ConfigService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
   }
 
-  delUser(user: User): void {
+  onSelectOne(user: User): void {
+    this.router.navigate(['/', 'users', user.id])
+  }
+
+  onDeleteOne(user: User): void {
     if (confirm(`Biztos hogy törli?`))
-      this.userservice.delete(user).subscribe(() => {
-        this.usersList$ = this.userservice.getAll()
-      });
+      this.userservice.delete(user).subscribe(
+        () => this.usersList$ = this.userservice.getAll()
+      )
   }
 
 }

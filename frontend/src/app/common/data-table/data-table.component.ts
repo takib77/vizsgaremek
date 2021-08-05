@@ -12,6 +12,8 @@ export class DataTableComponent<T extends { [propname: string]: any }> implement
   @Input() tableColumns: IDataDisplayer[] = [];
   @Input() list$: Observable<T[]> = of([]);
   @Input() tableTitle: string = '';
+  @Input() entityName: string = '';
+
   @Input() filterKey: string = '';
   phrase: string = '';
 
@@ -23,8 +25,7 @@ export class DataTableComponent<T extends { [propname: string]: any }> implement
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   onSelectEntity(entity: T): void {
     this.deleteEntity.emit(entity);
@@ -37,6 +38,10 @@ export class DataTableComponent<T extends { [propname: string]: any }> implement
   onColumnSelect(key: string): void {
     this.columnKey = key;
     this.sortDir = this.sortDir * (-1);
+  }
+
+  onSearch(event: Event): void {
+    this.phrase = (event.target as HTMLInputElement).value;
   }
 
 }

@@ -1,3 +1,3 @@
 <app-data-table [tableColumns]="usersTable" [list$]="usersList$" [tableTitle]="usersTitle"
-    (selectEntity)="onSelectOne($event)" (deleteEntity)="onDeleteOne($event)">
+    (selectEntity)="onSelectOne($event)" (deleteEntity)="onDeleteOne($event)" [entityName]="pageName">
 </app-data-table>

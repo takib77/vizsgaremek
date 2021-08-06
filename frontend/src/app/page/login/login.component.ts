@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/model/user';
 import { AuthService } from 'src/app/service/auth.service';
-import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +13,6 @@ export class LoginComponent implements OnInit {
   user: User = new User();
 
   constructor(
-    private userService: UserService,
     private auth: AuthService,
     private router: Router,
   ) { }
@@ -31,10 +29,5 @@ export class LoginComponent implements OnInit {
       }
     );
   }
-
-  // setPassword(): void {
-  //   this.userService.update({ _id: '2c', password: 'test' })
-  //     .subscribe(resp => console.log(resp));
-  // }
 
 }

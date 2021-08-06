@@ -15,12 +15,14 @@ import { DataTableComponent } from './common/data-table/data-table.component';
 import { HomeComponent } from './page/home/home.component';
 import { SortPipe } from './pipe/sort.pipe';
 import { SearchPipe } from './pipe/search.pipe';
-import { UsersComponent } from './page/users/users.component';
-import { ProductsComponent } from './page/products/products.component';
-import { OrdersComponent } from './page/orders/orders.component';
-import { AnimalsComponent } from './page/animals/animals.component';
+import { UserComponent } from './page/user/user.component';
+import { ProductComponent } from './page/product/product.component';
+import { OrderComponent } from './page/order/order.component';
+import { AnimalComponent } from './page/animal/animal.component';
 import { LoginComponent } from './page/login/login.component';
 import { XPipePipe } from './pipe/x-pipe.pipe';
+import { ForbiddenComponent } from './page/forbidden/forbidden.component';
+import { UserEditorComponent } from './page/user-editor/user-editor.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { XPipePipe } from './pipe/x-pipe.pipe';
     HomeComponent,
     SortPipe,
     SearchPipe,
-    UsersComponent,
-    ProductsComponent,
-    OrdersComponent,
-    AnimalsComponent,
+    UserComponent,
+    ProductComponent,
+    OrderComponent,
+    AnimalComponent,
     LoginComponent,
     XPipePipe,
+    ForbiddenComponent,
+    UserEditorComponent,
   ],
   imports: [
     BrowserModule,

@@ -19,8 +19,8 @@ export class ConfigService {
 
   public readonly apiUrl: string = 'http://localhost:3000/';
 
-  animalsTable: IDataDisplayer[] = [
-    { key: 'id', title: '#' },
+  animalTable: IDataDisplayer[] = [
+    { key: '_id', title: '#' },
     { key: 'name', title: 'NÉV' },
     { key: 'category', title: 'OSZTÁLY' },
     { key: 'subCategory', title: 'KATEGÓRIA' },
@@ -30,16 +30,16 @@ export class ConfigService {
     { key: 'active', title: 'KAPHATÓ?' },
   ];
 
-  ordersTable: IDataDisplayer[] = [
-    { key: 'id', title: '#' },
+  orderTable: IDataDisplayer[] = [
+    { key: '_id', title: '#' },
     { key: 'user', title: 'FELHASZNÁLÓ' },
     { key: 'products', title: 'TERMÉKEK' },
     { key: 'time', title: 'DÁTUM', pipes: [ConfigService.formateDate] },
     { key: 'note', title: 'MEGJEGYZÉS' },
   ];
 
-  productsTable: IDataDisplayer[] = [
-    { key: 'id', title: '#' },
+  productTable: IDataDisplayer[] = [
+    { key: '_id', title: '#' },
     { key: 'name', title: 'MEGNEVEZÉS' },
     { key: 'goodFor', title: 'MELYIK ÁLLATHOZ JÓ?' },
     { key: 'weight', title: 'TÖMEG' },
@@ -54,8 +54,8 @@ export class ConfigService {
     { key: 'organic', title: 'TERMÉSZETES?', htmlOutput: ConfigService.booleanSign },
   ];
 
-  usersTable: IDataDisplayer[] = [
-    { key: 'id', title: '#' },
+  userTable: IDataDisplayer[] = [
+    { key: '_id', title: '#' },
     { key: 'first_name', title: 'VEZETÉKNÉV' },
     { key: 'last_name', title: 'KERESZTNÉV' },
     {
@@ -63,7 +63,7 @@ export class ConfigService {
       pipes: [ConfigService.getSubProperty],
       pipeArgs: [['country', 'city', 'street']]
     },
-    { key: 'email', title: 'EMAIL' },
+    { key: 'email', title: 'EMAIL CÍM' },
     { key: 'password', title: 'JELSZÓ' },
     { key: 'role', title: 'JOGOSULTSÁG' },
   ];

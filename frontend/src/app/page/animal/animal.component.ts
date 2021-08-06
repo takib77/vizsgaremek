@@ -5,15 +5,15 @@ import { AnimalService } from 'src/app/service/animal.service';
 import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
 
 @Component({
-  selector: 'app-animals',
-  templateUrl: './animals.component.html',
-  styleUrls: ['./animals.component.scss']
+  selector: 'app-animal',
+  templateUrl: './animal.component.html',
+  styleUrls: ['./animal.component.scss']
 })
-export class AnimalsComponent implements OnInit {
+export class AnimalComponent implements OnInit {
 
-  animalsList$: Observable<Animal[]> = this.animalservice.getAll();
-  animalsTable: IDataDisplayer[] = this.config.animalsTable;
-  animalsTitle: string = 'Kisállatok listája';
+  animalList$: Observable<Animal[]> = this.animalservice.getAll();
+  animalTable: IDataDisplayer[] = this.config.animalTable;
+  animalTitle: string = 'Kisállatok listája';
 
   constructor(
     private animalservice: AnimalService,

@@ -5,15 +5,15 @@ import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
 import { OrderService } from 'src/app/service/order.service';
 
 @Component({
-  selector: 'app-orders',
-  templateUrl: './orders.component.html',
-  styleUrls: ['./orders.component.scss']
+  selector: 'app-order',
+  templateUrl: './order.component.html',
+  styleUrls: ['./order.component.scss']
 })
-export class OrdersComponent implements OnInit {
+export class OrderComponent implements OnInit {
 
-  ordersList$: Observable<Order[]> = this.orderservice.getAll();
-  ordersTable: IDataDisplayer[] = this.config.ordersTable;
-  ordersTitle: string = 'Rendelések listája';
+  orderList$: Observable<Order[]> = this.orderservice.getAll();
+  orderTable: IDataDisplayer[] = this.config.orderTable;
+  orderTitle: string = 'Rendelések listája';
 
   constructor(
     private orderservice: OrderService,

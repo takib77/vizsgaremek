@@ -28,7 +28,7 @@ export class DataTableComponent<T extends { [propname: string]: any }> implement
   ngOnInit(): void { }
 
   onSelectEntity(entity: T): void {
-    this.deleteEntity.emit(entity);
+    this.selectEntity.emit(entity);
   }
 
   onDeleteEntity(entity: T): void {

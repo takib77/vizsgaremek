@@ -5,15 +5,15 @@ import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
 import { ProductService } from 'src/app/service/product.service';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss']
+  selector: 'app-product',
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.scss']
 })
-export class ProductsComponent implements OnInit {
+export class ProductComponent implements OnInit {
 
-  productsList$: Observable<Product[]> = this.productservice.getAll();
-  productsTable: IDataDisplayer[] = this.config.productsTable;
-  productsTitle: string = 'Termékek listája';
+  productList$: Observable<Product[]> = this.productservice.getAll();
+  productTable: IDataDisplayer[] = this.config.productTable;
+  productTitle: string = 'Termékek listája';
 
   constructor(
     private productservice: ProductService,

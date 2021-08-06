@@ -4,8 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { registerLocaleData } from '@angular/common';
 import localeHu from '@angular/common/locales/hu';
-
 registerLocaleData(localeHu);
+
+import { AreusFormModule } from './areus-form/areus-form.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,7 +47,8 @@ import { UserEditorComponent } from './page/user-editor/user-editor.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AreusFormModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'hu-HU' }

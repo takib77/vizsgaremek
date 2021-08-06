@@ -64,7 +64,6 @@ export class ConfigService {
       pipeArgs: [['country', 'city', 'street']]
     },
     { key: 'email', title: 'EMAIL CÍM' },
-    { key: 'password', title: 'JELSZÓ' },
     { key: 'role', title: 'JOGOSULTSÁG' },
   ];
 

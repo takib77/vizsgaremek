@@ -27,7 +27,7 @@ export class UsersComponent implements OnInit {
   }
 
   onSelectOne(user: User): void {
-    this.router.navigate(['/', 'users', user.id])
+    this.router.navigate(['/', 'users', user._id])
   }
 
   onDeleteOne(user: User): void {

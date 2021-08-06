@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { AuthService } from 'src/app/service/auth.service';
 
@@ -8,15 +8,22 @@ import { AuthService } from 'src/app/service/auth.service';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent implements OnInit, OnDestroy {
 
-  user$: BehaviorSubject<User | null> = this.auth.currentUserSubject$;
+  user: User | null = null;
+  userSub: Subscription = new Subscription();
 
   constructor(
     private auth: AuthService
   ) { }
 
   ngOnInit(): void {
+    this.userSub = this.auth.currentUserSubject$.subscribe(
+      user => this.user = user);
+  }
+
+  ngOnDestroy(): void {
+    this.userSub.unsubscribe();
   }
 
   onLogout(): void {

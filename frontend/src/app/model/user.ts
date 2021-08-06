@@ -1,12 +1,12 @@
 export class User {
-    id: string | number = 0;
-    first_name?: string = '';
-    last_name?: string = '';
+    _id: string = '';
+    first_name: string = '';
+    last_name: string = '';
     address?: Address = {};
-    email?: string = '';
+    email: string = '';
     password?: string = '';
     role?: number = 0;
-    token?: string = '';
+    token?: string;
 }
 
 export interface Address {

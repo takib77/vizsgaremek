@@ -1,10 +1,10 @@
 export class Animal {
-    id: string | number = 0;
-    name?: string;
+    _id: string = '';
+    name: string = '';
     category?: string;
     subCategory?: string;
     description?: string;
     img?: string;
-    price?: number
+    price: number = 0;
     active?: boolean;
 }

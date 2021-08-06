@@ -32,9 +32,9 @@ export class LoginComponent implements OnInit {
     );
   }
 
-  setPassword(): void {
-    this.userService.update({ id: 1, password: 'test' })
-      .subscribe(resp => console.log(resp));
-  }
+  // setPassword(): void {
+  //   this.userService.update({ _id: '2c', password: 'test' })
+  //     .subscribe(resp => console.log(resp));
+  // }
 
 }

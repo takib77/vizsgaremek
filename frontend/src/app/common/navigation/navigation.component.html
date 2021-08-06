@@ -4,23 +4,27 @@
         <i class="fas fa-bars"></i>
     </button>
     <ul class="navbar-nav ms-auto me-3 me-lg-4">
-        <li *ngIf="(user$ | async)" class="nav-item dropdown">
-            <button *ngIf="!(user$ | async)" routerLink="/login" class="btn btn-success">
+        <span *ngIf="user" class="text-white my-auto">Üdv {{user.last_name}}!</span>
+        <li *ngIf="user" class="nav-item dropdown">
+            <button *ngIf="!user" routerLink="/login" class="btn btn-success">
                 <i class="fas fa-user"></i>
             </button>
             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#!">Profil</a></li>
-                <li><a class="dropdown-item" href="#!">Kosár</a></li>
+                <li>
+                    <a class="dropdown-item" href="#!">Profil</a>
+                </li>
                 <li>
                     <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" (click)="onLogout()">Kilépés</a></li>
+                <li>
+                    <a class="dropdown-item" (click)="onLogout()">Kilépés</a>
+                </li>
             </ul>
         </li>
-        <button routerLink="/login" *ngIf="!(user$ | async)" class="btn btn-success">
-            <i class="fas fa-user"></i>
+        <button routerLink="/login" *ngIf="!user" class="btn btn-success">
+            <i class="fas fa-sign-in-alt"></i>
         </button>
     </ul>
 </nav>

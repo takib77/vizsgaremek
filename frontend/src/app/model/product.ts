@@ -1,11 +1,11 @@
 export class Product {
-    id: string | number = 0;
-    name?: string;
-    goodFor?: string[];
+    _id: string = '';
+    name: string = '';
+    goodFor: string[] = [];
     weight?: number
     size?: string;
     material?: string;
-    price?: number
+    price: number = 0;
     active?: boolean;
     organic?: boolean;
 }

@@ -3,7 +3,7 @@
     <div [ngSwitch]="field.controlType">
         <input *ngSwitchCase="'input'" [type]="field.type" [formControlName]="field.key" [id]="field.key"
             class="form-control">
-        <select *ngSwitchCase="'select'" [formControlName]="field.key" [id]="field.key" class="form-control">
+        <select *ngSwitchCase="'select'" [formControlName]="field.key" [id]="field.key" class="form-select">
             <option *ngFor="let option of field.options" [value]="option.value">
                 {{ option.label }}
             </option>

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
 import { FieldBase } from 'src/app/areus-form/model/field-base';
 import { InputField } from 'src/app/areus-form/model/input-field';
 import { SelectField } from 'src/app/areus-form/model/select-field';
@@ -17,8 +15,7 @@ import { UserService } from 'src/app/service/user.service';
 export class UserEditorComponent implements OnInit {
 
   user: User = new User();
-  user$: Observable<User> = this.ar.params.pipe(
-    switchMap(params => this.userservice.get(params.id)));
+  title: string = '';
 
   fields: FieldBase<any>[] = [];
   showForm: boolean = false;
@@ -30,12 +27,23 @@ export class UserEditorComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.user$.subscribe(
-      user => {
-        this.user = user;
-        this.setForm();
-        this.showForm = true;
-      });
+    this.ar.params.subscribe(
+      params => {
+        if (params.id == 0) {
+          this.user = new User();
+          this.title = 'Új felhasználó felvétele';
+          this.setForm();
+          this.showForm = true;
+        }
+        else
+          this.userservice.get(params.id).subscribe(
+            item => {
+              this.user = item;
+              this.title = 'Felhasználó szerkesztése';
+              this.setForm();
+              this.showForm = true;
+            })
+      })
   }
 
   setForm(): void {

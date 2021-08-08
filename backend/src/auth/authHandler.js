@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken');
 
 const Users = [
-    { username: 'admin', password: 'admin_1', role: 'admin' },
-    { username: 'Tibi', password: 'Tibi1', role: 'user' }
+    { username: 'admin', password: 'admin_1', role: 3 },
+    { username: 'Tibi', password: 'Tibi1', role: 2 }
 ];
 
 const refreshTokens = [];
@@ -14,7 +14,7 @@ module.exports.login = (req, res) => {
         user => user.username === username && user.password === password);
 
     if (user) {
-        const accesToken = jwt.sign({
+        const accessToken = jwt.sign({
             username: user.username,
             role: user.role
         }, process.env.ACCESS_TOKEN_SECRET, {
@@ -27,7 +27,7 @@ module.exports.login = (req, res) => {
         }, process.env.REFRESH_TOKEN_SECRET);
 
         refreshTokens.push(refreshToken);
-        res.json({ accesToken, refreshToken });
+        res.json({ accessToken, refreshToken, user });
 
     } else {
         res.send('Username or Password incorrect!');
@@ -35,38 +35,38 @@ module.exports.login = (req, res) => {
 };
 
 module.exports.refresh = (req, res, next) => {
-    const { token } = req.body;
-    if (!token) {
+    const { accessToken } = req.body;
+    if (!accessToken) {
         return res.sendStatus(401);
     }
-    if (!refreshTokens.includes(token)) {
+    if (!refreshTokens.includes(accessToken)) {
         return res.sendStatus(403);
     }
 
-    jwt.verify(token, process.env.REFRESH_TOKEN_SECRET, (err, user) => {
+    jwt.verify(accessToken, process.env.REFRESH_TOKEN_SECRET, (err, user) => {
         if (err) {
             return res.sendStatus(403);
         }
 
-        const accesToken = jwt.sign({
+        const accessToken = jwt.sign({
             username: user.username,
             role: user.role
         }, process.env.ACCESS_TOKEN_SECRET, {
             expiresIn: process.env.TOKEN_EXPIRY
         });
 
-        res.json({ accesToken });
+        res.json({ accessToken });
     });
 };
 
 module.exports.logout = (req, res) => {
-    const { token } = req.body;
+    const { accessToken } = req.body;
 
-    if (!refreshTokens.includes(token)) {
+    if (!refreshTokens.includes(accessToken)) {
         res.sendStatus(403);
     }
 
-    const tokenIndex = refreshTokens.indexOf(token)
+    const tokenIndex = refreshTokens.indexOf(accessToken)
     refreshTokens.splice(tokenIndex, 1);
 
     res.sendStatus(200);

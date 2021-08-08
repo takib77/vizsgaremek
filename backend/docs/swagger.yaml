@@ -83,6 +83,46 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error'
+  /animals:
+    get:
+      description: Returns a list of animals
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: List of animals returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Animal'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /users:
+    get:
+      description: Returns a list of users
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: List of users returned successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
 components:
   securitySchemes:
     bearerAuth:            # arbitrary name for the security scheme
@@ -91,6 +131,29 @@ components:
       bearerFormat: JWT
   schemas:
     Person:
+      type: object
+      required:
+        - first_name
+        - last_name
+        - email
+      properties:
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+    Animal:
+      type: object
+      required:
+        - name
+        - price
+      properties:
+        name:
+          type: string
+        price:
+          type: number
+    User:
       type: object
       required:
         - first_name

@@ -1,14 +1,14 @@
 const Animal = require('../../models/animal.model');
 
-exports.findAll = () => Animal.find();
+exports.findAll = () => Animal.find().populate();
 
-exports.findOne = _id => Animal.findById(_id);
+exports.findOne = id => Animal.findById(id).populate();
 
 exports.create = animalData => {
     const animal = new Animal(animalData);
     return animal.save();
 };
 
-exports.update = (_id, updateData) => Animal.findByIdAndUpdate(_id, updateData, { new: true });
+exports.update = (id, updateData) => Animal.findByIdAndUpdate(id, updateData, { new: true });
 
-exports.delete = _id => Animal.findByIdAndRemove(_id);
+exports.delete = id => Animal.findByIdAndRemove(id);

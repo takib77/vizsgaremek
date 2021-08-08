@@ -1,10 +1,26 @@
-const express = require('express');
 const createError = require('http-errors');
-const animalService = require('./base.service');
+const userService = require('../user/user.service');
+const userModel = require('../../models/user.model');
+
+const checkModel = (model, body, next) => {
+    const validationError = new model(body).validateSync();
+    if (validationError) {
+        next(
+            new createError.BadRequest(
+                JSON.stringify({
+                    message: 'Schema validation error!',
+                    error: validationError
+                })
+            )
+        );
+        return false;
+    }
+    return true;
+}
 
 // Get All animal
 exports.findAll = (req, res, next) => {
-    return animalService.findAll()
+    return userService.findAll()
         .then(animals => {
             res.json(animals);
         })
@@ -12,7 +28,7 @@ exports.findAll = (req, res, next) => {
 
 // Get One animal
 exports.findOne = (req, res, next) => {
-    return animalService.findOne(req.params._id)
+    return userService.findOne(req.params.id)
         .then(animal => {
             if (!animal) {
                 return next(new createError.NotFound("Animal is not found"));
@@ -23,18 +39,11 @@ exports.findOne = (req, res, next) => {
 
 // Create a new animal
 exports.create = (req, res, next) => {
-    const { name, price } = req.body;
-    if (!name || !price) {
-        return next(
-            new createError.BadRequest("Missing properties!")
-        );
+    if (!checkModel(userModel, req.body, next)) {
+        return;
     };
 
-    const newAnimal = {
-        name, price
-    };
-
-    return animalService.create(newAnimal)
+    return userService.create(req.body)
         .then(animal => {
             res.status(201);
             res.json(animal);
@@ -44,14 +53,11 @@ exports.create = (req, res, next) => {
 
 // Update a animal
 exports.update = (req, res, next) => {
-    const { name, price } = req.body;
-    if (!name || !price) {
-        return next(
-            new createError.BadRequest("Missing properties!")
-        );
+    if (!checkModel(userModel, req.body, next)) {
+        return;
     };
 
-    return animalService.update(req.params._id, req.body)
+    return userService.update(req.params.id, req.body)
         .then(animal => {
             res.json(animal);
         })
@@ -60,7 +66,7 @@ exports.update = (req, res, next) => {
 
 // Delete a animal
 exports.delete = (req, res, next) => {
-    return animalService.delete(req.params._id)
+    return userService.delete(req.params.id)
         .then(() => res.json({}))
         .catch(err => next(new createError.NotFound("Animal is not found")));
 };

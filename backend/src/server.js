@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const swaggerUi = require('swagger-ui-express');
 const yaml = require('yamljs');
+const cors = require('../config/cors');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
@@ -15,7 +16,6 @@ const adminOnly = require('./auth/adminOnly');
 const authHandler = require('./auth/authHandler');
 
 const swaggerDocument = yaml.load('./docs/swagger.yaml');
-
 const { username, password, host } = config.get('database');
 mongoose
     // `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}`
@@ -30,6 +30,7 @@ mongoose
         process.exit();
     });
 
+app.use(cors());
 app.use(morgan('combined', { stream: logger.stream }));
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -42,6 +43,7 @@ app.post('/logout', authHandler.logout);
 // app.use('/person', authenticateJwt, require('./controllers/person/person.routes'));
 app.use('/person', require('./controllers/person/person.routes'));
 app.use('/animals', require('./controllers/animal/animal.routes'));
+app.use('/users', require('./controllers/user/user.routes'));
 app.use('/post', authenticateJwt, adminOnly, require('./controllers/post/post.routes'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 

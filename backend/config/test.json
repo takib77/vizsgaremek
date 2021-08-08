@@ -1,0 +1,7 @@
+{
+    "database": {
+        "username": "mongo",
+        "password": "c7DoYMad0U3DfEpU",
+        "host": "cluster0.p3vc6.mongodb.net/JestDB?retryWrites=true&w=majority"
+    }
+}

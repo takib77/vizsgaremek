@@ -1,0 +1,7 @@
+{
+    "database": {
+        "username": "mongo",
+        "password": "c7DoYMad0U3DfEpU",
+        "host": "mongo:27017/myFirstDatabase?retryWrites=true&w=majority"
+    }
+}

@@ -1,6 +1,95 @@
 <h3 class="text-center my-3">{{title}}</h3>
 <div class="row">
-    <div class="col-6 offset-3">
-        <app-form *ngIf="showForm" [fieldList]="fields" (submitted)="onSubmit($event)"></app-form>
+    <div *ngIf="user" class="col-6 offset-3 my-3">
+        <form #userForm="ngForm" (ngSubmit)="onSubmit(user)">
+            <div class="row d-flex mb-3">
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input id="first_name" name="first_name" [(ngModel)]="user.first_name" type="text"
+                            class="form-control" required>
+                        <label for="first_name">VEZETÉKNÉV</label>
+                        <div [hidden]="userForm.controls.first_name?.valid || userForm.controls.first_name?.pristine"
+                            class="error-message">
+                            Hibás megadás!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input id="last_name" name="last_name" [(ngModel)]="user.last_name" type="text"
+                            class="form-control" required>
+                        <label for="last_name">KERESZTNÉV</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input id="country" name="country" [(ngModel)]="user.address.country" type="text"
+                            class="form-control" required>
+                        <label for="country">ORSZÁG</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input id="city" name="city" [(ngModel)]="user.address.city" type="text" class="form-control"
+                            required>
+                        <label for="city">VÁROS</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex mb-3">
+                <div class="col-3">
+                    <div class="form-floating mb-3">
+                        <input id="zip" name="zip" [(ngModel)]="user.address.zip" type="number" class="form-control"
+                            required>
+                        <label for="zip">IRÁNYÍTÓSZÁM</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input id="street" name="street" [(ngModel)]="user.address.street" type="text"
+                            class="form-control" required>
+                        <label for="street">UTCA</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-floating mb-3">
+                        <input id="houseNumber" name="houseNumber" [(ngModel)]="user.address.houseNumber" type="number"
+                            class="form-control" required>
+                        <label for="houseNumber">HÁZSZÁM</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex mb-3">
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input id="email" name="email" [(ngModel)]="user.email" type="text" class="form-control"
+                            placeholder="EMAIL CÍM" required>
+                        <label for="email">EMAIL CÍM</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-floating mb-3">
+                        <input id="password" name="password" [(ngModel)]="user.password" type="password"
+                            class="form-control" placeholder="JELSZÓ">
+                        <label for="password">JELSZÓ</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <select id="role" name="role" [(ngModel)]="user.role" class="form-select">
+                    <option value="1">FELHASZNÁLÓ</option>
+                    <option value="2">SZERKESZTŐ</option>
+                    <option value="3">ADMIN</option>
+                </select>
+                <label for="role">JOGOSULTSÁG</label>
+            </div>
+            <div class="d-grid mx-auto my-5">
+                <button [disabled]="userForm.invalid" type="submit" class="btn btn-primary btn-block">
+                    <i class="far fa-save"></i>
+                </button>
+            </div>
+        </form>
     </div>
 </div>

@@ -1,16 +1,12 @@
+import { Address } from "./address";
+
 export class User {
     _id: string = '';
     first_name: string = '';
     last_name: string = '';
-    address?: Address = {};
+    address: Address = new Address();
     email: string = '';
     password?: string = '';
-    role?: number = 0;
-    token?: string;
-}
-
-export interface Address {
-    country?: string;
-    city?: string;
-    street?: string;
+    role?: number = 1;
+    accessToken?: string;
 }

@@ -22,7 +22,7 @@ export class AuthService {
   ) {
     if (localStorage.currentUser) {
       const user: User = JSON.parse(localStorage.currentUser);
-      this.lastToken = user.token || '';
+      this.lastToken = user.accessToken || '';
       this.currentUserSubject$.next(user);
     }
   }
@@ -35,7 +35,7 @@ export class AuthService {
       map(response => {
         if (response.user && response.accessToken) {
           this.lastToken = response.accessToken;
-          response.user.token = response.accessToken;
+          response.user.accessToken = response.accessToken;
           this.currentUserSubject$.next(response.user);
           localStorage.currentUser = JSON.stringify(response.user);
           return response.user;

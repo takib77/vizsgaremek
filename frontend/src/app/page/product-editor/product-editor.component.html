@@ -1,0 +1,82 @@
+<h3 class="text-center my-3">{{title}}</h3>
+<div class="row">
+    <div *ngIf="product" class="col-10 col-md-8 col-xl-6 offset-1 offset-md-2 offset-xl-3 my-3">
+        <form #productForm="ngForm" (ngSubmit)="onSubmit(product)">
+            <div class="form-floating mb-3">
+                <input id="name" name="name" [(ngModel)]="product.name" type="text" class="form-control" required
+                    pattern="^[A-ZÁÉÍÓÖŐÚÜŰ]{1}.{1,}">
+                <label for="name">TERMÉKNÉV*</label>
+                <div [hidden]="productForm.controls.name?.valid || productForm.controls.name?.pristine"
+                    class="error-message">
+                    A terméknévnek nagy betűvel kell kezdődnie!
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <input id="goodFor" name="goodFor" [(ngModel)]="product.goodFor" type="text" class="form-control"
+                    required pattern="[A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű, ]{1,}">
+                <label for="goodFor">MELYIK ÁLLAT(OK)HOZ JÓ?*</label>
+                <div [hidden]="productForm.controls.goodFor?.valid || productForm.controls.goodFor?.pristine"
+                    class="error-message">
+                    A mező csak betűket tartalmazhat!
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3">
+                        <input id="weight" name="weight" [(ngModel)]="product.weight" type="number"
+                            class="form-control">
+                        <label for="weight">TÖMEG</label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3">
+                        <input id="size" name="size" [(ngModel)]="product.size" type="text" class="form-control">
+                        <label for="size">MÉRET</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3">
+                        <input id="material" name="material" [(ngModel)]="product.material" type="text"
+                            class="form-control">
+                        <label for="material">ANYAG</label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3">
+                        <input id="price" name="price" [(ngModel)]="product.price" type="number" class="form-control"
+                            required pattern="\d{1,}">
+                        <label for="price">ÁR*</label>
+                    </div>
+                    <div [hidden]="productForm.controls.price?.valid || productForm.controls.price?.pristine"
+                        class="error-message">
+                        Az ár csak számokat tartalmazhat!
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6">
+                    <div class="form-check mb-3">
+                        <input id="active" name="active" [(ngModel)]="product.active" type="checkbox"
+                            class="form-check-input">
+                        <label for="active" class="form-check-label">KAPHATÓ?</label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check mb-3">
+                        <input id="organic" name="organic" [(ngModel)]="product.organic" type="checkbox"
+                            class="form-check-input">
+                        <label for="organic" class="form-check-label">TERMÉSZETES?</label>
+                    </div>
+                </div>
+            </div>
+            <i class="text-danger">*Kötelező megadni</i>
+            <div class="d-grid mx-auto my-5">
+                <button [disabled]="productForm.invalid" type="submit" class="btn btn-primary btn-block">
+                    <i class="far fa-save"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

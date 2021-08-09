@@ -24,6 +24,9 @@ import { LoginComponent } from './page/login/login.component';
 import { XPipePipe } from './pipe/x-pipe.pipe';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
+import { ProductEditorComponent } from './page/product-editor/product-editor.component';
+import { OrderEditorComponent } from './page/order-editor/order-editor.component';
+import { AnimalEditorComponent } from './page/animal-editor/animal-editor.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import { UserEditorComponent } from './page/user-editor/user-editor.component';
     XPipePipe,
     ForbiddenComponent,
     UserEditorComponent,
+    ProductEditorComponent,
+    OrderEditorComponent,
+    AnimalEditorComponent,
   ],
   imports: [
     BrowserModule,

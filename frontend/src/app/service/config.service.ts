@@ -40,7 +40,7 @@ export class ConfigService {
 
   productTable: IDataDisplayer[] = [
     { key: '_id', title: '#' },
-    { key: 'name', title: 'MEGNEVEZÉS' },
+    { key: 'name', title: 'TERMÉKNÉV' },
     { key: 'goodFor', title: 'MELYIK ÁLLATHOZ JÓ?' },
     { key: 'weight', title: 'TÖMEG', htmlOutput: ConfigService.noData },
     { key: 'size', title: 'MÉRET', htmlOutput: ConfigService.noData },

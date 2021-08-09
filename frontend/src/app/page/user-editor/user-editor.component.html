@@ -1,75 +1,81 @@
 <h3 class="text-center my-3">{{title}}</h3>
 <div class="row">
-    <div *ngIf="user" class="col-6 offset-3 my-3">
+    <div *ngIf="user" class="col-10 col-md-8 col-xl-6 offset-1 offset-md-2 offset-xl-3 my-3">
         <form #userForm="ngForm" (ngSubmit)="onSubmit(user)">
-            <div class="row d-flex mb-3">
-                <div class="col-6">
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
                     <div class="form-floating mb-3">
                         <input id="first_name" name="first_name" [(ngModel)]="user.first_name" type="text"
-                            class="form-control" required>
-                        <label for="first_name">VEZETÉKNÉV</label>
+                            class="form-control" required pattern="^[A-Z,ÁÉÍÓÖŐÚÜŰ]{1}[a-z,áéíóöőúüű]{1,}">
+                        <label for="first_name">VEZETÉKNÉV*</label>
                         <div [hidden]="userForm.controls.first_name?.valid || userForm.controls.first_name?.pristine"
                             class="error-message">
-                            Hibás megadás!
+                            A vezetéknévnek nagy betűvel kell kezdődnie!
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="form-floating mb-3">
                         <input id="last_name" name="last_name" [(ngModel)]="user.last_name" type="text"
-                            class="form-control" required>
-                        <label for="last_name">KERESZTNÉV</label>
+                            class="form-control" required pattern="^[A-Z,ÁÉÍÓÖŐÚÜŰ]{1}[a-z,áéíóöőúüű]{1,}">
+                        <label for="last_name">KERESZTNÉV*</label>
+                        <div [hidden]="userForm.controls.last_name?.valid || userForm.controls.last_name?.pristine"
+                            class="error-message">
+                            A keresztnévnek nagy betűvel kell kezdődnie!
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex">
-                <div class="col-6">
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
                     <div class="form-floating mb-3">
                         <input id="country" name="country" [(ngModel)]="user.address.country" type="text"
-                            class="form-control" required>
+                            class="form-control">
                         <label for="country">ORSZÁG</label>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="form-floating mb-3">
-                        <input id="city" name="city" [(ngModel)]="user.address.city" type="text" class="form-control"
-                            required>
+                        <input id="city" name="city" [(ngModel)]="user.address.city" type="text" class="form-control">
                         <label for="city">VÁROS</label>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex mb-3">
-                <div class="col-3">
+            <div class="row mb-3">
+                <div class="col-12 col-xl-4">
                     <div class="form-floating mb-3">
-                        <input id="zip" name="zip" [(ngModel)]="user.address.zip" type="number" class="form-control"
-                            required>
+                        <input id="zip" name="zip" [(ngModel)]="user.address.zip" type="number" class="form-control">
                         <label for="zip">IRÁNYÍTÓSZÁM</label>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-xl-5">
                     <div class="form-floating mb-3">
                         <input id="street" name="street" [(ngModel)]="user.address.street" type="text"
-                            class="form-control" required>
-                        <label for="street">UTCA</label>
+                            class="form-control">
+                        <label for="street">KÖZTERÜLET</label>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-xl-3">
                     <div class="form-floating mb-3">
                         <input id="houseNumber" name="houseNumber" [(ngModel)]="user.address.houseNumber" type="number"
-                            class="form-control" required>
+                            class="form-control">
                         <label for="houseNumber">HÁZSZÁM</label>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex mb-3">
-                <div class="col-6">
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
                     <div class="form-floating mb-3">
                         <input id="email" name="email" [(ngModel)]="user.email" type="text" class="form-control"
-                            placeholder="EMAIL CÍM" required>
-                        <label for="email">EMAIL CÍM</label>
+                            placeholder="EMAIL CÍM" required [pattern]="emailPattern">
+                        <label for="email">EMAIL CÍM*</label>
+                        <div [hidden]="userForm.controls.email?.valid || userForm.controls.email?.pristine"
+                            class="error-message">
+                            Szabványos email címet kell megadni!
+                        </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="form-floating mb-3">
                         <input id="password" name="password" [(ngModel)]="user.password" type="password"
                             class="form-control" placeholder="JELSZÓ">
@@ -85,6 +91,7 @@
                 </select>
                 <label for="role">JOGOSULTSÁG</label>
             </div>
+            <i class="text-danger">*Kötelező megadni</i>
             <div class="d-grid mx-auto my-5">
                 <button [disabled]="userForm.invalid" type="submit" class="btn btn-primary btn-block">
                     <i class="far fa-save"></i>

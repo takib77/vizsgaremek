@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Order } from 'src/app/model/order';
 import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
@@ -14,13 +15,26 @@ export class OrderComponent implements OnInit {
   orderList$: Observable<Order[]> = this.orderservice.getAll();
   orderTable: IDataDisplayer[] = this.config.orderTable;
   orderTitle: string = 'Rendelések listája';
+  pageName: string = 'order';
 
   constructor(
     private orderservice: OrderService,
-    private config: ConfigService
+    private config: ConfigService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
+  }
+
+  onSelectOne(order: Order): void {
+    this.router.navigate(['/order', order._id])
+  }
+
+  onDeleteOne(order: Order): void {
+    if (confirm(`Biztos hogy törli a(z) \"${order._id}\" azonosítójű rendelést?`))
+      this.orderservice.delete(order).subscribe(
+        () => this.orderList$ = this.orderservice.getAll()
+      )
   }
 
 }

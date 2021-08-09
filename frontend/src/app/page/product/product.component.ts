@@ -31,7 +31,7 @@ export class ProductComponent implements OnInit {
   }
 
   onDeleteOne(product: Product): void {
-    if (confirm(`Biztos hogy törli a \"${product.name}\" nevű terméket?`))
+    if (confirm(`Biztos hogy törli a(z) \"${product.name}\" nevű terméket?`))
       this.productservice.delete(product).subscribe(
         () => this.productList$ = this.productservice.getAll()
       )

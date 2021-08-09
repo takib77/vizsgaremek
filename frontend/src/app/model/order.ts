@@ -1,10 +1,7 @@
-import { Product } from "./product";
-import { User } from "./user";
-
 export class Order {
     _id: string = '';
-    user: User = new User();
-    products: Product[] = [];
+    user: string = '';
+    products: string = '';
     time?: Date = new Date();
     note?: string;
 }

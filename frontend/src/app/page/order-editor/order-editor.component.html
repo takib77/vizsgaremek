@@ -1,1 +1,26 @@
-<p>order-editor works!</p>
+<h3 class="text-center my-3">{{title}}</h3>
+<div class="row">
+    <div *ngIf="order" class="col-10 col-md-8 col-xl-6 offset-1 offset-md-2 offset-xl-3 my-3">
+        <label *ngIf="order._id" class="d-block text-muted text-right mb-3">{{'AZONOSÍTÓ: '+order._id}}</label>
+        <form #orderForm="ngForm" (ngSubmit)="onSubmit(order)">
+            <div class="form-floating mb-3">
+                <input id="user_id" name="user_id" [(ngModel)]="order.user" type="text" class="form-control" required>
+                <label for="user_id">MEGRENDELŐ AZONOSÍTÓJA*</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input id="products" name="products" [(ngModel)]="order.products" type="text" class="form-control">
+                <label for="products">TERMÉK(EK) AZONOSÍTÓJA</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input id="note" name="note" [(ngModel)]="order.note" type="text" class="form-control">
+                <label for="note">MEGJEGYZÉS</label>
+            </div>
+            <i class="text-danger">*Kötelező megadni</i>
+            <div class="d-grid mx-auto my-5">
+                <button [disabled]="orderForm.invalid" type="submit" class="btn btn-primary btn-block">
+                    <i class="far fa-save"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

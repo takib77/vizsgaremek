@@ -1,1 +1,52 @@
-<p>animal-editor works!</p>
+<h3 class="text-center my-3">{{title}}</h3>
+<div class="row">
+    <div *ngIf="animal" class="col-10 col-md-8 col-xl-6 offset-1 offset-md-2 offset-xl-3 my-3">
+        <label *ngIf="animal._id" class="d-block text-muted text-right mb-3">{{'AZONOSÍTÓ: '+animal._id}}</label>
+        <form #animalForm="ngForm" (ngSubmit)="onSubmit(animal)">
+            <div class="form-floating mb-3">
+                <input id="name" name="name" [(ngModel)]="animal.name" type="text" class="form-control" required
+                    pattern="^[A-ZÁÉÍÓÖŐÚÜŰ]{1}.{1,}">
+                <label for="name">NÉV*</label>
+                <div [hidden]="animalForm.controls.name?.valid || animalForm.controls.name?.pristine"
+                    class="error-message">
+                    A névnek nagy betűvel kell kezdődnie!
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3">
+                        <input id="category" name="category" [(ngModel)]="animal.category" type="text"
+                            class="form-control">
+                        <label for="category">KATEGÓRIA</label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3">
+                        <input id="price" name="price" [(ngModel)]="animal.price" type="number" class="form-control"
+                            required pattern="\d{1,}">
+                        <label for="price">ÁR*</label>
+                    </div>
+                    <div [hidden]="animalForm.controls.price?.valid || animalForm.controls.price?.pristine"
+                        class="error-message">
+                        Az ár csak számokat tartalmazhat!
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea id="description" name="description" [(ngModel)]="animal.description" class="form-control"
+                    style="height: 300px"></textarea>
+                <label for="description">LEÍRÁS</label>
+            </div>
+            <div class="form-check mb-3">
+                <input id="active" name="active" [(ngModel)]="animal.active" type="checkbox" class="form-check-input">
+                <label for="active" class="form-check-label">KAPHATÓ?</label>
+            </div>
+            <i class="text-danger">*Kötelező megadni</i>
+            <div class="d-grid mx-auto my-5">
+                <button [disabled]="animalForm.invalid" type="submit" class="btn btn-primary btn-block">
+                    <i class="far fa-save"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -3,8 +3,7 @@
     {
       "_id": "123qw",
       "name": "Szíriai aranyhörcsög",
-      "category": "Rágcsáló",
-      "subCategory": "Hörcsög",
+      "category": "Hörcsög",
       "description": "Az aranyhörcsögök az egyik leggyakrabban tartott rágcsálók, hiszen könnyen megszelídíthetőek és szinte biztos, hogy elérhetőek minden kisállat kereskedésben. Általában 4 évig élnek, körülbelül 17 cm-esre nőnek meg és 200 grammot nyomnak. Kíváncsi természetük miatt igénylik az ingereket, és hogy sokat foglalkozzunk velük. Igazi kis szabadulóművészek, ezért nagyon ügyelnünk kell arra, hogy kellően magas legyen a terrárium, vagy, hogy elég sűrűn legyenek a ketrec rácsai. Fontos tudni róluk, hogy magányosan szeretnek élni, nem szívesen osztják meg a területüket más hörcsögökkel. Ha mégis két kisemlőst szeretnénk, akkor kicsi koruktól kezdve együtt élő párt kell választanunk, különben halálos sérülésekkel járó verekedések szemtanúi lehetünk.",
       "img": "...",
       "price": 700,
@@ -13,8 +12,7 @@
     {
       "_id": "123we",
       "name": "Dzsungáriai törpehörcsög",
-      "category": "Rágcsáló",
-      "subCategory": "Hörcsög",
+      "category": "Hörcsög",
       "description": "A törpehörcsög kifejezés több faj esetében is használható, az egyik közülük a Dzsungáriai törpehörcsög. Ők sokkal inkább kijönnek egymással, mint az aranyhörcsögök, ennek köszönhetően tarthatóak párban vagy többedmagukkal is. Könnyen kezelhetőek és nem igényelnek túl sok gondozást. Azt viszont fontos észben tartanunk, hogy ezek az apróságok jellemzően harapósak. Rendszeres foglalkozással viszont leszoktathatóak róla. Maximum 7-8 centisre nőnek, és 50-60 gramm súlyúak.",
       "img": "...",
       "price": 900,
@@ -23,8 +21,7 @@
     {
       "_id": "123er",
       "name": "Roborovszki törpehörcsög",
-      "category": "Rágcsáló",
-      "subCategory": "Hörcsög",
+      "category": "Hörcsög",
       "description": "A Roborovszki törpehörcsögök a legkisebbek és leggyorsabbak a hörcsögök közül. Csak a saját fajtájukkal képesek kijönni, és nem szeretik, ha kézbe vesszük és babusgatjuk őket. Nézni viszont szabad. Egyszerre félénk és kíváncsi természetűek. Szelídek, ritkán harapnak. A felnőttek sem nagyobbak, mint egy emberi hüvelykujj, így a szökésbiztos rágcsálólakra nagy figyelmet kell fordítanunk.",
       "img": "...",
       "price": 1000,
@@ -33,8 +30,7 @@
     {
       "_id": "123rt",
       "name": "Kínai csíkos törpehörcsög",
-      "category": "Rágcsáló",
-      "subCategory": "Hörcsög",
+      "category": "Hörcsög",
       "description": "Nevükkel ellentétben a kínai törpehörcsögök valójában nem törpék. Ami viszont valós, hogy Kínából származnak. Kevesen tenyésztik őket, ezért ritkábban bukkanhatunk rájuk, mint a többi hörcsögfajtára. Több színkombinációban is léteznek, de minden esetben jellemző járjuk a hátukon lévő sötétbarna csík. Éjszakai állatok, napközben ritkán aktívak. Félénk kis rágcsálók, de csak akkor harapnak, ha provokálják őket. Kevesebb _ideig élnek és kisebbek is, mint az aranyhörcsögök, általában nem nőnek nagyobbra, mint 10 cm. Rendkívül fürgék, ezért, ha sikerül meglépniük, nagyon nehéz elkapni őket.",
       "img": "...",
       "price": 1150,
@@ -43,8 +39,7 @@
     {
       "_id": "123tz",
       "name": "Angol röv_idszőrű tengerimalac",
-      "category": "Rágcsáló",
-      "subCategory": "Tengerimalac",
+      "category": "Tengerimalac",
       "description": "Szőre teljesen sima, röv_id, egyenletes hosszúságú, valamint fényes és dús. Nincsenek forgók, rozetták és választékok.",
       "img": "...",
       "price": 650,
@@ -53,8 +48,7 @@
     {
       "_id": "123zu",
       "name": "Amerika bóbitás tengerimalac",
-      "category": "Rágcsáló",
-      "subCategory": "Tengerimalac",
+      "category": "Tengerimalac",
       "description": "A malac homlokán rozettaszerű szőrkorona látható. A korona színe fehér, kontrasztban áll a testen látható színnel.",
       "img": "...",
       "price": 850,
@@ -63,8 +57,7 @@
     {
       "_id": "123ui",
       "name": "Hosszúszőrű bóbitás tengerimalac",
-      "subCategory": "Tengerimalac",
-      "category": "Rágcsáló",
+      "category": "Tengerimalac",
       "description": "Szőre hosszú, dús, a fejtetőn egy rozetta található. Sörénye hátrafele nő, így nem fedi a fejet. Az oldalakon lévő szőr egyenletesen hosszú, az uszálya pedig még ennél is hosszabb.",
       "img": "...",
       "price": 990,
@@ -73,8 +66,7 @@
     {
       "_id": "123ui",
       "name": "Perui tengerimalac",
-      "category": "Rágcsáló",
-      "subCategory": "Tengerimalac",
+      "category": "Tengerimalac",
       "description": "Szőre hosszú és selymes. Fején a szőr előrelógó, a faron pedig két rozetta található. A sörényt alkotó szőr a vállakból indul ki, és egyenletesen fedi a fejet. Az oldalán és a vállán lévő szőrzet valóságos függönyt alkot teste körül, és sehol sem hézagos. Uszályát a faron megfelelően elhelyezkedő forgók teszik sűrűvé.",
       "img": "...",
       "price": 1490,
@@ -83,8 +75,7 @@
     {
       "_id": "123io",
       "name": "Német kossorrú óriásnyúl",
-      "category": "Rágcsáló",
-      "subCategory": "Nyúl",
+      "category": "Nyúl",
       "description": "",
       "img": "...",
       "price": 1700,
@@ -93,8 +84,7 @@
     {
       "_id": "123op",
       "name": "Mecklenburgi tarka nyúl",
-      "category": "Rágcsáló",
-      "subCategory": "Nyúl",
+      "category": "Nyúl",
       "description": "",
       "img": "...",
       "price": 1900,
@@ -103,8 +93,7 @@
     {
       "_id": "123pa",
       "name": "Törpe rex nyúl",
-      "category": "Rágcsáló",
-      "subCategory": "Nyúl",
+      "category": "Nyúl",
       "description": "",
       "img": "...",
       "price": 1800,
@@ -114,7 +103,6 @@
       "_id": "123ac",
       "name": "Tengerimalac",
       "category": "Rágcsáló",
-      "subCategory": "Tengerimalac",
       "description": "Rágcsáló",
       "img": "...",
       "price": 1100,
@@ -492,19 +480,14 @@
     {
       "_id": "1",
       "user": "2v",
-      "products": [
-        "123qw"
-      ],
+      "products": "123qw",
       "time": 20210805,
       "note": "A csengő rossz"
     },
     {
       "_id": "2",
       "user": "9",
-      "products": [
-        "123tz",
-        "123op"
-      ],
+      "products": "123tz, 123op",
       "time": 1626699947303,
       "note": "Csak délután vagyok otthon"
     }

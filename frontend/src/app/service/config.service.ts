@@ -20,10 +20,8 @@ export class ConfigService {
   public readonly apiUrl: string = 'http://localhost:3000/';
 
   animalTable: IDataDisplayer[] = [
-    { key: '_id', title: '#' },
     { key: 'name', title: 'NÉV' },
-    { key: 'category', title: 'OSZTÁLY' },
-    { key: 'subCategory', title: 'KATEGÓRIA' },
+    { key: 'category', title: 'KATEGÓRIA' },
     { key: 'description', title: 'LEÍRÁS' },
     { key: 'img', title: 'KÉP' },
     { key: 'price', title: 'ÁR' },
@@ -31,15 +29,13 @@ export class ConfigService {
   ];
 
   orderTable: IDataDisplayer[] = [
-    { key: '_id', title: '#' },
-    { key: 'user', title: 'FELHASZNÁLÓ' },
-    { key: 'products', title: 'TERMÉKEK' },
+    { key: 'user', title: 'MEGRENDELŐ AZ.' },
+    { key: 'products', title: 'TERMÉK(EK) AZ.' },
     { key: 'time', title: 'DÁTUM', pipes: [ConfigService.formateDate] },
     { key: 'note', title: 'MEGJEGYZÉS' },
   ];
 
   productTable: IDataDisplayer[] = [
-    { key: '_id', title: '#' },
     { key: 'name', title: 'TERMÉKNÉV' },
     { key: 'goodFor', title: 'MELYIK ÁLLATHOZ JÓ?' },
     { key: 'weight', title: 'TÖMEG', htmlOutput: ConfigService.noData },
@@ -55,7 +51,6 @@ export class ConfigService {
   ];
 
   userTable: IDataDisplayer[] = [
-    { key: '_id', title: '#', pipes: [ConfigService.cutLongString], pipeArgs: [[0, 3]] },
     { key: 'first_name', title: 'VEZETÉKNÉV' },
     { key: 'last_name', title: 'KERESZTNÉV' },
     {

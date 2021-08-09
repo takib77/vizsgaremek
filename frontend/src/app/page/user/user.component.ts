@@ -31,7 +31,7 @@ export class UserComponent implements OnInit {
   }
 
   onDeleteOne(user: User): void {
-    if (confirm(`Biztos hogy törli a \"${user.first_name} ${user.last_name}\" nevű felhasználót?`))
+    if (confirm(`Biztos hogy törli a(z) \"${user.first_name} ${user.last_name}\" nevű felhasználót?`))
       this.userservice.delete(user).subscribe(
         () => this.userList$ = this.userservice.getAll()
       )

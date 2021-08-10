@@ -23,9 +23,8 @@ export class ConfigService {
     { key: 'name', title: 'NÉV' },
     { key: 'category', title: 'KATEGÓRIA' },
     { key: 'description', title: 'LEÍRÁS' },
-    { key: 'img', title: 'KÉP' },
     { key: 'price', title: 'ÁR' },
-    { key: 'active', title: 'KAPHATÓ?' },
+    { key: 'active', title: 'KAPHATÓ?', htmlOutput: ConfigService.booleanSign },
   ];
 
   orderTable: IDataDisplayer[] = [

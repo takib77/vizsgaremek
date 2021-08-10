@@ -7,11 +7,11 @@ import { ProductService } from 'src/app/service/product.service';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
-  selector: 'app-equipment',
-  templateUrl: './equipment.component.html',
-  styleUrls: ['./equipment.component.scss']
+  selector: 'app-equipment-card',
+  templateUrl: './equipment-card.component.html',
+  styleUrls: ['./equipment-card.component.scss']
 })
-export class EquipmentComponent implements OnInit {
+export class EquipmentCardComponent implements OnInit {
 
   equipmentList$: Observable<Product[]> = this.productservice.getAll()
     .pipe(map(items => items
@@ -38,9 +38,9 @@ export class EquipmentComponent implements OnInit {
     this.selectProduct.emit(product);
     this.modalText = [];
     this.modalTitle = product.name;
-    this.modalText.push(product.goodFor);
-    if (product.size) this.modalText.push(product.size);
-    if (product.material) this.modalText.push(product.material);
+    this.modalText.push(`Melyik állat(ok)hoz jó: ${product.goodFor}`);
+    if (product.size) this.modalText.push(`Méret: ${product.size}`);
+    if (product.material) this.modalText.push(`Anyag: ${product.material}`);
   }
 
 }

@@ -2,55 +2,45 @@
     <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <div class="sb-sidenav-menu-heading"></div>
-                <a class="nav-link" routerLink="/">
-                    <div class="sb-nav-link-icon"><i class="fas fa-home"></i>
-                    </div> Kezdőlap
-                </a>
-                <div class="sb-sidenav-menu-heading">Áruház</div>
-                <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
-                    aria-expanded="false" aria-controls="collapseLayouts">
-                    <div class="sb-nav-link-icon"><i class="fas fa-paw"></i></div>
-                    Kisállatok <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                </a>
-                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
-                    data-bs-parent="#sidenavAccordion">
-                    <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="">Rágcsálók</a>
-                        <a class="nav-link" href="">Hüllők</a>
-                        <a class="nav-link" href="">Halak</a>
-                        <a class="nav-link" href="">Madarak</a>
-                    </nav>
-                </div> -->
-                <a class="nav-link" routerLink="/animal-cards">
-                    <div class="sb-nav-link-icon"><i class="fas fa-paw"></i>
-                    </div> Kisállatok
-                </a>
-                <a class="nav-link" routerLink="/foods">
-                    <div class="sb-nav-link-icon"><i class="fas fa-cookie"></i>
-                    </div> Eledelek
-                </a>
-                <a class="nav-link" routerLink="/equipments">
-                    <div class="sb-nav-link-icon"><i class="fas fa-igloo"></i>
-                    </div> Felszerelések
-                </a>
-                <div class="sb-sidenav-menu-heading">Adatlisták</div>
-                <a class="nav-link" routerLink="/animals">
-                    <div class="sb-nav-link-icon"><i class="fas fa-fish"></i></div>
-                    Kisállatok
-                </a>
-                <a class="nav-link" routerLink="/orders">
-                    <div class="sb-nav-link-icon"><i class="fas fa-credit-card"></i></div>
-                    Rendelések
-                </a>
-                <a class="nav-link" routerLink="/products">
-                    <div class="sb-nav-link-icon"><i class="fas fa-shopping-bag"></i>
-                    </div> Termékek
-                </a>
-                <a class="nav-link" routerLink="/users">
-                    <div class="sb-nav-link-icon"><i class="fas fa-users"></i>
-                    </div> Vásárlók
-                </a>
+                <div>
+                    <div class="sb-sidenav-menu-heading"></div>
+                    <a class="nav-link" routerLink="/">
+                        <div class="sb-nav-link-icon"><i class="fas fa-home"></i>
+                        </div> Kezdőlap
+                    </a>
+                    <div class="sb-sidenav-menu-heading">Áruház</div>
+                    <a class="nav-link" routerLink="/animal-cards">
+                        <div class="sb-nav-link-icon"><i class="fas fa-paw"></i>
+                        </div> Kisállatok
+                    </a>
+                    <a class="nav-link" routerLink="/food-cards">
+                        <div class="sb-nav-link-icon"><i class="fas fa-cookie"></i>
+                        </div> Eledelek
+                    </a>
+                    <a class="nav-link" routerLink="/equipment-cards">
+                        <div class="sb-nav-link-icon"><i class="fas fa-igloo"></i>
+                        </div> Felszerelések
+                    </a>
+                </div>
+                <div *ngIf="user">
+                    <div class="sb-sidenav-menu-heading">Adatlisták</div>
+                    <a class="nav-link" routerLink="/animals">
+                        <div class="sb-nav-link-icon"><i class="fas fa-fish"></i></div>
+                        Kisállatok
+                    </a>
+                    <a class="nav-link" routerLink="/orders">
+                        <div class="sb-nav-link-icon"><i class="fas fa-credit-card"></i></div>
+                        Rendelések
+                    </a>
+                    <a class="nav-link" routerLink="/products">
+                        <div class="sb-nav-link-icon"><i class="fas fa-shopping-bag"></i>
+                        </div> Termékek
+                    </a>
+                    <a class="nav-link" routerLink="/users">
+                        <div class="sb-nav-link-icon"><i class="fas fa-users"></i>
+                        </div> Vásárlók
+                    </a>
+                </div>
             </div>
         </div>
     </nav>

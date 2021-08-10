@@ -3,14 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { AnimalCardComponent } from './page/animal-card/animal-card.component';
 import { AnimalEditorComponent } from './page/animal-editor/animal-editor.component';
 import { AnimalComponent } from './page/animal/animal.component';
-import { EquipmentComponent } from './page/equipment/equipment.component';
-import { FoodComponent } from './page/food/food.component';
+import { EquipmentCardComponent } from './page/equipment-card/equipment-card.component';
+import { FoodCardComponent } from './page/food-card/food-card.component';
 import { HomeComponent } from './page/home/home.component';
 import { LoginComponent } from './page/login/login.component';
 import { OrderEditorComponent } from './page/order-editor/order-editor.component';
 import { OrderComponent } from './page/order/order.component';
 import { ProductEditorComponent } from './page/product-editor/product-editor.component';
 import { ProductComponent } from './page/product/product.component';
+import { ProfileComponent } from './page/profile/profile.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
 import { UserComponent } from './page/user/user.component';
 
@@ -24,12 +25,12 @@ const routes: Routes = [
     component: AnimalCardComponent
   },
   {
-    path: 'equipments',
-    component: EquipmentComponent
+    path: 'equipment-cards',
+    component: EquipmentCardComponent
   },
   {
-    path: 'foods',
-    component: FoodComponent
+    path: 'food-cards',
+    component: FoodCardComponent
   },
   {
     path: 'animals',
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   },
   {
     path: 'orders',

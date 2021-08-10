@@ -6,11 +6,12 @@
 </div>
 <div class="row d-flex">
     <div *ngFor="let animal of animalList$ | async" class="col-12 col-sm-6 col-md-4 col-xl-3 col-offset-1 p-3">
-        <div class="card mb-3 alert alert-success" style="max-width: 540px; min-height: 250px;">
+        <div class="card mb-3 alert alert-success mx-auto" style="max-width: 540px; min-height: 250px;">
             <div class="row g-0 my-auto">
                 <div class="col-12">
                     <img (click)="onClickImage(animal)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        src="{{animal.img}}" class="img-fluid rounded-start" alt="{{animal.img}}">
+                        src="{{animal.img}}" class="img-fluid rounded-start d-block mx-auto cursor"
+                        alt="{{animal.img}}">
                 </div>
                 <div class="col-12">
                     <div class="card-body">

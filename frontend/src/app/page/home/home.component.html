@@ -1,40 +1,25 @@
 <div class="row m-1">
-    <h1>Kategóriák</h1>
-    <p class="h5 my-3">Üzletünkben a következő kategóriákban találhatja meg legújabb házi kedvencét és a hozzá tartozó
-        felszereléseket, tárolókat és eledeleket.
-    </p>
+    <h1>Üdvözöljük oldalunkon!</h1>
+    <h3 class="my-3">Szakmai felkészültség, színvonalas kiszolgálás, kulturált körülmények, korrekt árak.</h3>
+    <h5 class="my-3">Nézzen szét áruházunkban és találja meg nálunk legújabb házi kedvencét! De nem csak egy új szeretni
+        való barátot, hanem a számára ideális felszereléseket, tárolókat és eledeleket is beszerezheti egy helyen.
+    </h5>
 </div>
-<div class="row m-1">
-    <div *ngFor="let text of cardData" class="accordion accordion-flush mr-1 my-1" id="accordionFlushExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" [id]="text.id">
-                <button class="accordion-button collapsed border" type="button" data-bs-toggle="collapse"
-                    [attr.data-bs-target]="'#'+text.target" aria-expanded="false" [attr.aria-controls]="text.target">
-                    {{text.category.toUpperCase()}}
-                </button>
-            </h2>
-            <div [id]="text.target" class="accordion-collapse collapse" [attr.aria-labelledby]="text.id"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <p class="card-text">{{text.description}}</p>
-                    <div class="row d-flex">
-                        <div *ngFor="let card of cardData" class="col-4 p-3">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="{{card.img}}" class="img-fluid rounded-start" alt="{{card.img}}">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">{{card.category}}</h5>
-                                            <p class="card-text">{{card.description}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<div class="row d-flex">
+    <div *ngFor="let card of cardData" class="col-12 col-md-4 col-offset-1 col-md-offset-4 p-3">
+        <div class="card mb-3 alert alert-warning mx-auto cursor" [routerLink]="card.link"
+            style="max-width: 540px; min-height: 250px;">
+            <div class="row g-0 my-auto">
+                <div class="col-12">
+                    <img src="{{card.img}}" class="img-fluid rounded-start d-flex mx-auto" alt="{{card.img}}">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{card.name.toUpperCase()}}</h5>
+                        <p class="card-text text-center text-danger">{{card.description}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>

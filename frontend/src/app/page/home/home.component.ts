@@ -9,32 +9,22 @@ export class HomeComponent implements OnInit {
 
   cardData = [
     {
-      category: 'Rágcsálók',
-      description: 'Hörcsögök, tengerimalacok, egerek..',
-      id: 'flush-headingOne',
-      target: 'flush-collapseOne',
-      img: 'assets/img/250.png'
+      name: 'Kisállatok',
+      description: 'Kisemlősök, díszmadarak, hüllők, halak avagy a legújabb barátja',
+      img: 'assets/img/250.png',
+      link: '/animal-cards'
     },
     {
-      category: 'Hüllők',
-      description: 'Kaméleon, teknős...',
-      id: 'flush-headingTwo',
-      target: 'flush-collapseTwo',
-      img: 'assets/img/250.png'
+      name: 'Eledelek',
+      description: 'Kisállataink táplálásához szükséges minőségi eledelek',
+      img: 'assets/img/250.png',
+      link: '/food-cards'
     },
     {
-      category: 'Halak',
-      description: 'Akváriumba tartható édesvizi halak...',
-      id: 'flush-headingThree',
-      target: 'flush-collapseThree',
-      img: 'assets/img/250.png'
-    },
-    {
-      category: 'Madarak',
-      description: 'Papagájok, kanárik és más tollassok...',
-      id: 'flush-headingFour',
-      target: 'flush-collapseFour',
-      img: 'assets/img/250.png'
+      name: 'Felszerelések',
+      description: 'A kiskedvencek tartásához szükséges felszerelések, mint pl. ketrecek, akváriumok, etetőtálak, itatóedények...',
+      img: 'assets/img/250.png',
+      link: '/equipment-cards'
     }
   ]
 

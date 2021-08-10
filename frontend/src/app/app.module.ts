@@ -28,8 +28,9 @@ import { ProductEditorComponent } from './page/product-editor/product-editor.com
 import { OrderEditorComponent } from './page/order-editor/order-editor.component';
 import { AnimalEditorComponent } from './page/animal-editor/animal-editor.component';
 import { AnimalCardComponent } from './page/animal-card/animal-card.component';
-import { FoodComponent } from './page/food/food.component';
-import { EquipmentComponent } from './page/equipment/equipment.component';
+import { FoodCardComponent } from './page/food-card/food-card.component';
+import { EquipmentCardComponent } from './page/equipment-card/equipment-card.component';
+import { ProfileComponent } from './page/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -52,8 +53,9 @@ import { EquipmentComponent } from './page/equipment/equipment.component';
     OrderEditorComponent,
     AnimalEditorComponent,
     AnimalCardComponent,
-    FoodComponent,
-    EquipmentComponent,
+    FoodCardComponent,
+    EquipmentCardComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

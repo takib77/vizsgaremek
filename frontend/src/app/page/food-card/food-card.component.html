@@ -6,11 +6,11 @@
 </div>
 <div class="row d-flex">
     <div *ngFor="let food of foodList$ | async" class="col-12 col-sm-6 col-md-4 col-xl-3 col-offset-1 p-3">
-        <div class="card mb-3 alert alert-danger" style="max-width: 540px; min-height: 250px;">
+        <div class="card mb-3 alert alert-danger mx-auto" style="max-width: 540px; min-height: 250px;">
             <div class="row g-0 my-auto">
                 <div class="col-12">
                     <img (click)="onClickImage(food)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        src="{{food.img}}" class="img-fluid rounded-start" alt="{{food.img}}">
+                        src="{{food.img}}" class="img-fluid rounded-start d-block mx-auto cursor" alt="{{food.img}}">
                 </div>
                 <div class="col-12">
                     <div class="card-body">
@@ -36,9 +36,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p class="text-center">Melyik állatokhoz jó: {{modalText[0]}}</p>
-                <p class="text-center">Súly: {{modalText[1]}} gramm</p>
-                <p class="text-center"> Természetes: {{modalText[2]}}</p>
+                <p class="text-center">{{modalText[0]}}</p>
+                <p *ngIf="modalText[1]" class="text-center">{{modalText[1]}}</p>
+                <p *ngIf="modalText[2]" class="text-center">{{modalText[2]}}</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>

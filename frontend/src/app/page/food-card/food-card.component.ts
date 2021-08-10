@@ -7,11 +7,11 @@ import { ProductService } from 'src/app/service/product.service';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
-  selector: 'app-food',
-  templateUrl: './food.component.html',
-  styleUrls: ['./food.component.scss']
+  selector: 'app-food-card',
+  templateUrl: './food-card.component.html',
+  styleUrls: ['./food-card.component.scss']
 })
-export class FoodComponent implements OnInit {
+export class FoodCardComponent implements OnInit {
 
   foodList$: Observable<Product[]> = this.productservice.getAll()
     .pipe(map(items => items
@@ -38,10 +38,10 @@ export class FoodComponent implements OnInit {
     this.selectProduct.emit(product);
     this.modalText = [];
     this.modalTitle = product.name;
-    this.modalText.push(product.goodFor);
-    if (product.weight) this.modalText.push(product.weight);
+    this.modalText.push(`Melyik állat(ok)hoz jó: ${product.goodFor}`);
+    if (product.weight) this.modalText.push(`Súly: ${product.weight} gramm`);
     if (product.organic) {
-      const boolean = (product.organic) ? 'Igen' : 'Nem';
+      const boolean = (product.organic) ? 'Természetes: Igen' : 'Természtes: Nem';
       this.modalText.push(boolean);
     }
   }

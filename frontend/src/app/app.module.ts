@@ -27,6 +27,9 @@ import { UserEditorComponent } from './page/user-editor/user-editor.component';
 import { ProductEditorComponent } from './page/product-editor/product-editor.component';
 import { OrderEditorComponent } from './page/order-editor/order-editor.component';
 import { AnimalEditorComponent } from './page/animal-editor/animal-editor.component';
+import { AnimalCardComponent } from './page/animal-card/animal-card.component';
+import { FoodComponent } from './page/food/food.component';
+import { EquipmentComponent } from './page/equipment/equipment.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,9 @@ import { AnimalEditorComponent } from './page/animal-editor/animal-editor.compon
     ProductEditorComponent,
     OrderEditorComponent,
     AnimalEditorComponent,
+    AnimalCardComponent,
+    FoodComponent,
+    EquipmentComponent,
   ],
   imports: [
     BrowserModule,

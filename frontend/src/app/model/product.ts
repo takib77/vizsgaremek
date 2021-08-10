@@ -1,7 +1,9 @@
 export class Product {
     _id: string = '';
     name: string = '';
-    goodFor: string[] = [];
+    category: string = '';
+    img?: string;
+    goodFor: string = '';
     weight?: number
     size?: string;
     material?: string;

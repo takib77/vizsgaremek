@@ -13,6 +13,13 @@
                 </div>
             </div>
             <div class="form-floating mb-3">
+                <select id="category" name="category" [(ngModel)]="product.category" class="form-select">
+                    <option value="eledel">ELEDEL</option>
+                    <option value="felszerelés">FELSZERELÉS</option>
+                </select>
+                <label for="category">KATEGÓRIA</label>
+            </div>
+            <div class="form-floating mb-3">
                 <input id="goodFor" name="goodFor" [(ngModel)]="product.goodFor" type="text" class="form-control"
                     required pattern="[A-ZÁÉÍÓÖŐÚÜŰa-záéíóöőúüű, ]{1,}">
                 <label for="goodFor">MELYIK ÁLLAT(OK)HOZ JÓ?*</label>

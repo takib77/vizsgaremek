@@ -38,7 +38,7 @@
     },
     {
       "_id": "123tz",
-      "name": "Angol röv_idszőrű tengerimalac",
+      "name": "Angol rövidszőrű tengerimalac",
       "category": "Tengerimalac",
       "description": "Szőre teljesen sima, röv_id, egyenletes hosszúságú, valamint fényes és dús. Nincsenek forgók, rozetták és választékok.",
       "img": "...",
@@ -113,6 +113,8 @@
     {
       "_id": "456tzu",
       "name": "széna",
+      "category": "eledel",
+      "img": "...",
       "goodFor": "Hörcsög, Tengerimalac",
       "price": 300,
       "weight": 200,
@@ -121,16 +123,20 @@
     },
     {
       "_id": "456tzi",
-      "name": "magkeverék",
+      "name": "Magkeverék",
+      "category": "eledel",
+      "img": "...",
       "goodFor": "Hörcsög",
       "weight": 1000,
       "price": 500,
-      "active": false,
+      "active": true,
       "organic": true
     },
     {
       "_id": "888mmm",
       "name": "ketrec",
+      "category": "felszerelés",
+      "img": "...",
       "goodFor": "Hörcsög",
       "size": "20*20*10",
       "material": "acél",
@@ -140,6 +146,8 @@
     {
       "_id": "888nnn",
       "name": "etetőtál",
+      "category": "felszerelés",
+      "img": "...",
       "goodFor": "Hörcsög, Tengerimalac",
       "size": "20*15*15",
       "material": "fa",

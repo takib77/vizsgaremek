@@ -1,0 +1,45 @@
+<div class="row m-1">
+    <h1>Kisállatok</h1>
+    <p class="h5 my-3">Válasszon a nálunk kapható kisállatok közül! A képre kattintva további információkat olvashat az
+        adott élőlényről.
+    </p>
+</div>
+<div class="row d-flex">
+    <div *ngFor="let animal of animalList$ | async" class="col-12 col-sm-6 col-md-4 col-xl-3 col-offset-1 p-3">
+        <div class="card mb-3 alert alert-success" style="max-width: 540px; min-height: 250px;">
+            <div class="row g-0 my-auto">
+                <div class="col-12">
+                    <img (click)="onClickImage(animal)" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        src="{{animal.img}}" class="img-fluid rounded-start" alt="{{animal.img}}">
+                </div>
+                <div class="col-12">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{animal.name.toUpperCase()}}</h5>
+                        <p class="card-text text-center text-danger">{{animal.price}} Ft</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg">
+                    <i class="fas fa-cart-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{modalTitle}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{modalText}}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+            </div>
+        </div>
+    </div>
+</div>

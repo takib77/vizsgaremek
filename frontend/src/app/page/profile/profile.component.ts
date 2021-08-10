@@ -28,6 +28,7 @@ export class ProfileComponent implements OnInit {
   }
 
   onSubmit(user: User): void {
+    delete user.accessToken;
     this.userservice.update(user).subscribe(() => {
       this.router.navigate(['/'])
     });

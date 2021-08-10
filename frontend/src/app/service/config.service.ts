@@ -18,6 +18,7 @@ export interface IDataDisplayer {
 export class ConfigService {
 
   public readonly apiUrl: string = 'http://localhost:3000/';
+  public readonly serviceUrl: string = 'http://127.0.0.1:3000/';
 
   animalTable: IDataDisplayer[] = [
     { key: 'name', title: 'NÉV' },

@@ -1,12 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { LOCALE_ID, NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { registerLocaleData } from '@angular/common';
 import localeHu from '@angular/common/locales/hu';
 registerLocaleData(localeHu);
-
-import { AreusFormModule } from './areus-form/areus-form.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +29,7 @@ import { AnimalCardComponent } from './page/animal-card/animal-card.component';
 import { FoodCardComponent } from './page/food-card/food-card.component';
 import { EquipmentCardComponent } from './page/equipment-card/equipment-card.component';
 import { ProfileComponent } from './page/profile/profile.component';
+import { JwtinterceptorService } from './service/jwt-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -57,16 +56,23 @@ import { ProfileComponent } from './page/profile/profile.component';
     EquipmentCardComponent,
     ProfileComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    AreusFormModule
+    FormsModule
   ],
+
   providers: [
-    { provide: LOCALE_ID, useValue: 'hu-HU' }
+    { provide: LOCALE_ID, useValue: 'hu-HU' },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtinterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

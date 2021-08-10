@@ -94,18 +94,9 @@
       "_id": "123pa",
       "name": "Törpe rex nyúl",
       "category": "Nyúl",
-      "description": "",
+      "description": "Nagyon szép!",
       "img": "assets/img/250.png",
       "price": 1800,
-      "active": true
-    },
-    {
-      "_id": "123ac",
-      "name": "Tengerimalac",
-      "category": "Rágcsáló",
-      "description": "Rágcsáló",
-      "img": "assets/img/250.png",
-      "price": 1100,
       "active": true
     }
   ],
@@ -153,6 +144,16 @@
       "material": "fa",
       "price": 500,
       "active": true
+    },
+    {
+      "_id": "u6wYww5",
+      "name": "Kalitka",
+      "category": "felszerelés",
+      "goodFor": "papagáj",
+      "price": 4500,
+      "material": "fém",
+      "active": true,
+      "size": "40*40*20"
     }
   ],
   "users": [
@@ -464,10 +465,12 @@
       "address": {
         "country": "USA",
         "city": "LA",
-        "street": "Sunset Avenue 33."
+        "street": "Sunset Avenue",
+        "zip": 4555,
+        "houseNumber": 33
       },
       "email": "cknightn@phpbb.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "password": "$2a$10$DWUaZHa5dpo9zJF75V0F.OWxse66nKT.0QddSTXmUBiD25U4mu7De",
       "role": 1
     },
     {
@@ -498,6 +501,12 @@
       "products": "123tz, 123op",
       "time": 1626699947303,
       "note": "Csak délután vagyok otthon"
+    },
+    {
+      "_id": "F_qndAP",
+      "user": "z56jz",
+      "products": "67j6, h54h, htrb6",
+      "time": "2021-08-10T16:53:57.488Z"
     }
   ],
   "list": [

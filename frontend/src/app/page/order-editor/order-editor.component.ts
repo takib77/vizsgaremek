@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Order } from 'src/app/model/order';
 import { OrderService } from 'src/app/service/order.service';
 
@@ -16,7 +17,8 @@ export class OrderEditorComponent implements OnInit {
   constructor(
     private orderservice: OrderService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -38,12 +40,14 @@ export class OrderEditorComponent implements OnInit {
   onSubmit(order: Order): void {
     if (!order._id) {
       this.orderservice.create(order).subscribe(() => {
-        this.router.navigate(['/orders'])
+        this.router.navigate(['/orders']);
+        this.toastr.info('Az adatok mentése sikerrel zárult!', 'Mentve', { timeOut: 3000 });
       });
 
     } else {
       this.orderservice.update(order).subscribe(() => {
-        this.router.navigate(['/orders'])
+        this.router.navigate(['/orders']);
+        this.toastr.info('Az adatok módosítása sikerrel zárult!!', 'Módosítva', { timeOut: 3000 });
       });
     }
   }

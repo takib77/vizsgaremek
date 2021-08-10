@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { Animal } from 'src/app/model/animal';
 import { AnimalService } from 'src/app/service/animal.service';
@@ -20,7 +21,8 @@ export class AnimalComponent implements OnInit {
   constructor(
     private animalservice: AnimalService,
     private config: ConfigService,
-    private router: Router
+    private router: Router,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -35,6 +37,7 @@ export class AnimalComponent implements OnInit {
       this.animalservice.delete(animal).subscribe(
         () => this.animalList$ = this.animalservice.getAll()
       )
+    this.toastr.warning('Az adat törölve lett!', 'Törölve', { timeOut: 3000 });
   }
 
 }

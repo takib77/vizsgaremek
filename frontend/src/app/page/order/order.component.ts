@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { Order } from 'src/app/model/order';
 import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
@@ -20,7 +21,8 @@ export class OrderComponent implements OnInit {
   constructor(
     private orderservice: OrderService,
     private config: ConfigService,
-    private router: Router
+    private router: Router,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -35,6 +37,7 @@ export class OrderComponent implements OnInit {
       this.orderservice.delete(order).subscribe(
         () => this.orderList$ = this.orderservice.getAll()
       )
+    this.toastr.warning('Az adat törölve lett!', 'Törölve', { timeOut: 3000 });
   }
 
 }

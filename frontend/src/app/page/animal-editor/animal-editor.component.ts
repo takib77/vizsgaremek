@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Animal } from 'src/app/model/animal';
 import { AnimalService } from 'src/app/service/animal.service';
 
@@ -16,7 +17,8 @@ export class AnimalEditorComponent implements OnInit {
   constructor(
     private animalservice: AnimalService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -38,12 +40,14 @@ export class AnimalEditorComponent implements OnInit {
   onSubmit(animal: Animal): void {
     if (!animal._id) {
       this.animalservice.create(animal).subscribe(() => {
-        this.router.navigate(['/animals'])
+        this.router.navigate(['/animals']);
+        this.toastr.info('Az adatok mentése sikerrel zárult!', 'Mentve', { timeOut: 3000 });
       });
 
     } else {
       this.animalservice.update(animal).subscribe(() => {
-        this.router.navigate(['/animals'])
+        this.router.navigate(['/animals']);
+        this.toastr.info('Az adatok módosítása sikerrel zárult!!', 'Módosítva', { timeOut: 3000 });
       });
     }
   }

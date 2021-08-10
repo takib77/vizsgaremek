@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Product } from 'src/app/model/product';
 import { ProductService } from 'src/app/service/product.service';
 
@@ -16,7 +17,8 @@ export class ProductEditorComponent implements OnInit {
   constructor(
     private productservice: ProductService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -38,12 +40,14 @@ export class ProductEditorComponent implements OnInit {
   onSubmit(product: Product): void {
     if (!product._id) {
       this.productservice.create(product).subscribe(() => {
-        this.router.navigate(['/products'])
+        this.router.navigate(['/products']);
+        this.toastr.info('Az adatok mentése sikerrel zárult!', 'Mentve', { timeOut: 3000 });
       });
 
     } else {
       this.productservice.update(product).subscribe(() => {
-        this.router.navigate(['/products'])
+        this.router.navigate(['/products']);
+        this.toastr.info('Az adatok módosítása sikerrel zárult!!', 'Módosítva', { timeOut: 3000 });
       });
     }
   }

@@ -56,7 +56,7 @@ export class ConfigService {
     {
       key: 'address', title: 'CÍM',
       pipes: [ConfigService.getSubProperty],
-      pipeArgs: [['country', 'city', 'street']]
+      pipeArgs: [['country', 'zip', 'city', 'street', 'houseNumber']]
     },
     { key: 'email', title: 'EMAIL CÍM' },
     { key: 'password', title: 'JELSZÓ', htmlOutput: ConfigService.passwordSign },

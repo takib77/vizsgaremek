@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { User } from 'src/app/model/user';
 import { AuthService } from 'src/app/service/auth.service';
 import { UserService } from 'src/app/service/user.service';
@@ -18,6 +19,7 @@ export class ProfileComponent implements OnInit {
   constructor(
     private userservice: UserService,
     private router: Router,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -30,7 +32,8 @@ export class ProfileComponent implements OnInit {
   onSubmit(user: User): void {
     delete user.accessToken;
     this.userservice.update(user).subscribe(() => {
-      this.router.navigate(['/'])
+      this.router.navigate(['/']);
+      this.toastr.info('Az adatok módosítása sikerrel zárult!!', 'Módosítva', { timeOut: 3000 });
     });
   }
 

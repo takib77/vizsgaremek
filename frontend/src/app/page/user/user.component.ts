@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
@@ -20,7 +21,8 @@ export class UserComponent implements OnInit {
   constructor(
     private userservice: UserService,
     private config: ConfigService,
-    private router: Router
+    private router: Router,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -35,6 +37,7 @@ export class UserComponent implements OnInit {
       this.userservice.delete(user).subscribe(
         () => this.userList$ = this.userservice.getAll()
       )
+    this.toastr.warning('Az adat törölve lett!', 'Törölve', { timeOut: 3000 });
   }
 
 }

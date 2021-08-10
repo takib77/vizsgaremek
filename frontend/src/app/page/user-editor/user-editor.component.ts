@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
 
@@ -17,7 +18,8 @@ export class UserEditorComponent implements OnInit {
   constructor(
     private userservice: UserService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private toastr: ToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -39,12 +41,14 @@ export class UserEditorComponent implements OnInit {
   onSubmit(user: User): void {
     if (!user._id) {
       this.userservice.create(user).subscribe(() => {
-        this.router.navigate(['/users'])
+        this.router.navigate(['/users']);
+        this.toastr.info('Az adatok mentése sikerrel zárult!', 'Mentve', { timeOut: 3000 });
       });
 
     } else {
       this.userservice.update(user).subscribe(() => {
-        this.router.navigate(['/users'])
+        this.router.navigate(['/users']);
+        this.toastr.info('Az adatok módosítása sikerrel zárult!!', 'Módosítva', { timeOut: 3000 });
       });
     }
   }

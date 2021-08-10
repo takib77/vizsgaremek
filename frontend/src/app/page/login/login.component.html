@@ -1,20 +1,25 @@
-<!-- <button class="btn-success" (click)="setPassword()">Jelszó beállítása</button> -->
 <div class="row">
     <div class="col-4 offset-4 my-3">
-        <h1 class="text-center my-3">Bejelentkezés</h1>
-        <form (ngSubmit)="onLogin()">
+        <h1 class="text-center my-5">Bejelentkezés</h1>
+        <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
             <div class="form-group mb-3">
-                <label>Email</label>
-                <input class="form-control" name="email" [(ngModel)]="user.email" type="email">
+                <label>EMAIL CÍM</label>
+                <input class="form-control" name="email" type="email" [(ngModel)]="user.email" #emailField="ngModel"
+                    email id="inputEmail" required autofocus>
+                <p *ngIf="emailField.invalid && emailField.touched" class="error-message">
+                    Szabványos email címet kell megadni!
+                </p>
             </div>
-            <div class="form-group mb-3">
-                <label>Jelszó</label>
-                <input class="form-control" name="password" [(ngModel)]="user.password" type="password">
+            <div class="form-group mb-5">
+                <label>JELSZÓ</label>
+                <input class="form-control" name="password" type="password" [(ngModel)]="user.password" #passwordField
+                    required>
             </div>
-            <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary btn-lg btn-block">
-                    <i class="fas fa-save"></i>
-                </button>
+            <div class="d-grid gap-2 mt-5">
+                <button type="submit" class="btn btn-primary btn-lg btn-block"> Belépés </button>
+                <div *ngIf="serverError && loginForm.submitted" class="alert alert-danger text-center mt-3">
+                    {{ serverError }}
+                </div>
             </div>
         </form>
     </div>

@@ -23,8 +23,12 @@ export class ConfigService {
   animalTable: IDataDisplayer[] = [
     { key: 'name', title: 'NÉV' },
     { key: 'category', title: 'KATEGÓRIA' },
-    { key: 'description', title: 'LEÍRÁS' },
-    { key: 'price', title: 'ÁR' },
+    { key: 'description', title: 'LEÍRÁS', pipes: [ConfigService.cutLongString], pipeArgs: [[0, 75]] },
+    {
+      key: 'price', title: 'ÁR',
+      pipes: [new CurrencyPipe('hu-HU')],
+      pipeArgs: [['HUF', 'symbol', '3.0']]
+    },
     { key: 'active', title: 'KAPHATÓ?', htmlOutput: ConfigService.booleanSign },
   ];
 

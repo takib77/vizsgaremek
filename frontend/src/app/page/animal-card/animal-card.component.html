@@ -19,7 +19,7 @@
                         <p class="card-text text-center text-danger">{{animal.price}} Ft</p>
                     </div>
                 </div>
-                <button class="btn btn-primary btn-lg">
+                <button *ngIf="user$.role" class="btn btn-primary btn-lg">
                     <i class="fas fa-cart-arrow-down"></i>
                 </button>
             </div>

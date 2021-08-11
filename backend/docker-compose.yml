@@ -1,18 +1,17 @@
 version: "3"
 services: 
     app:
+        container_name: Vizsgaremek
         build: 
             dockerfile: Dockerfile
             context: .
         volumes: 
-            - /app/node_modules
             - .:/app
         ports: 
             - "3000:3000"
         links: 
             - mongo
     mongo:
-        container_name: vizsgaremek
         image: mongo:latest
         volumes: 
             - ./data/db:/data/db

@@ -1,41 +1,56 @@
 const jwt = require('jsonwebtoken');
+const UserModel = require('../models/user.model');
 
-const Users = [
-    { username: 'admin', password: 'admin_1', role: 3 },
-    { username: 'Tibi', password: 'Tibi1', role: 2 }
-];
+// (async () => {
+//     const admin = new UserModel({ name: 'Admin', email: 'admin@gmail.com', password: 'admin_pw' });
+//     const user = new UserModel({ name: 'User', email: 'user@gmail.com', password: 'user_pw' });
+//     await admin.save();
+//     await user.save();
+// })();
 
 const refreshTokens = [];
 
-module.exports.login = (req, res) => {
-    const { username, password } = req.body;
+module.exports.login = async (req, res) => {
+    const { email, password } = req.body;
 
-    const user = Users.find(
-        user => user.username === username && user.password === password);
+    try {
+        const user = await UserModel.findOne({ email });
+        if (!user) {
+            throw new Error('User not found!');
+        }
 
-    if (user) {
+        const verified = await user.verifyPassword(password);
+        if (!verified) {
+            throw new Error('Incorrect password!');
+        }
+
         const accessToken = jwt.sign({
-            username: user.username,
+            email: user.email,
             role: user.role
         }, process.env.ACCESS_TOKEN_SECRET, {
             expiresIn: process.env.TOKEN_EXPIRY
         });
 
         const refreshToken = jwt.sign({
-            username: user.username,
+            email: user.email,
             role: user.role
         }, process.env.REFRESH_TOKEN_SECRET);
-
         refreshTokens.push(refreshToken);
-        res.json({ accessToken, refreshToken, user });
 
-    } else {
-        res.send('Username or Password incorrect!');
+        res.json({
+            accessToken,
+            refreshToken,
+            user
+        });
+
+    } catch (e) {
+        res.send('Username or password incorrect.');
     }
 };
 
 module.exports.refresh = (req, res, next) => {
     const { accessToken } = req.body;
+
     if (!accessToken) {
         return res.sendStatus(401);
     }

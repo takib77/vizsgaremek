@@ -11,6 +11,10 @@
                 <input id="products" name="products" [(ngModel)]="order.products" type="text" class="form-control">
                 <label for="products">TERMÉK(EK) AZONOSÍTÓJA</label>
             </div>
+            <div *ngIf="order._id" class="form-floating mb-3">
+                <input id="time" name="time" [(ngModel)]="order.time" type="text" disabled class="form-control">
+                <label for="time">DÁTUM</label>
+            </div>
             <div class="form-floating mb-3">
                 <input id="note" name="note" [(ngModel)]="order.note" type="text" class="form-control">
                 <label for="note">MEGJEGYZÉS</label>

@@ -10,9 +10,8 @@ const OrderSchema = mongoose.Schema({
         required: true
     },
     time: {
-        type: Date,
-        default: new Date(),
-        required: false
+        type: String,
+        default: (new Date()).toLocaleString()
     },
     note: String
 }, {

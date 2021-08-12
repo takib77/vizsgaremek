@@ -1,8 +1,14 @@
 const mongoose = require('mongoose');
 
 const UserSchema = mongoose.Schema({
-    first_name: String,
-    last_name: String,
+    first_name: {
+        type: String,
+        required: true
+    },
+    last_name: {
+        type: String,
+        required: true
+    },
     address: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Address'
@@ -15,6 +21,7 @@ const UserSchema = mongoose.Schema({
         type: Number,
         default: 1
     },
+    accessToken: String
 }, {
     timeStamps: true
 });

@@ -41,7 +41,7 @@ export class ConfigService {
   orderTable: IDataDisplayer[] = [
     { key: 'user', title: 'MEGRENDELŐ AZ.' },
     { key: 'products', title: 'TERMÉK(EK) AZ.' },
-    { key: 'time', title: 'DÁTUM', pipes: [ConfigService.formateDate] },
+    { key: 'time', title: 'DÁTUM' },
     { key: 'note', title: 'MEGJEGYZÉS' },
   ];
 
@@ -84,17 +84,6 @@ export class ConfigService {
 
   static noData(value: any): string {
     return (value === undefined) ? '-' : value;
-  }
-
-  static formateDate(date: number): string | number {
-    const dateOptions: Intl.DateTimeFormatOptions = {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-    };
-    return Intl.DateTimeFormat('hu', dateOptions).format(date);
   }
 
   static cutLongString(data: string, start: number, end: number, curve: string = '...'): string {

@@ -44,6 +44,9 @@ app.use('/post', authenticateJwt, adminOnly, require('./controllers/post/post.ro
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use('/animals', require('./controllers/animal/animal.routes'));
+app.use('/animal-cards', require('./controllers/animal/animal.routes'));
+app.use('/products', require('./controllers/product/product.routes'));
+app.use('/orders', require('./controllers/order/order.routes'));
 app.use('/users', require('./controllers/user/user.routes'));
 
 app.use((err, req, res, next) => {

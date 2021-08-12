@@ -6,7 +6,6 @@ const AnimalSchema = mongoose.Schema({
         required: true
     },
     category: String,
-    subCategory: String,
     description: String,
     img: String,
     price: {

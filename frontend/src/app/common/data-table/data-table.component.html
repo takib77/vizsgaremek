@@ -4,29 +4,24 @@
             <i class="fas fa-table me-1"></i>
             {{tableTitle}}
         </div>
-        <div class="col-8 col-offset-2 my-3 mx-auto alert-primary">
-            <form class="row g-3">
-                <div class="col-auto ml-auto">
+        <div class="col-12 col-md-8 col-md-offset-2 my-3 mx-auto alert-primary">
+            <form class="row g-2">
+                <div class="col-auto mx-auto my-3">
                     <select [(ngModel)]="filterKey" class="form-select">
                         <option selected disabled>Válasszon kategóriát!</option>
-                        <option *ngFor="let entity of tableColumns" [value]="entity.key">{{ entity.title }}</option>
+                        <option *ngFor="let item of tableSearch" [value]="item.key">{{ item.title }}</option>
                     </select>
                 </div>
-                <div class="col-auto">
+                <div class="col-auto mx-auto my-3">
                     <input (keyup)="onSearch($event)" class="form-control" type="text" name="search"
                         placeholder="Keresés...">
-                </div>
-                <div class="col-auto mr-auto">
-                    <button class="btn btn-primary mb-3" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
                 </div>
             </form>
         </div>
     </div>
     <div class="card-body">
         <div class="col-12 px-0">
-            <button class="btn btn-success btn-large btn-block" routerLink='/{{entityName}}/0'>
+            <button class="btn btn-success btn-large btn-block" routerLink='/{{entityName}}/edit/0'>
                 <i class="fas fa-plus"></i>
             </button>
         </div>
@@ -34,28 +29,29 @@
             <table class="table table-striped table-successs text-center">
                 <thead>
                     <tr>
-                        <th *ngFor="let table of tableColumns" (click)="onColumnSelect(table.key)" class="select">
+                        <th *ngFor="let table of tableColumns" (click)="onColumnSelect(table.key)"
+                            class="align-middle select">
                             {{table.title}}
                         </th>
-                        <th>MŰVELETEK</th>
+                        <th class="align-middle">MŰVELETEK</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let entity of list$ | async | search: filterKey: phrase | sort: columnKey: sortDir">
                         <td *ngFor="let item of tableColumns" class="align-middle">
                             <span *ngIf="!item.htmlOutput; else elseBlock">
-                                {{ entity[item.key] | xPipe:item.pipes:item.pipeArgs }}
+                                {{ entity[item.key] | booleanSign | xPipe:item.pipes:item.pipeArgs }}
                             </span>
                             <ng-template #elseBlock>
                                 <span [innerHTML]="item.htmlOutput(entity[item.key])"></span>
                             </ng-template>
                         </td>
-                        <td>
+                        <td class="align-middle">
                             <div class="btn-group">
-                                <button (click)="onSelectEntity(entity)" class="btn btn-primary">
+                                <button (click)="onSelectEntity(entity)" class="btn btn-primary mr-1">
                                     <i class="fas fa-edit"></i>
                                 </button>
-                                <button (click)="onDeleteEntity(entity)" class="btn btn-danger">
+                                <button (click)="onDeleteEntity(entity)" class="btn btn-danger ml-1">
                                     <i class="fas fa-trash"></i>
                                 </button>
                             </div>
@@ -64,8 +60,8 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th *ngFor="let table of tableColumns">{{table.title}}</th>
-                        <th>MŰVELETEK</th>
+                        <th class="align-middle" *ngFor="let table of tableColumns">{{table.title}}</th>
+                        <th class="align-middle">MŰVELETEK</th>
                     </tr>
                 </tfoot>
             </table>

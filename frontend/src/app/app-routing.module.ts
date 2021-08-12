@@ -37,7 +37,7 @@ const routes: Routes = [
     component: AnimalComponent
   },
   {
-    path: 'animal/:id',
+    path: 'animals/edit/:id',
     component: AnimalEditorComponent
   },
   {
@@ -53,7 +53,7 @@ const routes: Routes = [
     component: OrderComponent
   },
   {
-    path: 'order/:id',
+    path: 'orders/edit/:id',
     component: OrderEditorComponent
   },
   {
@@ -61,7 +61,7 @@ const routes: Routes = [
     component: ProductComponent
   },
   {
-    path: 'product/:id',
+    path: 'products/edit/:id',
     component: ProductEditorComponent
   },
   {
@@ -69,7 +69,7 @@ const routes: Routes = [
     component: UserComponent
   },
   {
-    path: 'user/:id',
+    path: 'users/edit/:id',
     component: UserEditorComponent
   },
   {

@@ -1,3 +1,4 @@
-<app-data-table [tableColumns]="animalTable" [list$]="animalList$" [tableTitle]="animalTitle"
-    (selectEntity)="onSelectOne($event)" (deleteEntity)="onDeleteOne($event)" [entityName]="pageName">
+<app-data-table [tableSearch]="animalSearch" [tableColumns]="animalTable" [list$]="animalList$"
+    [tableTitle]="animalTitle" (selectEntity)="onSelectOne($event)" (deleteEntity)="onDeleteOne($event)"
+    [entityName]="pageName">
 </app-data-table>

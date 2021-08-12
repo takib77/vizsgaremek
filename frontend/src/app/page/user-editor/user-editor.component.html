@@ -1,29 +1,31 @@
 <h3 class="text-center my-3">{{title}}</h3>
 <div class="row">
     <div *ngIf="user" class="col-10 col-md-8 col-xl-6 offset-1 offset-md-2 offset-xl-3 my-3">
-        <label *ngIf="user._id" class="d-block text-muted text-right mb-3">{{'AZONOSÍTÓ: '+user._id}}</label>
+        <label *ngIf="user._id" class="d-block text-muted text-right mb-3">{{'AZONOSÍTÓ: '+ user._id}}</label>
         <form #userForm="ngForm" (ngSubmit)="onSubmit(user)">
             <div class="row mb-3">
                 <div class="col-12 col-lg-6">
                     <div class="form-floating mb-3">
                         <input id="first_name" name="first_name" [(ngModel)]="user.first_name" type="text"
-                            class="form-control" required pattern="^[A-Z,ÁÉÍÓÖŐÚÜŰ]{1}[a-z,áéíóöőúüű]{1,}">
+                            class="form-control">
+                        <!-- required pattern="^[A-Z,ÁÉÍÓÖŐÚÜŰ]{1}[a-z,áéíóöőúüű]{1,}"> -->
                         <label for="first_name">VEZETÉKNÉV*</label>
-                        <div [hidden]="userForm.controls.first_name?.valid || userForm.controls.first_name?.pristine"
+                        <!-- <div [hidden]="userForm.controls.first_name?.valid || userForm.controls.first_name?.pristine"
                             class="error-message">
                             A vezetéknévnek nagy betűvel kell kezdődnie!
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="form-floating mb-3">
                         <input id="last_name" name="last_name" [(ngModel)]="user.last_name" type="text"
-                            class="form-control" required pattern="^[A-Z,ÁÉÍÓÖŐÚÜŰ]{1}[a-z,áéíóöőúüű]{1,}">
+                            class="form-control">
+                        <!-- required pattern="^[A-Z,ÁÉÍÓÖŐÚÜŰ]{1}[a-z,áéíóöőúüű]{1,}"> -->
                         <label for="last_name">KERESZTNÉV*</label>
-                        <div [hidden]="userForm.controls.last_name?.valid || userForm.controls.last_name?.pristine"
+                        <!-- <div [hidden]="userForm.controls.last_name?.valid || userForm.controls.last_name?.pristine"
                             class="error-message">
                             A keresztnévnek nagy betűvel kell kezdődnie!
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

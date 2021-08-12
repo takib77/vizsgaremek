@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { Observable, of } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
 
@@ -10,6 +13,19 @@ import { UserService } from 'src/app/service/user.service';
   styleUrls: ['./user-editor.component.scss']
 })
 export class UserEditorComponent implements OnInit {
+
+  // user$: Observable<User> = this.activatedRoute.params.pipe(
+  //   switchMap(params => {
+  //     if (params.id === '0') {
+  //       return of(new User());
+  //     }
+  //     return this.userservice.get(params.id);
+  //   }),
+  //   map(user => {
+  //     user.address = user.address || {};
+  //     return user;
+  //   })
+  // );
 
   user: User = new User();
   title: string = '';

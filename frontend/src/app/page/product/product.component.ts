@@ -15,8 +15,9 @@ export class ProductComponent implements OnInit {
 
   productList$: Observable<Product[]> = this.productservice.getAll();
   productTable: IDataDisplayer[] = this.config.productTable;
+  productSearch: IDataDisplayer[] = this.config.productSearch;
   productTitle: string = 'Termékek listája';
-  pageName: string = 'product';
+  pageName: string = 'products';
 
   constructor(
     private productservice: ProductService,
@@ -25,19 +26,18 @@ export class ProductComponent implements OnInit {
     private toastr: ToastrService,
   ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   onSelectOne(product: Product): void {
-    this.router.navigate(['/product', product._id])
+    this.router.navigate(['/products/edit', product._id])
   }
 
   onDeleteOne(product: Product): void {
-    if (confirm(`Biztos hogy törli a(z) \"${product.name}\" nevű terméket?`))
+    if (confirm(`Biztos hogy törli a(z) \"${product.name}\" nevű terméket?`)) {
       this.productservice.delete(product).subscribe(
-        () => this.productList$ = this.productservice.getAll()
-      )
-    this.toastr.warning('Az adat törölve lett!', 'Törölve', { timeOut: 3000 });
+        () => this.productList$ = this.productservice.getAll());
+      this.toastr.warning('Az adat törölve lett!', 'Törölve', { timeOut: 3000 });
+    }
   }
 
 }

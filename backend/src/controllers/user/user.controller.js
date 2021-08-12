@@ -1,6 +1,7 @@
 const createError = require('http-errors');
 const userService = require('../user/user.service');
 const userModel = require('../../models/user.model');
+const addressModel = require('../../models/address.model');
 
 const checkModel = (model, body, next) => {
     const validationError = new model(body).validateSync();
@@ -18,7 +19,7 @@ const checkModel = (model, body, next) => {
     return true;
 }
 
-// Get All animal
+// Get All user
 exports.findAll = (req, res, next) => {
     return userService.findAll()
         .then(animals => {
@@ -26,45 +27,53 @@ exports.findAll = (req, res, next) => {
         })
 };
 
-// Get One animal
+// Get One user
 exports.findOne = (req, res, next) => {
     return userService.findOne(req.params.id)
-        .then(animal => {
-            if (!animal) {
+        .then(user => {
+            if (!user) {
                 return next(new createError.NotFound("Animal is not found"));
             }
-            return res.json(animal);
+            return res.json(user);
         })
 };
 
-// Create a new animal
-exports.create = (req, res, next) => {
+// Create a new user
+exports.create = async (req, res, next) => {
+    const address = new addressModel(req.body.address);
+    await address.save();
+    req.body.address = address._id;
+
     if (!checkModel(userModel, req.body, next)) {
         return;
     };
 
     return userService.create(req.body)
-        .then(animal => {
+        .then(user => {
             res.status(201);
-            res.json(animal);
+            res.json(user);
         })
         .catch(err => next(new createError.InternalServerError(err.message)));
 };
 
-// Update a animal
-exports.update = (req, res, next) => {
+// Update a user
+exports.update = async (req, res, next) => {
     if (!checkModel(userModel, req.body, next)) {
         return;
     };
-
+    //
+    if (!checkModel(addressModel, req.body, next)) {
+        return;
+    };
+    //
     return userService.update(req.params.id, req.body)
-        .then(animal => {
-            res.json(animal);
+        .then(user => {
+            res.json(user);
         })
         .catch(err => next(new createError.InternalServerError(err.message)));
 };
 
-// Delete a animal
+// Delete a user
 exports.delete = (req, res, next) => {
     return userService.delete(req.params.id)
         .then(() => res.json({}))

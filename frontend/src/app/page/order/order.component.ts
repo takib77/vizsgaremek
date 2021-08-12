@@ -16,7 +16,7 @@ export class OrderComponent implements OnInit {
   orderList$: Observable<Order[]> = this.orderservice.getAll();
   orderTable: IDataDisplayer[] = this.config.orderTable;
   orderTitle: string = 'Rendelések listája';
-  pageName: string = 'order';
+  pageName: string = 'orders';
 
   constructor(
     private orderservice: OrderService,
@@ -29,15 +29,15 @@ export class OrderComponent implements OnInit {
   }
 
   onSelectOne(order: Order): void {
-    this.router.navigate(['/order', order._id])
+    this.router.navigate(['/orders/edit', order._id])
   }
 
   onDeleteOne(order: Order): void {
-    if (confirm(`Biztos hogy törli a(z) \"${order._id}\" azonosítójű rendelést?`))
+    if (confirm(`Biztos hogy törli a(z) \"${order._id}\" azonosítójű rendelést?`)) {
       this.orderservice.delete(order).subscribe(
-        () => this.orderList$ = this.orderservice.getAll()
-      )
-    this.toastr.warning('Az adat törölve lett!', 'Törölve', { timeOut: 3000 });
+        () => this.orderList$ = this.orderservice.getAll());
+      this.toastr.warning('Az adat törölve lett!', 'Törölve', { timeOut: 3000 });
+    }
   }
 
 }

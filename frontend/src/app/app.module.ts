@@ -33,6 +33,8 @@ import { FoodCardComponent } from './page/food-card/food-card.component';
 import { EquipmentCardComponent } from './page/equipment-card/equipment-card.component';
 import { ProfileComponent } from './page/profile/profile.component';
 import { JwtinterceptorService } from './service/jwt-interceptor.service';
+import { UserRolePipe } from './pipe/user-role.pipe';
+import { BooleanSignPipe } from './pipe/boolean-sign.pipe';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,8 @@ import { JwtinterceptorService } from './service/jwt-interceptor.service';
     FoodCardComponent,
     EquipmentCardComponent,
     ProfileComponent,
+    UserRolePipe,
+    BooleanSignPipe,
   ],
 
   imports: [

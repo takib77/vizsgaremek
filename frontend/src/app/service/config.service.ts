@@ -5,7 +5,6 @@ import { get } from 'lodash';
 export interface IDataDisplayer {
   key: string;
   title: string;
-  hidden?: boolean;
   outputTransform?: any;
   htmlOutput?: any;
   pipes?: any[];
@@ -23,13 +22,20 @@ export class ConfigService {
   animalTable: IDataDisplayer[] = [
     { key: 'name', title: 'NÉV' },
     { key: 'category', title: 'KATEGÓRIA' },
-    { key: 'description', title: 'LEÍRÁS', pipes: [ConfigService.cutLongString], pipeArgs: [[0, 75]] },
+    { key: 'description', title: 'LEÍRÁS', pipes: [ConfigService.cutLongString], pipeArgs: [[0, 250]] },
     {
       key: 'price', title: 'ÁR',
       pipes: [new CurrencyPipe('hu-HU')],
       pipeArgs: [['HUF', 'symbol', '3.0']]
     },
-    { key: 'active', title: 'KAPHATÓ?', htmlOutput: ConfigService.booleanSign },
+    { key: "active", title: 'ELÉRHETŐ?' }
+  ];
+
+  animalSearch: IDataDisplayer[] = [
+    { key: 'name', title: 'NÉV' },
+    { key: 'category', title: 'KATEGÓRIA' },
+    { key: 'description', title: 'LEÍRÁS' },
+    { key: 'price', title: 'ÁR' }
   ];
 
   orderTable: IDataDisplayer[] = [
@@ -50,8 +56,17 @@ export class ConfigService {
       pipes: [new CurrencyPipe('hu-HU')],
       pipeArgs: [['HUF', 'symbol', '3.0']]
     },
-    { key: 'active', title: 'KAPHATÓ?', htmlOutput: ConfigService.booleanSign },
-    { key: 'organic', title: 'TERMÉSZETES?', htmlOutput: ConfigService.booleanSign },
+    { key: "active", title: 'ELÉRHETŐ?' },
+    { key: "organic", title: 'TERMÉSZETES?' }
+  ];
+
+  productSearch: IDataDisplayer[] = [
+    { key: 'name', title: 'TERMÉKNÉV' },
+    { key: 'goodFor', title: 'MELYIK ÁLLATHOZ JÓ?' },
+    { key: 'weight', title: 'TÖMEG' },
+    { key: 'size', title: 'MÉRET' },
+    { key: 'material', title: 'ANYAG' },
+    { key: 'price', title: 'ÁR' }
   ];
 
   userTable: IDataDisplayer[] = [
@@ -63,43 +78,12 @@ export class ConfigService {
       pipeArgs: [['country', 'zip', 'city', 'street', 'houseNumber']]
     },
     { key: 'email', title: 'EMAIL CÍM' },
-    { key: 'password', title: 'JELSZÓ', htmlOutput: ConfigService.passwordSign },
-    { key: 'role', title: 'JOGOSULTSÁG', htmlOutput: ConfigService.roleText },
   ];
 
   constructor() { }
 
-  static booleanSign(value: boolean | undefined): string {
-    if (typeof value === 'undefined') {
-      return 'Nincs adat';
-    }
-    const icon: string = (value) ? 'fa-check' : 'fa-ban';
-    return `<i class="fas ${icon}"></i>`;
-  }
-
   static noData(value: any): string {
-    return (value === undefined) ? 'Ninca adat' : value;
-  }
-
-  static passwordSign(value: string): string {
-    return value = '********';
-  }
-
-  static roleText(value: number | string): string {
-    let role: string;
-    if (typeof value === 'string') value = parseInt(value);
-    switch (value) {
-      case 3:
-        role = 'Admin';
-        break;
-      case 2:
-        role = 'Szerkesztő';
-        break;
-      default: 1;
-        role = 'Felhasználó'
-        break;
-    }
-    return role;
+    return (value === undefined) ? '-' : value;
   }
 
   static formateDate(date: number): string | number {

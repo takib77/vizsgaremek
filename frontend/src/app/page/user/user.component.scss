@@ -1,0 +1,8 @@
+.select {
+    user-select: none;
+    
+    &:hover {
+        background-color: #90ee90;
+        cursor: pointer;
+    }
+}

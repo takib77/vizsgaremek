@@ -125,14 +125,15 @@
     },
     {
       "_id": "888mmm",
-      "name": "ketrec",
+      "name": "Ketrec",
       "category": "felszerelés",
       "img": "...",
       "goodFor": "Hörcsög",
       "size": "20*20*10",
       "material": "acél",
       "price": 2200,
-      "active": true
+      "active": false,
+      "organic": false
     },
     {
       "_id": "888nnn",
@@ -164,12 +165,12 @@
       "address": {
         "country": "USA",
         "city": "NY",
-        "street": "Sunset Avenue 33.",
-        "zip": 11,
+        "street": "Sunset Avenue",
+        "zip": 1100,
         "houseNumber": 10
       },
       "email": "wbosche0@1688.com",
-      "password": "$2a$10$tq.vggvXb1k2h.Dm1RdsLuKy4YQEuN9LiP2zoJ405N.D26BqrURSS",
+      "password": "$2a$10$OB9uiXyXSioYHNo2/onfau0EBqHA/.lCcKlD/X6S2Je.4OuBOVL3y",
       "role": "3"
     },
     {
@@ -178,11 +179,12 @@
       "last_name": "Salamon",
       "address": {
         "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "city": "Florida",
+        "street": "Sunset Avenue",
+        "houseNumber": 33
       },
       "email": "msalamon1@istockphoto.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "password": "$2a$10$rhyVPoqOPcxi0m0aFZAgzO9NC3JoTKU3jh2FOTcpAnPxGq7c0QMSG",
       "role": 1
     },
     {

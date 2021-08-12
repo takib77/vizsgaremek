@@ -9,6 +9,7 @@ import { IDataDisplayer } from 'src/app/service/config.service';
 })
 export class DataTableComponent<T extends { [propname: string]: any }> implements OnInit {
 
+  @Input() tableSearch: IDataDisplayer[] = [];
   @Input() tableColumns: IDataDisplayer[] = [];
   @Input() list$: Observable<T[]> = of([]);
   @Input() tableTitle: string = '';

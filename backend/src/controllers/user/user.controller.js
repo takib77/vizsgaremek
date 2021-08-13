@@ -1,7 +1,6 @@
 const createError = require('http-errors');
 const userService = require('../user/user.service');
 const userModel = require('../../models/user.model');
-const addressModel = require('../../models/address.model');
 
 const checkModel = (model, body, next) => {
     const validationError = new model(body).validateSync();

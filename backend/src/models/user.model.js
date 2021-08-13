@@ -1,5 +1,15 @@
 const mongoose = require('mongoose');
 
+const AddressSchema = mongoose.Schema({
+    country: String,
+    zip: Number,
+    city: String,
+    street: String,
+    houseNumber: Number
+}, {
+    timeStamps: true
+});
+
 const UserSchema = mongoose.Schema({
     first_name: {
         type: String,
@@ -9,10 +19,7 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    address: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Address'
-    },
+    address: AddressSchema,
     email: {
         type: String,
         required: true

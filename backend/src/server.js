@@ -24,7 +24,7 @@ mongoose
         useUnifiedTopology: true
     })
     .then(() =>
-        require('./seed/seeder'),
+        // require('./seed/seeder'),
         logger.info('MongoDB connection has been established successfully.'))
 
     .catch(err => {

@@ -6,8 +6,7 @@
         "goodFor": "Hal",
         "size": "36 x 22 x 36",
         "price": 27190,
-        "active": true,
-        "organic": ""
+        "active": true
     },
     {
         "name": "ADA Cube Garden 45-P",
@@ -16,8 +15,7 @@
         "goodFor": "Hal",
         "size": "45*27*30",
         "price": 32690,
-        "active": true,
-        "organic": ""
+        "active": true
     },
     {
         "name": "Dennerle Scaper's Tank",
@@ -26,8 +24,7 @@
         "goodFor": "Hal",
         "size": "40 x 32 x 28",
         "price": 25190,
-        "active": false,
-        "organic": ""
+        "active": false
     },
     {
         "name": "Dennerle Scaper's Tank Basic LED",
@@ -36,8 +33,7 @@
         "goodFor": "Hal",
         "size": "40*32*28",
         "price": 54790,
-        "active": true,
-        "organic": ""
+        "active": true
     },
     {
         "name": "ADA Aqua Soil Amazonia - általános növénytalaj",

@@ -1,8 +1,8 @@
 const User = require('../../models/user.model');
 
-exports.findAll = () => User.find().populate('address');
+exports.findAll = () => User.find().populate();
 
-exports.findOne = id => User.findById(id).populate('address');
+exports.findOne = id => User.findById(id).populate();
 
 exports.create = userData => {
     const user = new User(userData);

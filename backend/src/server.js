@@ -35,6 +35,7 @@ mongoose
 app.use(cors());
 app.use(morgan('combined', { stream: logger.stream }));
 app.use(bodyParser.json());
+app.use(express.static('public'));
 
 // Router
 app.post('/login', authHandler.login);

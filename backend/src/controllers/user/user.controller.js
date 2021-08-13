@@ -39,10 +39,6 @@ exports.findOne = (req, res, next) => {
 
 // Create a new user
 exports.create = async (req, res, next) => {
-    const address = new addressModel(req.body.address);
-    await address.save();
-    req.body.address = address._id;
-
     if (!checkModel(userModel, req.body, next)) {
         return;
     };
@@ -60,11 +56,7 @@ exports.update = async (req, res, next) => {
     if (!checkModel(userModel, req.body, next)) {
         return;
     };
-    //
-    if (!checkModel(addressModel, req.body, next)) {
-        return;
-    };
-    //
+
     return userService.update(req.params.id, req.body)
         .then(user => {
             res.json(user);

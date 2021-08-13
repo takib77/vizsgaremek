@@ -9,6 +9,8 @@ paths:
   /animals:
     get:
       description: Return a list of Animals
+      security:
+        - bearerAuth: []
       responses:
         '200':
           description: List of Animals returned successfully
@@ -26,6 +28,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     post:
       description: Create a new Animal
+      security:
+        - bearerAuth: []
       requestBody:
         required: true
         content:
@@ -54,6 +58,8 @@ paths:
   /animals/{_id}:
     get:
       description: Get an Animal
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -82,6 +88,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     patch:
       description: Update an Animal
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -115,6 +123,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     delete:
       description: Remove an Animal
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -145,6 +155,8 @@ paths:
   /orders:
     get:
       description: Return a list of Orders
+      security:
+        - bearerAuth: []
       responses:
         '200':
           description: List of Orders returned successfully
@@ -162,6 +174,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     post:
       description: Create a new Order
+      security:
+        - bearerAuth: []
       requestBody:
         required: true
         content:
@@ -190,6 +204,8 @@ paths:
   /orders/{_id}:
     get:
       description: Get an Order
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -218,6 +234,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     patch:
       description: Update an Order
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -251,6 +269,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     delete:
       description: Remove an Order
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -281,6 +301,8 @@ paths:
   /products:
     get:
       description: Return a list of Products
+      security:
+        - bearerAuth: []
       responses:
         '200':
           description: List of Products returned successfully
@@ -298,6 +320,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     post:
       description: Create a new Product
+      security:
+        - bearerAuth: []
       requestBody:
         required: true
         content:
@@ -326,6 +350,8 @@ paths:
   /products/{_id}:
     get:
       description: Get an Product
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -354,6 +380,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     patch:
       description: Update an Product
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -387,6 +415,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     delete:
       description: Remove an Product
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -417,6 +447,8 @@ paths:
   /users:
     get:
       description: Return a list of Users
+      security:
+        - bearerAuth: []
       responses:
         '200':
           description: List of Users returned successfully
@@ -434,6 +466,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     post:
       description: Create a new User
+      security:
+        - bearerAuth: []
       requestBody:
         required: true
         content:
@@ -462,6 +496,8 @@ paths:
   /users/{_id}:
     get:
       description: Get a User
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -490,6 +526,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     patch:
       description: Update a User
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -523,6 +561,8 @@ paths:
                 $ref: '#/components/schemas/Error'
     delete:
       description: Remove a User
+      security:
+        - bearerAuth: []
       parameters:
         - in: path
           name: _id
@@ -551,6 +591,11 @@ paths:
                 $ref: '#/components/schemas/Error'
 
 components:
+  securitySchemes:
+    bearerAuth:            
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   schemas:
     Animal:
       type: object

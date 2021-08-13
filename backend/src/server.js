@@ -42,14 +42,12 @@ app.post('/login', authHandler.login);
 app.post('/refresh', authHandler.refresh);
 app.post('/logout', authHandler.logout);
 
-// app.use('/person', authenticateJwt, require('./controllers/person/person.routes'));
-// app.use('/post', authenticateJwt, adminOnly, require('./controllers/post/post.routes'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use('/animals', require('./controllers/animal/animal.routes'));
 app.use('/products', require('./controllers/product/product.routes'));
 app.use('/orders', require('./controllers/order/order.routes'));
-app.use('/users', require('./controllers/user/user.routes'));
+app.use('/users', authenticateJwt, require('./controllers/user/user.routes'));
 
 app.use((err, req, res, next) => {
     res.status(err.statusCode);

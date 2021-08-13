@@ -16,7 +16,7 @@ export class UserComponent implements OnInit {
 
   userList$: Observable<User[]> = this.userservice.getAll();
   userTable: IDataDisplayer[] = this.config.userTable;
-  userTitle: string = 'Vásárlók listája';
+  userTitle: string = 'Felhasználók listája';
   pageName: string = 'users';
 
   filterKey: string = '';

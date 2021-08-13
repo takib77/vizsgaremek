@@ -16,7 +16,6 @@ const ProductSchema = mongoose.Schema({
     },
     weight: Number,
     size: String,
-    material: String,
     price: {
         type: Number,
         required: true,

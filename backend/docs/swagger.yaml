@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: FullStack Developers Vizsgaremek API
-  description: An API for the FullStack Developers Vizsgaremek
+  title: FullStack Developers API
+  description: An API for the FullStack Developers
 servers:
   - url: http://localhost:3000
 paths:
@@ -605,8 +605,6 @@ components:
         weight:
           type: number
         size:
-          type: string
-        material:
           type: string
         price:
           type: number

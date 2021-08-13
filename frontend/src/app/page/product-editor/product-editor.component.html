@@ -33,7 +33,7 @@
                     <div class="form-floating mb-3">
                         <input id="weight" name="weight" [(ngModel)]="product.weight" type="number"
                             class="form-control">
-                        <label for="weight">TÖMEG</label>
+                        <label for="weight">TÖMEG (gramm)</label>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -44,23 +44,14 @@
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col-12 col-lg-6">
-                    <div class="form-floating mb-3">
-                        <input id="material" name="material" [(ngModel)]="product.material" type="text"
-                            class="form-control">
-                        <label for="material">ANYAG</label>
-                    </div>
+                <div class="form-floating mb-3">
+                    <input id="price" name="price" [(ngModel)]="product.price" type="number" class="form-control"
+                        required pattern="\d{1,}">
+                    <label for="price">ÁR*</label>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="form-floating mb-3">
-                        <input id="price" name="price" [(ngModel)]="product.price" type="number" class="form-control"
-                            required pattern="\d{1,}">
-                        <label for="price">ÁR*</label>
-                    </div>
-                    <div [hidden]="productForm.controls.price?.valid || productForm.controls.price?.pristine"
-                        class="error-message">
-                        Az ár csak számokat tartalmazhat!
-                    </div>
+                <div [hidden]="productForm.controls.price?.valid || productForm.controls.price?.pristine"
+                    class="error-message">
+                    Az ár csak számokat tartalmazhat!
                 </div>
             </div>
             <div class="row mb-3">

@@ -40,10 +40,8 @@ export class FoodCardComponent implements OnInit {
     this.modalTitle = product.name;
     this.modalText.push(`Melyik állat(ok)hoz jó: ${product.goodFor}`);
     if (product.weight) this.modalText.push(`Súly: ${product.weight} gramm`);
-    if (product.organic) {
-      const boolean = (product.organic) ? 'Természetes: Igen' : 'Természtes: Nem';
-      this.modalText.push(boolean);
-    }
+    if (product.organic == true) this.modalText.push('Természetes: Igen');
+    if (product.organic == false) this.modalText.push('Természtes: Nem');
   }
 
 }

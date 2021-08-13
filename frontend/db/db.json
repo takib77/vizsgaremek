@@ -3,525 +3,1681 @@
     {
       "_id": "123qw",
       "name": "Szíriai aranyhörcsög",
-      "category": "Hörcsög",
+      "category": "Rágcsáló",
       "description": "Az aranyhörcsögök az egyik leggyakrabban tartott rágcsálók, hiszen könnyen megszelídíthetőek és szinte biztos, hogy elérhetőek minden kisállat kereskedésben. Általában 4 évig élnek, körülbelül 17 cm-esre nőnek meg és 200 grammot nyomnak. Kíváncsi természetük miatt igénylik az ingereket, és hogy sokat foglalkozzunk velük. Igazi kis szabadulóművészek, ezért nagyon ügyelnünk kell arra, hogy kellően magas legyen a terrárium, vagy, hogy elég sűrűn legyenek a ketrec rácsai. Fontos tudni róluk, hogy magányosan szeretnek élni, nem szívesen osztják meg a területüket más hörcsögökkel. Ha mégis két kisemlőst szeretnénk, akkor kicsi koruktól kezdve együtt élő párt kell választanunk, különben halálos sérülésekkel járó verekedések szemtanúi lehetünk.",
-      "img": "assets/img/250.png",
+      "img": "assets/img/sziriaiarany.jpg",
       "price": 700,
       "active": true
     },
     {
       "_id": "123we",
       "name": "Dzsungáriai törpehörcsög",
-      "category": "Hörcsög",
+      "category": "Rágcsáló",
       "description": "A törpehörcsög kifejezés több faj esetében is használható, az egyik közülük a Dzsungáriai törpehörcsög. Ők sokkal inkább kijönnek egymással, mint az aranyhörcsögök, ennek köszönhetően tarthatóak párban vagy többedmagukkal is. Könnyen kezelhetőek és nem igényelnek túl sok gondozást. Azt viszont fontos észben tartanunk, hogy ezek az apróságok jellemzően harapósak. Rendszeres foglalkozással viszont leszoktathatóak róla. Maximum 7-8 centisre nőnek, és 50-60 gramm súlyúak.",
-      "img": "assets/img/250.png",
+      "img": "assets/img/dzsungariaitorpe.jpg",
       "price": 900,
       "active": false
     },
     {
       "_id": "123er",
       "name": "Roborovszki törpehörcsög",
-      "category": "Hörcsög",
+      "category": "Rágcsáló",
       "description": "A Roborovszki törpehörcsögök a legkisebbek és leggyorsabbak a hörcsögök közül. Csak a saját fajtájukkal képesek kijönni, és nem szeretik, ha kézbe vesszük és babusgatjuk őket. Nézni viszont szabad. Egyszerre félénk és kíváncsi természetűek. Szelídek, ritkán harapnak. A felnőttek sem nagyobbak, mint egy emberi hüvelykujj, így a szökésbiztos rágcsálólakra nagy figyelmet kell fordítanunk.",
-      "img": "assets/img/250.png",
+      "img": "assets/img/roborovszkitorpe.jpg",
       "price": 1000,
-      "active": false
+      "active": true
     },
     {
       "_id": "123rt",
       "name": "Kínai csíkos törpehörcsög",
-      "category": "Hörcsög",
+      "category": "Rágcsáló",
       "description": "Nevükkel ellentétben a kínai törpehörcsögök valójában nem törpék. Ami viszont valós, hogy Kínából származnak. Kevesen tenyésztik őket, ezért ritkábban bukkanhatunk rájuk, mint a többi hörcsögfajtára. Több színkombinációban is léteznek, de minden esetben jellemző járjuk a hátukon lévő sötétbarna csík. Éjszakai állatok, napközben ritkán aktívak. Félénk kis rágcsálók, de csak akkor harapnak, ha provokálják őket. Kevesebb _ideig élnek és kisebbek is, mint az aranyhörcsögök, általában nem nőnek nagyobbra, mint 10 cm. Rendkívül fürgék, ezért, ha sikerül meglépniük, nagyon nehéz elkapni őket.",
-      "img": "assets/img/250.png",
+      "img": "assets/img/kinaicsikos.jpg",
       "price": 1150,
       "active": false
     },
     {
       "_id": "123tz",
       "name": "Angol rövidszőrű tengerimalac",
-      "category": "Tengerimalac",
-      "description": "Szőre teljesen sima, röv_id, egyenletes hosszúságú, valamint fényes és dús. Nincsenek forgók, rozetták és választékok.",
-      "img": "assets/img/250.png",
+      "category": "Rágcsáló",
+      "description": "Szőre teljesen sima, rövid, egyenletes hosszúságú, valamint fényes és dús. Nincsenek forgók, rozetták és választékok.",
+      "img": "assets/img/angolrovidszoru.jpg",
       "price": 650,
       "active": true
     },
     {
       "_id": "123zu",
-      "name": "Amerika bóbitás tengerimalac",
-      "category": "Tengerimalac",
+      "name": "Amerikai bóbitás tengerimalac",
+      "category": "Rágcsáló",
       "description": "A malac homlokán rozettaszerű szőrkorona látható. A korona színe fehér, kontrasztban áll a testen látható színnel.",
-      "img": "assets/img/250.png",
+      "img": "assets/img/amerikaibobitas.jpg",
       "price": 850,
       "active": false
     },
     {
       "_id": "123ui",
       "name": "Hosszúszőrű bóbitás tengerimalac",
-      "category": "Tengerimalac",
+      "category": "Rágcsáló",
       "description": "Szőre hosszú, dús, a fejtetőn egy rozetta található. Sörénye hátrafele nő, így nem fedi a fejet. Az oldalakon lévő szőr egyenletesen hosszú, az uszálya pedig még ennél is hosszabb.",
-      "img": "assets/img/250.png",
+      "img": "assets/img/hosszuszorubobitas.jpg",
       "price": 990,
       "active": true
     },
     {
       "_id": "123ui",
       "name": "Perui tengerimalac",
-      "category": "Tengerimalac",
+      "category": "Rágcsáló",
       "description": "Szőre hosszú és selymes. Fején a szőr előrelógó, a faron pedig két rozetta található. A sörényt alkotó szőr a vállakból indul ki, és egyenletesen fedi a fejet. Az oldalán és a vállán lévő szőrzet valóságos függönyt alkot teste körül, és sehol sem hézagos. Uszályát a faron megfelelően elhelyezkedő forgók teszik sűrűvé.",
-      "img": "assets/img/250.png",
+      "img": "assets/img/perui.jpg",
       "price": 1490,
       "active": true
     },
     {
-      "_id": "123io",
-      "name": "Német kossorrú óriásnyúl",
-      "category": "Nyúl",
-      "description": "",
-      "img": "assets/img/250.png",
-      "price": 1700,
+      "_id": "123sd",
+      "name": "Csincsilla",
+      "category": "Rágcsáló",
+      "description": "A csincsilla bundája sűrű, puha és jól védi a hidegtől. Szőre szürke színű, selymes tapintású, puha. Testének felső része gyöngyszínű szürkésfehér vagy ezüstszürke, a hasoldal kissé világosabb.Nagy fején, széles pofa és nagy fekete szemek vannak. A hosszú serteszerű bajusz lehet fekete vagy fehér. Füle lekerekített hegyű és elálló, kiváló hallást biztosít az állatnak. A hátsó végtagok hosszúak és izmosak. Farka hosszú és bozontos. A farkot borító szőrszálak hosszabbak és durvábbak, mint a bunda többi részén levők.",
+      "img": "assets/img/csincsilla.jpg",
+      "price": 1250,
       "active": true
     },
     {
-      "_id": "123op",
-      "name": "Mecklenburgi tarka nyúl",
-      "category": "Nyúl",
-      "description": "",
-      "img": "assets/img/250.png",
-      "price": 1900,
+      "_id": "123df",
+      "name": "Hullámos papagáj",
+      "category": "Madár",
+      "description": "Vékony, reszelős hangjuk van, de meg tudnak tanulni annyi szót és kifejezést, mint a nagyobb papagájok.Sokkal szelídebbek, mint a kis termetű (vad alakú) fajtársaik, melyeknek kézre szoktatásához sokszor csak a csípések elviselésén át vezet az út. Élettartama általában 10 év, de vannak 15-17 éves példányok is.",
+      "img": "assets/img/hullamos.jpg",
+      "price": 1970,
       "active": true
     },
     {
-      "_id": "123pa",
-      "name": "Törpe rex nyúl",
-      "category": "Nyúl",
-      "description": "Nagyon szép!",
-      "img": "assets/img/250.png",
-      "price": 1800,
+      "_id": "123fg",
+      "name": "Sárga-kék arapapagáj",
+      "category": "Madár",
+      "description": "Értelmes, társaságkedvelő, és ha gazdája elkötelezett, felelősségteljes, és jól ismeri a madár szükségleteit, általában nagyon jó háziállat. Nagyméretű madár, ennélfogva rendkívül hangosan képes rikácsolni. Éppen ezért talán nem a legjobb választás azok számára, akik társasházban élnek, vagy ahol kicsi gyerek van.",
+      "img": "assets/img/sargakekara.jpg",
+      "price": 2200,
+      "active": false
+    },
+    {
+      "_id": "123gh",
+      "name": "Örvös sándorpapagáj",
+      "category": "Madár",
+      "description": "Az örvös sándorpapagáj annyira tisztán beszél, hogy a szerzetesek szentként tartották számon, miután meghallották, hogy az egyik madár elismételte az imájukat, amit minden nap a kolostor kertjében mondtak. Sok online videót lehet találni a sándorpapagájokról, amint bonyolult és hosszas részleteket szavalnak könyvekből, versekből és a Bibliából. Ha szeretnél egy nagyszájú madarat, amelyik nem olyan nagyméretű, akkor ez a közepes méretű papagáj a neked való madár.",
+      "img": "assets/img/orvossandor.jpg",
+      "price": 1990,
+      "active": true
+    },
+    {
+      "_id": "123hj",
+      "name": "Vadkanári",
+      "category": "Madár",
+      "description": "A kanárikat legalább párosával, de legideálisabb esetben csoportosan érdemes tartani. Soha ne tartsunk csupán egy madarat! A csoportban egy hím és több tojó legyen. Természetesen ehhez megfelelő méretű kalitkát kell beszerezni, hogy a madarak tudjanak benne repkedni. Ennek ellenére ajánlott naponta legalább egyszer a lakásban szabadon repkedni.",
+      "img": "assets/img/vadkanari.jpg",
+      "price": 990,
+      "active": true
+    },
+    {
+      "_id": "123jk",
+      "name": "Kék királylazac",
+      "category": "Hal",
+      "description": "A Királylazac egy színváltozata, de annál valamivel kisebb is. Indigókék színével igazi ínyencségnek számít a csapathalak között. A nőstény kevésbé színes, de a zsírúszója piros, vagy narancssárga színű, így könnyen megkülönböztethetjük a hímektől.",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/i/n/inpaichthys_kerri.jpg",
+      "price": 490,
+      "active": true
+    },
+    {
+      "_id": "123kl",
+      "name": "Ferdénúszó pontylazac",
+      "category": "Hal",
+      "description": "Ismertetőjele a fekete csík, amely egész testén végig húzódik. Valamint az enyhén ferde testtartása, amivel kitűnik a legtöbb csapathal közül. Nagyobb mérete miatt ügyeljünk arra, hogy a sűrű növényzet mellett biztosítsunk megfelelő úszóteret is számára. Aki egyedi látványt nyújtó csapathalat keres, annak bátran ajánlható.",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/f/e/ferdenuszo_01.jpg",
+      "price": 450,
+      "active": false
+    },
+    {
+      "_id": "123ly",
+      "name": "Vitorláshal",
+      "category": "Hal",
+      "description": "Az akvaristák által talán az egyik legjobban kedvelt nagy testű díszhal. Magas testfelépítésű kecses hal, mely igazán szépre nagyméretű akváriumban fejlődik. Sajnos sokan tartják túl kis akváriumokban, pedig ajánlott a minimum 120-150 literes medence számukra. Mivel territoriális hal ezért nem érdemes 3 - 4 darabnál kevesebbet tartani belőle, ellenkező esetben az egész akváriumot kisajátíthatja magának.",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/p/t/pterophyllum-scalare.jpg",
+      "price": 1290,
+      "active": true
+    },
+    {
+      "_id": "123yx",
+      "name": "Arany Kolibrihal",
+      "category": "Hal",
+      "description": "Egy igen látványos és jól tartható kis termetű pontyféle. Könnyű tartása, látványos színezete, élénk mozgása miatt igen közkedvelt hal az akváriumokban. Kiváló \"kezdő hal\" az akvarisztikával még csak ismerkedőknek. Élénk színei a neonhaléval vetekszenek. Szaporítása nem nehéz. 4 cm-es mérete lehetővé teszi kisebb 40-50 literes akváriumokban való tartásra. Csapatban (min. 5-6 db) érzi jól magát.",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/a/r/arany_kolibri_01_1.jpg",
+      "price": 390,
+      "active": true
+    },
+    {
+      "_id": "123xc",
+      "name": "Violaszínű páncélosharcsa",
+      "category": "Hal",
+      "description": "A test alapszíne világosbarna, aranysárga csillogással. A hasi rész kivételével a test apró foltokkal fedett, amelyek a fejen élénkek, színesek. A test hátsó része, a hátúszó végétől a farokúszóig kékes színű, melynek intenzítása a farokúszó felé haladva fokozatosan erősödik. Rajhal, minél nagyobb csapatban tartjuk, annál jobban érzi magát. Fontos, hogy a talaj éles szemcséktől mentes legyen, különben hasa és a szája sérülhetnek. Nagy segítségünkre lehet a lehullott és el nem fogyasztott eleség összeszedésében, a talaj tisztán tartásában.",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/c/o/corydoras-similis.jpg",
+      "price": 1990,
+      "active": true
+    },
+    {
+      "_id": "123cv",
+      "name": "Kék szemű villásfarkú kalászhal",
+      "category": "Hal",
+      "description": "Két hátúszója van és az első sokkal kisebb, mint a második. A testük színe sárgás-zöld. A hímek hát- és farok alatti úszója a tövénél átlátszó, de a szélei sárga színűek, míg a mell- és has alatti úszók pirosas árnyalatúak. A farok is sárgás színű és villás. A nőstényeken a mell- és has alatti úszók átlátszóak. A szemük gyönyörű kék színű.",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/p/o/popondetta_furcata_2.jpg",
+      "price": 790,
+      "active": false
+    },
+    {
+      "_id": "123vb",
+      "name": "Törpe szívóharcsa",
+      "category": "Hal",
+      "description": "Minden haltartó számára igen hasznos és érdekes hal lehet, mert nagyon sokféle algát ”lelegel”, szorgalmas munkás. Több példányt ajánlatos együtt tartani, egyedül állítólag nem él annyit… Nano akváriumokba is minden gond nélkül tarthatjuk, kicsiny mérete miatt.",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/o/t/ottocinclus-affinis-torpe-szivoharcsa.jpg",
+      "price": 990,
       "active": true
     }
   ],
   "products": [
     {
-      "_id": "456tzu",
-      "name": "széna",
-      "category": "eledel",
-      "img": "...",
-      "goodFor": "Hörcsög, Tengerimalac",
-      "price": 300,
-      "weight": 200,
-      "active": true,
-      "organic": true
-    },
-    {
-      "_id": "456tzi",
-      "name": "Magkeverék",
-      "category": "eledel",
-      "img": "...",
-      "goodFor": "Hörcsög",
-      "weight": 1000,
-      "price": 500,
-      "active": true,
-      "organic": true
-    },
-    {
       "_id": "888mmm",
-      "name": "Ketrec",
+      "name": "ADA Cube Garden Mini M Nano akvárium",
       "category": "felszerelés",
-      "img": "...",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/c/u/cube_garden_f_086a3439_1_5.jpg",
+      "goodFor": "Hal",
+      "size": "36 x 22 x 36",
+      "price": 27190,
+      "active": true,
+      "organic": ""
+    },
+    {
+      "_id": "888bbb",
+      "name": "ADA Cube Garden 45-P",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/c/u/cube_garden_f_086a3439_1_2.jpg",
+      "goodFor": "Hal",
+      "size": "45*27*30",
+      "price": 32690,
+      "active": true,
+      "organic": ""
+    },
+    {
+      "_id": "888vvv",
+      "name": "Dennerle Scaper's Tank",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/5/5/5591-44.png",
+      "goodFor": "Hal",
+      "size": "40 x 32 x 28",
+      "price": 25190,
+      "active": false,
+      "organic": ""
+    },
+    {
+      "_id": "888ccc",
+      "name": "Dennerle Scaper's Tank Basic LED",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/5/5/5592-44_3_dennerle-scaper-s-tank-basic-led-akvarium-szett-szurovel-led-5-0-vilagitassal-35l.jpg",
+      "goodFor": "Hal",
+      "size": "40*32*28",
+      "price": 54790,
+      "active": true,
+      "organic": ""
+    },
+    {
+      "_id": "888xxx",
+      "name": "ADA Aqua Soil Amazonia - általános növénytalaj",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/a/m/amazonia_normal_9l-1.jpg",
+      "goodFor": "Hal",
+      "size": "",
+      "weight": 3000,
+      "price": 6400,
+      "active": true,
+      "organic": true
+    },
+    {
+      "_id": "888yyy",
+      "name": "ADA Aqua Gravel S, dekor kavics",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/a/q/aquagravel_8kg_1.jpg",
+      "goodFor": "Hal",
+      "size": "",
+      "weight": 2000,
+      "price": 3190,
+      "active": true,
+      "organic": true
+    },
+    {
+      "_id": "888aaa",
+      "name": "ADA Colorado Sand dekorhomok",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/c/o/colorado_sand_8kg_1.jpg",
+      "goodFor": "Hal",
+      "size": "",
+      "weight": 2000,
+      "price": 4090,
+      "active": false,
+      "organic": true
+    },
+    {
+      "_id": "888sss",
+      "name": "Green Aqua MICRO növénytáp",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/g/r/green-aqua-micro-novenytap-250-ml_2.jpg",
+      "goodFor": "Hal",
+      "price": 2490,
+      "weight": 250,
+      "active": true
+    },
+    {
+      "_id": "888ddd",
+      "name": "Green Aqua MACRO növénytáp",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/g/r/green-aqua-macro-novenytap-1000-ml-utantolto.jpg",
+      "goodFor": "Hal",
+      "price": 7190,
+      "weight": 1000,
+      "active": false
+    },
+    {
+      "_id": "888ggg",
+      "name": "Green Aqua cleanit tisztító oldat",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/g/r/greenaqua-cleanit.jpg",
+      "goodFor": "Hal",
+      "price": 2690,
+      "weight": 500,
+      "active": true
+    },
+    {
+      "_id": "888fff",
+      "name": "Seachem HeadStart vízkezelő csomag",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/1/1/1125-55.jpg",
+      "goodFor": "Hal",
+      "price": 7590,
+      "active": false
+    },
+    {
+      "_id": "888hhh",
+      "name": "Green Aqua kézi drótkefe",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/9/9/999852.jpg",
+      "goodFor": "Hal",
+      "price": 590,
+      "active": true
+    },
+    {
+      "_id": "888jjj",
+      "name": "Söchting Carbonator - Akvárium CO2 ellátó",
+      "category": "felszerelés",
+      "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/s/o/sochting-carbonator-akvarium-co2-ellato-250-literig.jpg",
+      "goodFor": "Hal",
+      "price": 13900,
+      "active": true
+    },
+    {
+      "_id": "11qq",
+      "name": "TEDDY LUX",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/1913-84552-thickbox/horcsogketrec-alaguttal-teddy-lux-.jpg",
       "goodFor": "Hörcsög",
-      "size": "20*20*10",
-      "material": "acél",
-      "price": 2200,
+      "size": "43 x 28 x 23.5",
+      "price": 11279,
+      "active": false
+    },
+    {
+      "_id": "11ww",
+      "name": "TEDDY I",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/1860-20510-thickbox/teddy-i-ketrec-horcsogoknek.jpg",
+      "goodFor": "Hörcsög",
+      "size": "37 x 27 x 28.5",
+      "price": 9029,
+      "active": true
+    },
+    {
+      "_id": "11ee",
+      "name": "Rágcsáló kalitka RABBIT 100",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/9176-16392-thickbox/ragcsalo-kalitka-rabbit-100-szurke-felszerel-nelkul.jpg",
+      "goodFor": "Hörcsög, Tengerimalac",
+      "size": "95 x 58 x 46",
+      "price": 17870,
+      "active": true
+    },
+    {
+      "_id": "11rr",
+      "name": "Rágcsáló kalitka RABBIT 60",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/1856-20434-thickbox/nyuszi-es-tengerimalac-ketrec-rabbit-60-krom.jpg",
+      "goodFor": "Hörcsög, Tengerimalac",
+      "size": "59 x 36 x 31",
+      "price": 11506,
+      "active": true
+    },
+    {
+      "_id": "11rr",
+      "name": "Rágcsáló kalitka CSINCSILLA 80",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/5845-20223-thickbox/ragcsalo-kalitka-csincsilla-80-krom-new.jpg",
+      "goodFor": "Csincsilla",
+      "size": "78 x 47 x 78",
+      "price": 31964,
+      "active": true
+    },
+    {
+      "_id": "11tt",
+      "name": "Rágcsáló házikó fűből",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/2862-2731-thickbox/ragcsalo-haziko-fbl-hosszukas-19-cm.jpg",
+      "goodFor": "Hörcsög, Tengerimalac, Csincsilla",
+      "price": 1145,
+      "active": true,
+      "organic": true
+    },
+    {
+      "_id": "11zz",
+      "name": "Faforgács",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/3485-3354-thickbox/faforgacs-12-14-l-alom-ragcsalo-szamara.jpg",
+      "goodFor": "Hörcsög, Tengerimalac, Csincsilla",
+      "price": 839,
+      "weight": 1200,
+      "active": true,
+      "organic": true
+    },
+    {
+      "_id": "11uu",
+      "name": "Széna",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/3487-22084-thickbox/szena-ragcsaloknak-500-g.jpg",
+      "goodFor": "Hörcsög, Tengerimalac, Csincsilla",
+      "price": 619,
+      "weight": 500,
+      "active": true,
+      "organic": true
+    },
+    {
+      "_id": "11uu",
+      "name": "Cavia Complete",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/2397-23348-thickbox/cavia-complete-500-g-tengerimalac-eledel.jpg",
+      "goodFor": "Tengerimalac",
+      "price": 1829,
+      "weight": 500,
       "active": false,
       "organic": false
     },
     {
-      "_id": "888nnn",
-      "name": "etetőtál",
-      "category": "felszerelés",
-      "img": "...",
+      "_id": "11ii",
+      "name": "Crispy Muesli Hamsters & Co",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/2387-21729-thickbox/crispy-muesli-hamsters-co-ragcsalotap-1-kg.jpg",
       "goodFor": "Hörcsög, Tengerimalac",
-      "size": "20*15*15",
-      "material": "fa",
-      "price": 500,
+      "price": 1369,
+      "weight": 1000,
+      "active": true,
+      "organic": false
+    },
+    {
+      "_id": "11oo",
+      "name": "KIKI EXCELLENT MAX MENU - COBAYAS",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/15462-33181-thickbox/kiki-excellent-max-menu-tap-tengeri-malacoknak-1kg.jpg",
+      "goodFor": "Tengerimalac",
+      "price": 1449,
+      "weight": 1000,
+      "active": true,
+      "organic": false
+    },
+    {
+      "_id": "11pp",
+      "name": "KIKI EXCELLENT MAX MENU - HAMSTERS",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/15463-33180-thickbox/kiki-excellent-max-menu-tap-horcsogoknek-1kg.jpg",
+      "goodFor": "Hörcsög",
+      "price": 1449,
+      "weight": 1000,
+      "active": true,
+      "organic": false
+    },
+    {
+      "_id": "11pp",
+      "name": "KIKI EXCELLENT MAX MENU - CHINCHILLAS",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/18992-41647-thickbox/kiki-excellent-max-menu-csincsillatap-800-g.jpg",
+      "goodFor": "Hörcsög",
+      "price": 1449,
+      "weight": 800,
+      "active": true,
+      "organic": false
+    },
+    {
+      "_id": "11ff",
+      "name": "Versele-Laga Parrots",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/2404-33326-thickbox/parrots-1-kg-taplalek-papagajok-reszere.jpg",
+      "goodFor": "Papagáj",
+      "price": 1868,
+      "weight": 1000,
+      "active": true,
+      "organic": true
+    },
+    {
+      "_id": "11gg",
+      "name": "Canaries",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/2411-21855-thickbox/canaries-1-kg-eledel-kanarinak.jpg",
+      "goodFor": "Kanári",
+      "price": 1487,
+      "weight": 1000,
+      "active": true,
+      "organic": true
+    },
+    {
+      "_id": "11hh",
+      "name": "Tropical finches",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/2409-21857-thickbox/tropical-finches-1-kg-egzotikus-madar-eleseg.jpg",
+      "goodFor": "Kanári, Papagáj",
+      "price": 1487,
+      "weight": 1000,
+      "active": false,
+      "organic": true
+    },
+    {
+      "_id": "11hhh",
+      "name": "TROPICAL Vitality colour flake",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/516-18965-thickbox/tropical-vitality-colour-flake-taplalek-112-l-2-kg.jpg",
+      "goodFor": "Hal",
+      "price": 24199,
+      "weight": 2000,
+      "active": true,
+      "organic": false
+    },
+    {
+      "_id": "11jjj",
+      "name": "Sera FD Krill",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/232-19173-thickbox/sera-fd-krill-hal-eledel-250-ml.jpg",
+      "goodFor": "Hal",
+      "price": 4720,
+      "weight": 250,
+      "active": false,
+      "organic": true
+    },
+    {
+      "_id": "11kkk",
+      "name": "Sera VIFORMO TABS",
+      "category": "eledel",
+      "img": "https://abc-zoo.hu/299-19153-thickbox/sera-viformo-tabs-eleseg-halaknak-2000-ml-14-kg.jpg",
+      "goodFor": "Hal",
+      "price": 31165,
+      "weight": 1200,
+      "active": true,
+      "organic": true
+    },
+    {
+      "_id": "11ss",
+      "name": "KANAREK mini",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/1916-20379-thickbox/kalitka-kanarinak-kanarek-mini-30-x-20-x-24-cm.jpg",
+      "goodFor": "Kanári",
+      "size": "30 x 20 x 24",
+      "price": 8230,
       "active": true
     },
     {
-      "_id": "u6wYww5",
-      "name": "Kalitka",
+      "_id": "11dd",
+      "name": "IZA III",
       "category": "felszerelés",
-      "goodFor": "papagáj",
-      "price": 4500,
-      "material": "fém",
-      "active": true,
-      "size": "40*40*20"
+      "img": "https://abc-zoo.hu/4361-29497-thickbox/iza-iii-papagaj-kalitka-585-x-38-x-65-cm.jpg",
+      "goodFor": "Papagáj, Kanári",
+      "size": "58,5 x 38 x 65",
+      "price": 20955,
+      "active": true
+    },
+    {
+      "_id": "11aaa",
+      "name": "JBL AutoFood",
+      "category": "felszerelés",
+      "img": "https://abc-zoo.hu/16324-35383-thickbox/jbl-autofood-black-automata-etet.jpg",
+      "goodFor": "Hal",
+      "price": 15555,
+      "active": true
     }
   ],
   "users": [
     {
-      "_id": "1",
-      "first_name": "Washington",
-      "last_name": "Bosche",
-      "address": {
-        "country": "USA",
-        "city": "NY",
-        "street": "Sunset Avenue",
-        "zip": 1100,
-        "houseNumber": 10
-      },
-      "email": "wbosche0@1688.com",
-      "password": "$2a$10$OB9uiXyXSioYHNo2/onfau0EBqHA/.lCcKlD/X6S2Je.4OuBOVL3y",
-      "role": "3"
-    },
-    {
-      "_id": "2",
-      "first_name": "Melessa",
-      "last_name": "Salamon",
-      "address": {
-        "country": "USA",
-        "city": "Florida",
-        "street": "Sunset Avenue",
-        "houseNumber": 33
-      },
-      "email": "msalamon1@istockphoto.com",
-      "password": "$2a$10$rhyVPoqOPcxi0m0aFZAgzO9NC3JoTKU3jh2FOTcpAnPxGq7c0QMSG",
-      "role": 1
-    },
-    {
-      "_id": "3",
-      "first_name": "Orsola",
-      "last_name": "Lyons",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "olyons2@engadget.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 1
-    },
-    {
-      "_id": "4",
-      "first_name": "Elene",
-      "last_name": "Baxandall",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "ebaxandall3@amazon.co.jp",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 3
-    },
-    {
-      "_id": "5",
-      "first_name": "Eustace",
-      "last_name": "Snartt",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "esnartt4@clickbank.net",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 2
-    },
-    {
-      "_id": "6",
-      "first_name": "Rudiger",
-      "last_name": "Jerdon",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "rjerdon5@weather.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 1
-    },
-    {
-      "_id": "7",
-      "first_name": "Cullie",
-      "last_name": "Persence",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "cpersence6@360.cn",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 3
-    },
-    {
-      "_id": "8",
-      "first_name": "Herb",
-      "last_name": "Inchbald",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "hinchbald7@ted.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 3
-    },
-    {
-      "_id": "9",
-      "first_name": "Jeniece",
-      "last_name": "Burrus",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "jburrus8@google.com.au",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 1
-    },
-    {
-      "_id": "1y",
-      "first_name": "El",
-      "last_name": "Staner",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "estaner9@photobucket.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 1
-    },
-    {
       "_id": "1a",
-      "first_name": "Kelila",
-      "last_name": "Steanson",
+      "first_name": "Flore",
+      "last_name": "Degoix",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Hungary",
+        "zip": 3717,
+        "city": "Varva",
+        "street": "Mccormick utca",
+        "houseNumber": 22
       },
-      "email": "ksteansona@weebly.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 3
+      "email": "fdegoix1e@time.com",
+      "password": "$2a$10$EsNDBG6pzlxvyQ6Y4yQoIuEtemTzYNaP56FLAvwc7w4ZL2HnJUc7.",
+      "role": 1
     },
     {
-      "_id": "1s",
-      "first_name": "Ruddy",
-      "last_name": "Muzzini",
+      "_id": "1b",
+      "first_name": "Hilton",
+      "last_name": "Carletto",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Slovenia",
+        "zip": 7935,
+        "city": "Izlake",
+        "street": "Harbort utca",
+        "houseNumber": 88
       },
-      "email": "rmuzzinib@homestead.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "email": "hcarletto1f@engadget.com",
+      "password": "$2a$10$TzUrnfVClvePAaeif.RXaeg8zTaug9MAHbTRjRg.xFjokNIy.x3HW",
       "role": 2
+    },
+    {
+      "_id": "1c",
+      "first_name": "Ewart",
+      "last_name": "Attride",
+      "address": {
+        "country": "Hungary",
+        "zip": 1181,
+        "city": "Bilyayivka",
+        "street": "Sugar utca",
+        "houseNumber": 75
+      },
+      "email": "eattride1g@smh.com.au",
+      "password": "$2a$10$al2XYAvMt51hSADkR/1FoOdND1fxrMPLY2umdvN6fo.s5q8VZdx02",
+      "role": 3
     },
     {
       "_id": "1d",
-      "first_name": "Rochell",
-      "last_name": "Crothers",
+      "first_name": "Elle",
+      "last_name": "Marchelli",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Hungary",
+        "zip": 8941,
+        "city": "Nelipyno",
+        "street": "Havey utca",
+        "houseNumber": 22
       },
-      "email": "rcrothersc@dailymotion.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "email": "emarchelli1h@livejournal.com",
+      "password": "$2a$10$cZmPT9RMXI8tLn0N/a2dIuz8DT0wzGZ9aUCzaUqBLauEUack27TgC",
       "role": 2
+    },
+    {
+      "_id": "1e",
+      "first_name": "Jeffry",
+      "last_name": "Tatchell",
+      "address": {
+        "country": "Serbia",
+        "zip": 9245,
+        "city": "Šimanovci",
+        "street": "Reindahl utca",
+        "houseNumber": 87
+      },
+      "email": "jtatchell1i@hugedomains.com",
+      "password": "$2a$10$pycw.9d2gEdYJkd1uZBusuxwpIXXoGuT3W8S7aA3j5q.Nl5J0riQS",
+      "role": 1
     },
     {
       "_id": "1f",
-      "first_name": "Tova",
-      "last_name": "Norvel",
+      "first_name": "Joby",
+      "last_name": "Chadburn",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Croatia",
+        "zip": 9227,
+        "city": "Fažana",
+        "street": "Warbler utca",
+        "houseNumber": 170
       },
-      "email": "tnorveld@wikipedia.org",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 2
+      "email": "jchadburn1j@washingtonpost.com",
+      "password": "$2a$10$RRiOhA1wTlWOARSQx6dDk.qEld12Z2I0NAdYgyDuL5HNdJeNM6Dua",
+      "role": 1
     },
     {
       "_id": "1g",
-      "first_name": "Son",
-      "last_name": "Butterworth",
+      "first_name": "Brigg",
+      "last_name": "Shortall",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Hungary",
+        "zip": 5994,
+        "city": "Marhanets’",
+        "street": "Maywood tér",
+        "houseNumber": 5
       },
-      "email": "sbutterworthe@instagram.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 2
+      "email": "bshortall1k@usa.gov",
+      "password": "$2a$10$LF/Airb0qAuMNT70qhxLUuh5SQVZnDljAsrlEv9l.ZxNK58UJV.A.",
+      "role": 1
     },
     {
       "_id": "1h",
-      "first_name": "Bentley",
-      "last_name": "Stell",
+      "first_name": "Kurtis",
+      "last_name": "Bretland",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Hungary",
+        "zip": 4134,
+        "city": "Trostyanets’",
+        "street": "Fallview tér",
+        "houseNumber": 98
       },
-      "email": "bstellf@illinois.edu",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "email": "kbretland1l@mit.edu",
+      "password": "$2a$10$Af6aFR9DcBycJN0EcW4v2urQA0aDlv1R00.KmghP3OGi/n0xASHQ.",
+      "role": 3
+    },
+    {
+      "_id": "1i",
+      "first_name": "Alleen",
+      "last_name": "Pedro",
+      "address": {
+        "country": "Hungary",
+        "zip": 8174,
+        "city": "Kulevcha",
+        "street": "Porter tér",
+        "houseNumber": 102
+      },
+      "email": "apedro1m@purevolume.com",
+      "password": "$2a$10$9ZYNrsrzPhkKuSH6Pg3Dpezj2ydv6kQrfZLm/7R6cOH0fOba8t4Ua",
       "role": 3
     },
     {
       "_id": "1j",
-      "first_name": "Brody",
-      "last_name": "Arend",
+      "first_name": "Perry",
+      "last_name": "Gibling",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Hungary",
+        "zip": 7729,
+        "city": "Dobryanka",
+        "street": "Cody tér",
+        "houseNumber": 77
       },
-      "email": "barendg@tiny.cc",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 1
+      "email": "pgibling1n@miitbeian.gov.cn",
+      "password": "$2a$10$HMtTZJjXxSPYaeHwsJmPqumy6lFUrrJQ.sQKiy5vustPVFbcXsRbC",
+      "role": 2
     },
     {
       "_id": "1k",
-      "first_name": "Henderson",
-      "last_name": "Assad",
+      "first_name": "Vevay",
+      "last_name": "Agastina",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Hungary",
+        "zip": 4501,
+        "city": "Khorostkiv",
+        "street": "2nd tér",
+        "houseNumber": 25
       },
-      "email": "hassadh@drupal.org",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
-      "role": 3
+      "email": "vagastina1o@xrea.com",
+      "password": "$2a$10$ABskYp6maaA6VSh4.INAmOwb1vXeTBBuffAHbyvMM3if1L0i7n8oy",
+      "role": 1
     },
     {
       "_id": "1l",
-      "first_name": "Aubrette",
-      "last_name": "Feeham",
+      "first_name": "Carolyne",
+      "last_name": "Rutigliano",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Serbia",
+        "zip": 9294,
+        "city": "Jevremovac",
+        "street": "Riverside út",
+        "houseNumber": 56
       },
-      "email": "afeehami@about.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "email": "crutigliano1p@cpanel.net",
+      "password": "$2a$10$bgIt5nr5dZgxizeoe4WSneGnD5dgBoiVaz3WD2TFo95AcJuRc1j8y",
+      "role": 2
+    },
+    {
+      "_id": "1m",
+      "first_name": "Rozelle",
+      "last_name": "New",
+      "address": {
+        "country": "Croatia",
+        "zip": 7649,
+        "city": "Pazin",
+        "street": "Westport út",
+        "houseNumber": 26
+      },
+      "email": "rnew1q@google.com.br",
+      "password": "$2a$10$EstY1bKoEOfG1lLWKrKMEe48.bfyKB8P5MStBg76JpmuRUZT33mN6",
+      "role": 2
+    },
+    {
+      "_id": "1n",
+      "first_name": "Jarrid",
+      "last_name": "Bedham",
+      "address": {
+        "country": "Hungary",
+        "zip": 3998,
+        "city": "Novyy Svit",
+        "street": "Dorton út",
+        "houseNumber": 23
+      },
+      "email": "jbedham1r@canalblog.com",
+      "password": "$2a$10$3wk5GVxvYm2QHvpOJjkz5uSe4a/bMkzv.UT/ol3/RTXqDcw7lXzau",
       "role": 3
     },
     {
-      "_id": "2x",
-      "first_name": "Griffin",
-      "last_name": "Lettsom",
+      "_id": "1o",
+      "first_name": "Darryl",
+      "last_name": "Flindall",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Ukraine",
+        "zip": 4429,
+        "city": "Lanchyn",
+        "street": "Moulton út",
+        "houseNumber": 8
       },
-      "email": "glettsomj@newyorker.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "email": "dflindall1s@artisteer.com",
+      "password": "$2a$10$fgzPXpbNdBKIQNdMWW3RV.yq9HVlPp2r9cJ2siM4dto3CV6DGEcMa",
+      "role": 1
+    },
+    {
+      "_id": "1p",
+      "first_name": "Electra",
+      "last_name": "Redd",
+      "address": {
+        "country": "Ukraine",
+        "zip": 1913,
+        "city": "Chapayeve",
+        "street": "Acker út",
+        "houseNumber": 148
+      },
+      "email": "eredd1t@ameblo.jp",
+      "password": "$2a$10$Aii3b60zc2LDqtWlZwXu/.8GvCgmb6z9G.3icMQJF6WZ9OoVgD9LC",
+      "role": 2
+    },
+    {
+      "_id": "1r",
+      "first_name": "Rutger",
+      "last_name": "Boddis",
+      "address": {
+        "country": "Ukraine",
+        "zip": 1155,
+        "city": "Rozhnyativ",
+        "street": "Mockingbird út",
+        "houseNumber": 186
+      },
+      "email": "rboddis1u@hao123.com",
+      "password": "$2a$10$5RCnNj2Bi742h8OQApc.1OHvSe8PnUP0oWow48gdlbjqL4ISuPsja",
+      "role": 3
+    },
+    {
+      "_id": "1s",
+      "first_name": "Eddy",
+      "last_name": "Rippin",
+      "address": {
+        "country": "Ukraine",
+        "zip": 8982,
+        "city": "Bashtanka",
+        "street": "Scott út",
+        "houseNumber": 22
+      },
+      "email": "erippin1v@slate.com",
+      "password": "$2a$10$Qf2S9azFnxv7zTrgY6np6OSdmr9pcTeZVZXDvw916g87o/4jlzIs6",
+      "role": 1
+    },
+    {
+      "_id": "1t",
+      "first_name": "Vivianna",
+      "last_name": "Cathery",
+      "address": {
+        "country": "Ukraine",
+        "zip": 6817,
+        "city": "Shepetivka",
+        "street": "South út",
+        "houseNumber": 200
+      },
+      "email": "vcathery1w@nhs.uk",
+      "password": "$2a$10$eH1kBB40qqXF3tPn7buqxu4uCgbl3TOY0iHeSr2UVnK6E0UpsDB/u",
+      "role": 1
+    },
+    {
+      "_id": "1u",
+      "first_name": "Charlie",
+      "last_name": "Springle",
+      "address": {
+        "country": "Ukraine",
+        "zip": 6453,
+        "city": "Krasnyy Lyman",
+        "street": "Declaration fasor",
+        "houseNumber": 160
+      },
+      "email": "cspringle1x@usa.gov",
+      "password": "$2a$10$V.t1GzZb85kjZBmTKoDBxucrTI61bPmdYVDN49UY8AOSaTdjbryp.",
+      "role": 3
+    },
+    {
+      "_id": "1v",
+      "first_name": "Shawnee",
+      "last_name": "Alsina",
+      "address": {
+        "country": "Ukraine",
+        "zip": 1234,
+        "city": "Kotel’va",
+        "street": "Aberg fasor",
+        "houseNumber": 104
+      },
+      "email": "salsina1y@google.ru",
+      "password": "$2a$10$/y.FXK3JPFgcvzjFKJhOIujsipQbGaIh74haiKSswIQsVHsmDpQuy",
+      "role": 3
+    },
+    {
+      "_id": "1z",
+      "first_name": "Christean",
+      "last_name": "Bernette",
+      "address": {
+        "country": "Ukraine",
+        "zip": 6516,
+        "city": "Kapitanivka",
+        "street": "Summit fasor",
+        "houseNumber": 104
+      },
+      "email": "cbernette1z@biblegateway.com",
+      "password": "$2a$10$UxgqZRIWPQH9VkzKLf5TiO1/DVpq0ogIVbn5y5u.RXsnF6d7nYHv.",
+      "role": 1
+    },
+    {
+      "_id": "1x",
+      "first_name": "Margaux",
+      "last_name": "Danaher",
+      "address": {
+        "country": "Ukraine",
+        "zip": 7792,
+        "city": "Volodars’k-Volyns’kyy",
+        "street": "Fieldstone fasor",
+        "houseNumber": 159
+      },
+      "email": "mdanaher20@shareasale.com",
+      "password": "$2a$10$6EB0JDIZp7iZs0tXH7RZ0OaV/bWCwYrtT.ddwKsGE1BczH4vU2ED2",
+      "role": 3
+    },
+    {
+      "_id": "1y",
+      "first_name": "Phillie",
+      "last_name": "Lawlee",
+      "address": {
+        "country": "Ukraine",
+        "zip": 8087,
+        "city": "Lymanske",
+        "street": "Messerschmidt fasor",
+        "houseNumber": 168
+      },
+      "email": "plawlee21@google.com.hk",
+      "password": "$2a$10$Gxn50rViCXlI7V4d3vEjfuRly2KPYmNwSC9c0aU29mhCu8jlUViXK",
+      "role": 2
+    },
+    {
+      "_id": "1w",
+      "first_name": "Darci",
+      "last_name": "Bucky",
+      "address": {
+        "country": "Croatia",
+        "zip": 1722,
+        "city": "Trilj",
+        "street": "Monica köz",
+        "houseNumber": 22
+      },
+      "email": "dbucky22@mysql.com",
+      "password": "$2a$10$ZPvWXNa6rY6gbj0po6HGN.mY45S8pYCzHNgRlxrq8KvmGnDEPkbny",
+      "role": 2
+    },
+    {
+      "_id": "1q",
+      "first_name": "Lizzie",
+      "last_name": "Bosse",
+      "address": {
+        "country": "Ukraine",
+        "zip": 3161,
+        "city": "Matviyivka",
+        "street": "Dennis köz",
+        "houseNumber": 116
+      },
+      "email": "lbosse23@yale.edu",
+      "password": "$2a$10$F7lnLjqIhvZ418NeOvi7SO2mL97f8VqsfeuqyCayohimIvrYO14oi",
+      "role": 2
+    },
+    {
+      "_id": "2a",
+      "first_name": "Daryl",
+      "last_name": "Dudny",
+      "address": {
+        "country": "Serbia",
+        "zip": 5154,
+        "city": "Knjazevac",
+        "street": "Fair Oaks köz",
+        "houseNumber": 101
+      },
+      "email": "ddudny24@utexas.edu",
+      "password": "$2a$10$UVxwPYmCjINGVDcGn6q10.g5vY6kwF5il5uoE8a9XU0adH2gsT5su",
+      "role": 3
+    },
+    {
+      "_id": "2b",
+      "first_name": "Aluin",
+      "last_name": "Dowsing",
+      "address": {
+        "country": "Ukraine",
+        "zip": 3501,
+        "city": "Reni",
+        "street": "Melody köz",
+        "houseNumber": 21
+      },
+      "email": "adowsing25@miitbeian.gov.cn",
+      "password": "$2a$10$h2kTmV3BoN7FAHwTiRxIYungpV7e4w8HiwwIc6biijrW03MeUlr5a",
       "role": 3
     },
     {
       "_id": "2c",
-      "first_name": "Kaine",
-      "last_name": "Horsley",
+      "first_name": "Killian",
+      "last_name": "Wendover",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Ukraine",
+        "zip": 7608,
+        "city": "Horodyshche",
+        "street": "Meadow Ridge körút",
+        "houseNumber": 164
       },
-      "email": "khorsleyk@buzzfeed.com",
-      "password": "$2a$10$q5lHF9piJNCyJp0MpW4mKeRvAJ9pl0JVxc0z0TvpD3w36ndKQnqzW",
-      "role": 3
-    },
-    {
-      "_id": "2v",
-      "first_name": "Marni",
-      "last_name": "Furst",
-      "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
-      },
-      "email": "mfurstl@ftc.gov",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "email": "kwendover26@domainmarket.com",
+      "password": "$2a$10$V3VIHzzOiF76duDgWUMzUOfR2GWHH.z0kn9gh28bxJdkjuM5DCi.C",
       "role": 2
     },
     {
-      "_id": "2b",
-      "first_name": "Aarika",
-      "last_name": "Meiningen",
+      "_id": "2d",
+      "first_name": "Derk",
+      "last_name": "Ellingford",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Ukraine",
+        "zip": 8386,
+        "city": "Stari Bohorodchany",
+        "street": "Straubel körút",
+        "houseNumber": 185
       },
-      "email": "ameiningenm@infoseek.co.jp",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "email": "dellingford27@gmpg.org",
+      "password": "$2a$10$8yOS38X//e28UyhQCX2LYebuGmP1deMcilGQJimxyeI21T0k3z9uy",
+      "role": 2
+    },
+    {
+      "_id": "2e",
+      "first_name": "Etti",
+      "last_name": "Smylie",
+      "address": {
+        "country": "Ukraine",
+        "zip": 2921,
+        "city": "Novyy Starodub",
+        "street": "Moulton körút",
+        "houseNumber": 49
+      },
+      "email": "esmylie28@networkadvertising.org",
+      "password": "$2a$10$wIb6kiGn83YmXPGCJ9GwU.xbRO5vY8o0zl1rCXY8wlxcY1XcAlLc2",
+      "role": 1
+    },
+    {
+      "_id": "2f",
+      "first_name": "Kissie",
+      "last_name": "Miskelly",
+      "address": {
+        "country": "Serbia",
+        "zip": 2273,
+        "city": "Kuršumlija",
+        "street": "Grim körút",
+        "houseNumber": 166
+      },
+      "email": "kmiskelly29@omniture.com",
+      "password": "$2a$10$4Bb4oryRmCr97obJ607V/epmxl35sUIkB03rZnDOtHJ5exkpuCuEy",
+      "role": 1
+    },
+    {
+      "_id": "2g",
+      "first_name": "Mora",
+      "last_name": "Bowerman",
+      "address": {
+        "country": "Serbia",
+        "zip": 6957,
+        "city": "Bačka Palanka",
+        "street": "Carberry körút",
+        "houseNumber": 18
+      },
+      "email": "mbowerman2a@4shared.com",
+      "password": "$2a$10$LeJpHOkxQyQfqMRZvVeXI.BwzSFLIJ3lESMWe7dRyN7tvM5vRaDI2",
+      "role": 3
+    },
+    {
+      "_id": "2h",
+      "first_name": "Omero",
+      "last_name": "Eskrigge",
+      "address": {
+        "country": "Croatia",
+        "zip": 9036,
+        "city": "Bistrinci",
+        "street": "Raven rakpart",
+        "houseNumber": 84
+      },
+      "email": "oeskrigge2b@mozilla.org",
+      "password": "$2a$10$gsNf8DqPCT8LlPe8fsA8PuoQjCJ014mEw0nVLXDZroSpZ77r.b0Uq",
+      "role": 1
+    },
+    {
+      "_id": "2i",
+      "first_name": "Velvet",
+      "last_name": "Detheridge",
+      "address": {
+        "country": "Ukraine",
+        "zip": 2961,
+        "city": "Biryukove",
+        "street": "Fieldstone rakpart",
+        "houseNumber": 50
+      },
+      "email": "vdetheridge2c@w3.org",
+      "password": "$2a$10$nywiK8nnKkWJ1uFi86KzY.Xuyrf4HBoMvIQx80AMBWsnoiLJJ.mlG",
+      "role": 1
+    },
+    {
+      "_id": "2j",
+      "first_name": "Julissa",
+      "last_name": "Mottinelli",
+      "address": {
+        "country": "Serbia",
+        "zip": 7471,
+        "city": "Despotovac",
+        "street": "Shasta rakpart",
+        "houseNumber": 118
+      },
+      "email": "jmottinelli2d@reuters.com",
+      "password": "$2a$10$u7hjgNaac3eKrcDvBLObTerNYNhEUkIOqK/GjCB0fTyYMqWaVTwl2",
+      "role": 3
+    },
+    {
+      "_id": "2k",
+      "first_name": "Gasparo",
+      "last_name": "Ahren",
+      "address": {
+        "country": "Croatia",
+        "zip": 1585,
+        "city": "Sunja",
+        "street": "Sherman dűlő",
+        "houseNumber": 71
+      },
+      "email": "gahren2e@qq.com",
+      "password": "$2a$10$G1KmjT.AEWsXQ7xTNsBY9e/V0P3UDDLVhOFSrTdVKwi5mz6cIAZsm",
+      "role": 3
+    },
+    {
+      "_id": "2l",
+      "first_name": "Missy",
+      "last_name": "Peasee",
+      "address": {
+        "country": "Ukraine",
+        "zip": 1786,
+        "city": "Kotovs’k",
+        "street": "Tomscot dűlő",
+        "houseNumber": 92
+      },
+      "email": "mpeasee2f@indiatimes.com",
+      "password": "$2a$10$RPE9tb5vX4YOniyMRV9pKu/OOt3HSU3Iz/C9H0i1WUBnQJK4/Cr12",
+      "role": 3
+    },
+    {
+      "_id": "2m",
+      "first_name": "Charlotta",
+      "last_name": "Enrigo",
+      "address": {
+        "country": "Slovenia",
+        "zip": 7753,
+        "city": "Moste",
+        "street": "Gerald dűlő",
+        "houseNumber": 173
+      },
+      "email": "cenrigo2g@mashable.com",
+      "password": "$2a$10$eeOqYlqF9aZB3XAY0dvJSOybLmJR2mh3x.8exWm02jIyHR4DWG9X2",
       "role": 2
     },
     {
       "_id": "2n",
-      "first_name": "Camellia",
-      "last_name": "Knight",
+      "first_name": "Hobie",
+      "last_name": "Skoate",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue",
-        "zip": 4555,
-        "houseNumber": 33
+        "country": "Ukraine",
+        "zip": 6960,
+        "city": "Koryukivka",
+        "street": "Sutherland dűlő",
+        "houseNumber": 56
       },
-      "email": "cknightn@phpbb.com",
-      "password": "$2a$10$DWUaZHa5dpo9zJF75V0F.OWxse66nKT.0QddSTXmUBiD25U4mu7De",
+      "email": "hskoate2h@nationalgeographic.com",
+      "password": "$2a$10$aCbhQ4LzZGMIF8PKmNXbLejen5U./lhJ1fkNMW8mzx/SD.nggu19y",
+      "role": 3
+    },
+    {
+      "_id": "2o",
+      "first_name": "Bird",
+      "last_name": "Jago",
+      "address": {
+        "country": "Ukraine",
+        "zip": 6659,
+        "city": "Kobyzhcha",
+        "street": "Upham utca",
+        "houseNumber": 177
+      },
+      "email": "bjago2i@cbsnews.com",
+      "password": "$2a$10$4xpZ.PY7ZPOmfL8NpLvaouuQ/FdmOnYqJYcQmkUqTtI1HVdhzpe3y",
+      "role": 2
+    },
+    {
+      "_id": "2p",
+      "first_name": "Winfred",
+      "last_name": "Durker",
+      "address": {
+        "country": "Slovenia",
+        "zip": 2474,
+        "city": "Kranj",
+        "street": "Petterle utca",
+        "houseNumber": 22
+      },
+      "email": "wdurker2j@telegraph.co.uk",
+      "password": "$2a$10$XyrvouIFV4/vcQwo42yiZObBZzn.INurXhglhjywgLKdanp9Makc6",
+      "role": 3
+    },
+    {
+      "_id": "2q",
+      "first_name": "Worth",
+      "last_name": "Confait",
+      "address": {
+        "country": "Ukraine",
+        "zip": 5206,
+        "city": "Merefa",
+        "street": "Monterey utca",
+        "houseNumber": 137
+      },
+      "email": "wconfait2k@taobao.com",
+      "password": "$2a$10$dvTSLDGdvaVlR5YPaRPRI.qd160oqiA8LQKzNNTOioH.xZtlTt3iS",
       "role": 1
     },
     {
-      "_id": "2m",
-      "first_name": "Yancey",
-      "last_name": "Straffon",
+      "_id": "2r",
+      "first_name": "Austin",
+      "last_name": "Boij",
+      "address": {},
+      "email": "aboij2l@naver.com",
+      "password": "$2a$10$L66WWwDnbEdq7cT9onS1beAilFVK9HeEnHdMm0bfl2la4CuUJf7vi",
+      "role": 3
+    },
+    {
+      "_id": "2s",
+      "first_name": "Susana",
+      "last_name": "Hagergham",
       "address": {
-        "country": "USA",
-        "city": "LA",
-        "street": "Sunset Avenue 33."
+        "country": "Austria",
+        "zip": 9494,
+        "city": "Klagenfurt am Wörthersee",
+        "street": "Melody utca",
+        "houseNumber": 95
       },
-      "email": "ystraffono@ning.com",
-      "password": "$2a$10$ZTuVDCxRb9sYTeWDK2gQWuWW6lBbgXnlNSktJPuE.K0Ii4Rn8jv1W",
+      "email": "shagergham2m@sina.com.cn",
+      "password": "$2a$10$Z5l05ULhyHunlD7d1Nc9GubH8I4gi4OQxJtBKo8OzAlR.2vf1veCO",
+      "role": 2
+    },
+    {
+      "_id": "2t",
+      "first_name": "Roberta",
+      "last_name": "Gianuzzi",
+      "address": {
+        "country": "Ukraine",
+        "zip": 5069,
+        "city": "Tysmenychany",
+        "street": "Bunting utca",
+        "houseNumber": 148
+      },
+      "email": "rgianuzzi2n@blogtalkradio.com",
+      "password": "$2a$10$xKGV.xWPUwUgFrWBGJoWsuli5EiGvclnB/adyTXGlrJPc43pHGis2",
       "role": 1
+    },
+    {
+      "_id": "2u",
+      "first_name": "Lorant",
+      "last_name": "Mannagh",
+      "address": {
+        "country": "Croatia",
+        "zip": 7303,
+        "city": "Posedarje",
+        "street": "Gulseth utca",
+        "houseNumber": 188
+      },
+      "email": "lmannagh2o@about.me",
+      "password": "$2a$10$ZzmkTeUl0hU/s4EnvZc7ie5njb9lNe22ULKPcZ1018A4A.BY1myKW",
+      "role": 2
+    },
+    {
+      "_id": "2v",
+      "first_name": "Cele",
+      "last_name": "Scambler",
+      "address": {
+        "country": "Croatia",
+        "zip": 3674,
+        "city": "Vrsi",
+        "street": "Straubel út",
+        "houseNumber": 40
+      },
+      "email": "cscambler2p@usda.gov",
+      "password": "$2a$10$3dQPvdDyjfEDj3dqaWal.e5EeqY2cZ4PUkqnqUJmJwRsL0qo5KtBu",
+      "role": 1
+    },
+    {
+      "_id": "2w",
+      "first_name": "Rozanna",
+      "last_name": "Jeandeau",
+      "address": {
+        "country": "Croatia",
+        "zip": 5898,
+        "city": "Novalja",
+        "street": "Anniversary út",
+        "houseNumber": 132
+      },
+      "email": "rjeandeau2q@auda.org.au",
+      "password": "$2a$10$FSYrrUaxmV.FnUjvcOhw2.Mho4IkRBKnhmxjk43WovXn3cN62OKnG",
+      "role": 2
+    },
+    {
+      "_id": "2x",
+      "first_name": "Merna",
+      "last_name": "Instone",
+      "address": {
+        "country": "Slovenia",
+        "zip": 1244,
+        "city": "Deskle",
+        "street": "Spenser út",
+        "houseNumber": 27
+      },
+      "email": "minstone2r@timesonline.uk",
+      "password": "$2a$10$W1sGUghZS4aPgIub/uzsKe8Jw4ACBCcaoavZdB4.pJk/nivE.rNXi",
+      "role": 2
+    },
+    {
+      "_id": "2y",
+      "first_name": "Jorgan",
+      "last_name": "Perrycost",
+      "address": {
+        "country": "Serbia",
+        "zip": 4989,
+        "city": "Kučevo",
+        "street": "Mosinee út",
+        "houseNumber": 145
+      },
+      "email": "jperrycosta@whitehouse.gov",
+      "password": "$2a$10$qKO3YDLLxTTJ2C3/y7RCUev/6k3nfcnVrtds5R7VCeH2srRL5WbYG",
+      "role": 3
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$hESf/Zhbl7FL1PaUVOEiHeqyR68YtHoeOOfmxQuEEkeWAPni0xe6u",
+      "_id": "DWbCjBs",
+      "first_name": "Ad",
+      "last_name": "Min",
+      "address": {
+        "country": "Hungary",
+        "zip": 1000,
+        "city": "Budapest",
+        "street": "Fő tér",
+        "houseNumber": 1
+      },
+      "role": 3
     }
   ],
   "orders": [
     {
-      "_id": "1",
-      "user": "2v",
-      "products": "123qw",
-      "time": 20210805,
-      "note": "A csengő rossz"
+      "_id": "c315454c-44ad-4790-b713-b10f2e851fec",
+      "user": "49349-791",
+      "products": "S62256P",
+      "time": "2020-11-26 15:13:05",
+      "note": ""
     },
     {
-      "_id": "2",
-      "user": "9",
-      "products": "123tz, 123op",
-      "time": 1626699947303,
-      "note": "Csak délután vagyok otthon"
+      "_id": "5d99c9a1-2759-4ad6-9a21-fe2f81ba1046",
+      "user": "49288-0464",
+      "products": "M84542G",
+      "time": "2020-10-21 11:37:42",
+      "note": ""
     },
     {
-      "_id": "F_qndAP",
-      "user": "z56jz",
-      "products": "67j6, h54h, htrb6",
-      "time": "2021-08-10T16:53:57.488Z"
+      "_id": "32ebcc64-5c08-4e77-8b7e-058f59f778c5",
+      "user": "63323-459",
+      "products": "S40922D",
+      "time": "2020-10-04 01:44:12",
+      "note": ""
+    },
+    {
+      "_id": "cdb6b4d1-7a48-4068-8651-1c8af67f378b",
+      "user": "52270-001",
+      "products": "C8128, S62256P, W5581",
+      "time": "2021-08-01 20:16:31",
+      "note": "A csengő nem működik."
+    },
+    {
+      "_id": "6a70316c-1bc3-4305-a46b-36cd902a6ef6",
+      "user": "42023-123",
+      "products": "T63022A, S62256P",
+      "time": "2020-12-30 13:36:51",
+      "note": "Csak 14 óra után."
+    },
+    {
+      "_id": "22841495-03c5-48b4-9262-0ec788e182d8",
+      "user": "59779-612",
+      "products": "S31803D",
+      "time": "2021-04-19 18:12:16",
+      "note": "A TechPro üzlet pultjához hozzák!"
+    },
+    {
+      "_id": "dfa5fbe2-9979-4612-b067-c72b7da5e218",
+      "user": "0781-1516",
+      "products": "S65219S, W5581",
+      "time": "2021-04-22 02:43:33",
+      "note": ""
+    },
+    {
+      "_id": "7b3a5142-4c09-43db-b289-637399acc9b6",
+      "user": "59762-0156",
+      "products": "S82442C",
+      "time": "2021-05-10 05:30:24",
+      "note": ""
+    },
+    {
+      "_id": "c6e5ee0a-f75b-4bdf-824a-7f51144cde05",
+      "user": "48951-8169",
+      "products": "E1137X2, W5581",
+      "time": "2021-05-13 07:01:09",
+      "note": "Nincs csengő."
+    },
+    {
+      "_id": "aae367c0-997d-4219-9c1a-532419987c59",
+      "user": "67046-672",
+      "products": "W5581",
+      "time": "2021-02-04 05:32:53",
+      "note": ""
+    },
+    {
+      "_id": "1b358678-7a3a-4fd1-8896-1a41f44c7977",
+      "user": "60760-027",
+      "products": "T23732S, T63022A",
+      "time": "2021-02-03 22:14:12",
+      "note": ""
+    },
+    {
+      "_id": "e5027d11-4dc2-42c0-b0c1-8cb24c3fb76c",
+      "user": "63739-073",
+      "products": "S72025K, S62256P, W5581, S62131D, K0820",
+      "time": "2020-12-02 18:41:45",
+      "note": ""
+    },
+    {
+      "_id": "a29b795a-b235-48dd-802b-962bd10cb698",
+      "user": "54868-6024",
+      "products": "T384X2S, T63022A, S62131D, K0820",
+      "time": "2020-09-20 12:20:41",
+      "note": ""
+    },
+    {
+      "_id": "5e1abeb1-24f8-4bd4-ad10-cb792438a0b0",
+      "user": "52125-335",
+      "products": "S62131D",
+      "time": "2020-08-26 21:05:39",
+      "note": ""
+    },
+    {
+      "_id": "0fac2c1a-0689-4aaa-90a3-98688f3ccfb0",
+      "user": "59779-034",
+      "products": "T860, K0820",
+      "time": "2020-09-11 22:35:35",
+      "note": ""
+    },
+    {
+      "_id": "5df4c9d3-1fa7-4217-98c1-60d71205c62a",
+      "user": "52164-1109",
+      "products": "S15121S",
+      "time": "2021-02-20 04:02:49",
+      "note": ""
+    },
+    {
+      "_id": "f62b3765-103d-4a94-884b-cf1ae0c0210c",
+      "user": "53346-1304",
+      "products": "H4431, S62131D",
+      "time": "2021-06-29 19:54:50",
+      "note": ""
+    },
+    {
+      "_id": "061d5b1e-d12c-4981-834b-2cfb90b6c7e0",
+      "user": "68196-144",
+      "products": "S31159S, S62131D",
+      "time": "2021-01-05 02:39:54",
+      "note": "Legkésőbb 10 óráig tudom átvenni."
+    },
+    {
+      "_id": "7fb4250c-6378-4dc4-9cd2-575f6495a0f4",
+      "user": "55154-0975",
+      "products": "H401331",
+      "time": "2020-11-08 17:57:27",
+      "note": "Szerdán házon kívül vagyok."
+    },
+    {
+      "_id": "2e82d1cc-7861-4162-aee4-320b6c2be139",
+      "user": "0168-0202",
+      "products": "V719XXA",
+      "time": "2021-07-20 14:33:20",
+      "note": ""
+    },
+    {
+      "_id": "a66b193e-b821-49ac-8cc1-c4fb6b619da8",
+      "user": "0496-0750",
+      "products": "T491X4S, S62131D, K0820",
+      "time": "2020-09-17 20:24:01",
+      "note": ""
+    },
+    {
+      "_id": "f5bfdfce-1eb8-4613-9c0c-ffa7908054df",
+      "user": "51393-5622",
+      "products": "S731",
+      "time": "2021-03-20 11:38:49",
+      "note": "Pénteken csak 14 óráig vagyok a címen."
+    },
+    {
+      "_id": "1cd5d75b-b19f-414c-8852-b80b5fc3f41e",
+      "user": "52685-377",
+      "products": "S73033A, S62131D, K0820",
+      "time": "2021-07-18 23:31:16",
+      "note": ""
+    },
+    {
+      "_id": "eacd2dcb-ff23-4f38-9051-63032f481e2f",
+      "user": "53499-1271",
+      "products": "S20101A",
+      "time": "2021-01-12 07:38:26",
+      "note": ""
+    },
+    {
+      "_id": "8db9025a-2f46-4e93-a33c-ca5471ea32e4",
+      "user": "0574-0148",
+      "products": "T457X2",
+      "time": "2021-05-20 17:21:49",
+      "note": "Ne csengessenek, hanem telefonáljanak, ha megjött a futár!"
+    },
+    {
+      "_id": "0c03c64c-6c05-470e-99c6-97f268edffff",
+      "user": "50865-050",
+      "products": "T39396D, S95891D",
+      "time": "2021-02-08 12:19:14",
+      "note": "Kérem legyenek halkak!"
+    },
+    {
+      "_id": "29269da7-6ca2-44f0-87ed-3a3ebdfc8b22",
+      "user": "10812-329",
+      "products": "K0820",
+      "time": "2020-10-01 10:46:28",
+      "note": "9 és 17 óra között tudom átvenni."
+    },
+    {
+      "_id": "d6439808-f3f8-464c-9c6a-dde81b94f269",
+      "user": "63868-712",
+      "products": "T82838S, S95891D",
+      "time": "2020-10-24 22:05:25",
+      "note": ""
+    },
+    {
+      "_id": "5c7d45f8-fe05-4a4b-ac54-5e5ee6adfec7",
+      "user": "41167-1008",
+      "products": "Y35303A",
+      "time": "2020-10-09 00:30:52",
+      "note": "Tel: 06205556677."
+    },
+    {
+      "_id": "049e9ce3-02e1-4108-9959-a5de153a8cf7",
+      "user": "30142-798",
+      "products": "B659, S95891D",
+      "time": "2021-07-23 08:04:31",
+      "note": ""
+    },
+    {
+      "_id": "50eae281-3d8a-4305-92e9-8347f8bbd8d5",
+      "user": "41163-964",
+      "products": "M1A351",
+      "time": "2020-09-21 21:33:49",
+      "note": "Ha nem vagyok a szomszéd átveszi."
+    },
+    {
+      "_id": "9283576b-ed7e-4eaa-accc-d5491a9d12f5",
+      "user": "64175-525",
+      "products": "S66111S, S62131D",
+      "time": "2020-12-20 21:10:43",
+      "note": ""
+    },
+    {
+      "_id": "8c6a673d-dc50-4e95-9c47-11a4113d051e",
+      "user": "36987-1591",
+      "products": "G43A, S95891D",
+      "time": "2021-04-12 04:30:34",
+      "note": "Hagyják a portán!"
+    },
+    {
+      "_id": "94b58760-8132-44f1-8b0b-37464c08e6cd",
+      "user": "33261-142",
+      "products": "S95891D",
+      "time": "2020-11-09 21:12:26",
+      "note": "Ebédidőben házon kívül vagyunk."
+    },
+    {
+      "_id": "4bd452b1-5720-4273-b2ab-f33f3c8b2cb2",
+      "user": "67345-6083",
+      "products": "C620",
+      "time": "2021-01-02 17:42:42",
+      "note": "Csak adja le a pultoslánynál!"
+    },
+    {
+      "_id": "5a26aed4-a354-494b-8e18-2d13ac03db84",
+      "user": "0054-4570",
+      "products": "S61218A",
+      "time": "2020-11-10 04:34:18",
+      "note": "8 és 16 között tudom átvenni."
+    },
+    {
+      "_id": "dbcf8444-e276-42f8-932d-a9613c03cbd1",
+      "user": "52125-306",
+      "products": "L258, S82232H",
+      "time": "2021-07-21 20:15:42",
+      "note": ""
+    },
+    {
+      "_id": "f181f09f-a549-4372-922d-180b25a1a75d",
+      "user": "24338-114",
+      "products": "M051",
+      "time": "2021-04-11 02:13:27",
+      "note": ""
+    },
+    {
+      "_id": "cd6f1105-1d08-40f0-bbf5-5c86555b0994",
+      "user": "0904-0359",
+      "products": "S72453H, S82232H",
+      "time": "2020-08-31 18:03:41",
+      "note": ""
+    },
+    {
+      "_id": "12a961b5-c4a1-4c08-9f4d-a0f81e0bf73e",
+      "user": "55111-134",
+      "products": "S82232H",
+      "time": "2021-07-29 03:26:16",
+      "note": ""
+    },
+    {
+      "_id": "6c4e65bd-2b4b-4967-9b44-4add286fe519",
+      "user": "63459-512",
+      "products": "S65599S",
+      "time": "2021-03-26 23:16:17",
+      "note": "Csak délelőtt."
+    },
+    {
+      "_id": "7a977c5a-6ac7-40ec-a360-bbf527d7455d",
+      "user": "41595-7101",
+      "products": "T45526D",
+      "time": "2021-08-04 07:34:58",
+      "note": "Nem működik a kaputelefon!"
+    },
+    {
+      "_id": "33f7d534-4e59-4555-84e7-2532dc8b598f",
+      "user": "42571-080",
+      "products": "V0219XS, M1A351",
+      "time": "2021-07-30 23:20:06",
+      "note": "Az ajtón a Kiss Bt neve szerepel."
+    },
+    {
+      "_id": "6c11fcfe-7360-42db-9aa0-69f7a01826da",
+      "user": "57815-011",
+      "products": "S72145E, T45526D",
+      "time": "2020-11-27 02:12:34",
+      "note": "Mindeképp hívjon, mielőtt érkezik!"
+    },
+    {
+      "_id": "6dada452-3471-4b13-a42b-926123fc2140",
+      "user": "55111-311",
+      "products": "M21922, M1A351, O641XX5",
+      "time": "2021-01-28 18:50:44",
+      "note": ""
+    },
+    {
+      "_id": "ca270f19-5c43-4e53-8b03-b9390f2d9c82",
+      "user": "49693-1306",
+      "products": "O641XX5",
+      "time": "2020-10-25 00:53:31",
+      "note": "Hétfőn és szerdán csak délelőtt vagyunk nyitva."
+    },
+    {
+      "_id": "92da33da-5cff-4028-ab91-f761d947bc9f",
+      "user": "52125-078",
+      "products": "S61502A",
+      "time": "2020-10-17 22:50:04",
+      "note": ""
+    },
+    {
+      "_id": "586c2b7e-3fba-4b92-96ed-c3cde6f0c05d",
+      "user": "36987-1308",
+      "products": "S25811",
+      "time": "2021-05-13 17:45:38",
+      "note": ""
+    },
+    {
+      "_id": "a674b621-c914-463a-aea3-49ae9419eef1",
+      "user": "43063-500",
+      "products": "M71061, T45526D",
+      "time": "2021-02-18 04:40:39",
+      "note": ""
+    },
+    {
+      "_id": "4e00dc9b-5172-4eb4-ba96-d957ff3c7ba0",
+      "user": "63354-031",
+      "products": "S42453B, T45526D, M71061",
+      "time": "2020-08-29 09:28:57",
+      "note": ""
     }
-  ],
-  "list": [
-    "csincsilla",
-    "egér",
-    "patkány",
-    "mókus",
-    "sün",
-    "vadászgörény",
-    "kanári",
-    "papagáj",
-    "degu",
-    "teknős",
-    "kaméleon"
   ]
 }

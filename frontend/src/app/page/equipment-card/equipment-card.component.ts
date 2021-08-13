@@ -40,7 +40,7 @@ export class EquipmentCardComponent implements OnInit {
     this.modalTitle = product.name;
     this.modalText.push(`Melyik állat(ok)hoz jó: ${product.goodFor}`);
     if (product.size) this.modalText.push(`Méret: ${product.size}`);
-    if (product.material) this.modalText.push(`Anyag: ${product.material}`);
+    if (product.weight) this.modalText.push(`Súly: ${product.weight} gramm`);
   }
 
 }

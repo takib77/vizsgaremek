@@ -10,12 +10,11 @@
             <div class="row g-0 my-auto">
                 <div class="col-12">
                     <img (click)="onClickImage(food)" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        src="{{food.img}}" class="img-fluid rounded-start d-block mx-auto cursor" alt="{{food.img}}">
+                        src="{{food.img}}" class="img-fluid rounded-start d-block mx-auto cursor" alt="{{food.name}}">
                 </div>
                 <div class="col-12">
                     <div class="card-body">
                         <h4 class="card-title text-center">{{food.name.toUpperCase()}}</h4>
-                        <p class="card-text text-center">{{food.goodFor}}</p>
                         <p class="card-text text-center text-danger">{{food.price}} Ft</p>
                     </div>
                 </div>

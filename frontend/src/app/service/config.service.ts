@@ -48,9 +48,8 @@ export class ConfigService {
   productTable: IDataDisplayer[] = [
     { key: 'name', title: 'TERMÉKNÉV' },
     { key: 'goodFor', title: 'MELYIK ÁLLATHOZ JÓ?' },
-    { key: 'weight', title: 'TÖMEG', htmlOutput: ConfigService.noData },
-    { key: 'size', title: 'MÉRET', htmlOutput: ConfigService.noData },
-    { key: 'material', title: 'ANYAG', htmlOutput: ConfigService.noData },
+    { key: 'weight', title: 'TÖMEG' },
+    { key: 'size', title: 'MÉRET' },
     {
       key: 'price', title: 'ÁR',
       pipes: [new CurrencyPipe('hu-HU')],
@@ -65,7 +64,6 @@ export class ConfigService {
     { key: 'goodFor', title: 'MELYIK ÁLLATHOZ JÓ?' },
     { key: 'weight', title: 'TÖMEG' },
     { key: 'size', title: 'MÉRET' },
-    { key: 'material', title: 'ANYAG' },
     { key: 'price', title: 'ÁR' }
   ];
 
@@ -81,10 +79,6 @@ export class ConfigService {
   ];
 
   constructor() { }
-
-  static noData(value: any): string {
-    return (value === undefined) ? '-' : value;
-  }
 
   static cutLongString(data: string, start: number, end: number, curve: string = '...'): string {
     return data.slice(start, end) + curve;

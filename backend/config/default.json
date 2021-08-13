@@ -2,6 +2,7 @@
     "database": {
         "username": "mongo",
         "password": "c7DoYMad0U3DfEpU",
-        "host": "mongo:27017/myFirstDatabase?retryWrites=true&w=majority"
+        "host": "mongo:27017/vizsgaremek?retryWrites=true&w=majority",
+        "dataBaseName": "vizsgaremek"
     }
 }

@@ -13,7 +13,7 @@ export class UserRolePipe implements PipeTransform {
         role = 'Admin';
         break;
       case 2:
-        role = 'Szerkesztő';
+        role = 'Üzemeltető';
         break;
       default: 1;
         role = 'Felhasználó'

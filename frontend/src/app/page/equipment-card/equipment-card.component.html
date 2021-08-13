@@ -11,12 +11,11 @@
                 <div class="col-12">
                     <img (click)="onClickImage(equipment)" data-bs-toggle="modal" data-bs-target="#exampleModal"
                         src="{{equipment.img}}" class="img-fluid rounded-start d-block mx-auto cursor"
-                        alt="{{equipment.img}}">
+                        alt="{{equipment.name}}">
                 </div>
                 <div class="col-12">
                     <div class="card-body">
                         <h5 class="card-title text-center">{{equipment.name.toUpperCase()}}</h5>
-                        <p class="card-text text-center">{{equipment.goodFor}}</p>
                         <p class="card-text text-center text-danger">{{equipment.price}} Ft</p>
                     </div>
                 </div>

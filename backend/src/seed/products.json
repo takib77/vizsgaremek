@@ -1,0 +1,336 @@
+[
+    {
+        "name": "ADA Cube Garden Mini M Nano akvárium",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/c/u/cube_garden_f_086a3439_1_5.jpg",
+        "goodFor": "Hal",
+        "size": "36 x 22 x 36",
+        "price": 27190,
+        "active": true,
+        "organic": ""
+    },
+    {
+        "name": "ADA Cube Garden 45-P",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/c/u/cube_garden_f_086a3439_1_2.jpg",
+        "goodFor": "Hal",
+        "size": "45*27*30",
+        "price": 32690,
+        "active": true,
+        "organic": ""
+    },
+    {
+        "name": "Dennerle Scaper's Tank",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/5/5/5591-44.png",
+        "goodFor": "Hal",
+        "size": "40 x 32 x 28",
+        "price": 25190,
+        "active": false,
+        "organic": ""
+    },
+    {
+        "name": "Dennerle Scaper's Tank Basic LED",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/5/5/5592-44_3_dennerle-scaper-s-tank-basic-led-akvarium-szett-szurovel-led-5-0-vilagitassal-35l.jpg",
+        "goodFor": "Hal",
+        "size": "40*32*28",
+        "price": 54790,
+        "active": true,
+        "organic": ""
+    },
+    {
+        "name": "ADA Aqua Soil Amazonia - általános növénytalaj",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/a/m/amazonia_normal_9l-1.jpg",
+        "goodFor": "Hal",
+        "size": "",
+        "weight": 3000,
+        "price": 6400,
+        "active": true,
+        "organic": true
+    },
+    {
+        "name": "ADA Aqua Gravel S, dekor kavics",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/a/q/aquagravel_8kg_1.jpg",
+        "goodFor": "Hal",
+        "size": "",
+        "weight": 2000,
+        "price": 3190,
+        "active": true,
+        "organic": true
+    },
+    {
+        "name": "ADA Colorado Sand dekorhomok",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/c/o/colorado_sand_8kg_1.jpg",
+        "goodFor": "Hal",
+        "size": "",
+        "weight": 2000,
+        "price": 4090,
+        "active": false,
+        "organic": true
+    },
+    {
+        "name": "Green Aqua MICRO növénytáp",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/g/r/green-aqua-micro-novenytap-250-ml_2.jpg",
+        "goodFor": "Hal",
+        "price": 2490,
+        "weight": 250,
+        "active": true
+    },
+    {
+        "name": "Green Aqua MACRO növénytáp",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/g/r/green-aqua-macro-novenytap-1000-ml-utantolto.jpg",
+        "goodFor": "Hal",
+        "price": 7190,
+        "weight": 1000,
+        "active": false
+    },
+    {
+        "name": "Green Aqua cleanit tisztító oldat",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/g/r/greenaqua-cleanit.jpg",
+        "goodFor": "Hal",
+        "price": 2690,
+        "weight": 500,
+        "active": true
+    },
+    {
+        "name": "Seachem HeadStart vízkezelő csomag",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/1/1/1125-55.jpg",
+        "goodFor": "Hal",
+        "price": 7590,
+        "active": false
+    },
+    {
+        "name": "Green Aqua kézi drótkefe",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/9/9/999852.jpg",
+        "goodFor": "Hal",
+        "price": 590,
+        "active": true
+    },
+    {
+        "name": "Söchting Carbonator - Akvárium CO2 ellátó",
+        "category": "felszerelés",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/s/o/sochting-carbonator-akvarium-co2-ellato-250-literig.jpg",
+        "goodFor": "Hal",
+        "price": 13900,
+        "active": true
+    },
+    {
+        "name": "TEDDY LUX",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/1913-84552-thickbox/horcsogketrec-alaguttal-teddy-lux-.jpg",
+        "goodFor": "Hörcsög",
+        "size": "43 x 28 x 23.5",
+        "price": 11279,
+        "active": false
+    },
+    {
+        "name": "TEDDY I",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/1860-20510-thickbox/teddy-i-ketrec-horcsogoknek.jpg",
+        "goodFor": "Hörcsög",
+        "size": "37 x 27 x 28.5",
+        "price": 9029,
+        "active": true
+    },
+    {
+        "name": "Rágcsáló kalitka RABBIT 100",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/9176-16392-thickbox/ragcsalo-kalitka-rabbit-100-szurke-felszerel-nelkul.jpg",
+        "goodFor": "Hörcsög, Tengerimalac",
+        "size": "95 x 58 x 46",
+        "price": 17870,
+        "active": true
+    },
+    {
+        "name": "Rágcsáló kalitka RABBIT 60",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/1856-20434-thickbox/nyuszi-es-tengerimalac-ketrec-rabbit-60-krom.jpg",
+        "goodFor": "Hörcsög, Tengerimalac",
+        "size": "59 x 36 x 31",
+        "price": 11506,
+        "active": true
+    },
+    {
+        "name": "Rágcsáló kalitka CSINCSILLA 80",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/5845-20223-thickbox/ragcsalo-kalitka-csincsilla-80-krom-new.jpg",
+        "goodFor": "Csincsilla",
+        "size": "78 x 47 x 78",
+        "price": 31964,
+        "active": true
+    },
+    {
+        "name": "Rágcsáló házikó fűből",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/2862-2731-thickbox/ragcsalo-haziko-fbl-hosszukas-19-cm.jpg",
+        "goodFor": "Hörcsög, Tengerimalac, Csincsilla",
+        "price": 1145,
+        "active": true,
+        "organic": true
+    },
+    {
+        "name": "Faforgács",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/3485-3354-thickbox/faforgacs-12-14-l-alom-ragcsalo-szamara.jpg",
+        "goodFor": "Hörcsög, Tengerimalac, Csincsilla",
+        "price": 839,
+        "weight": 1200,
+        "active": true,
+        "organic": true
+    },
+    {
+        "name": "Széna",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/3487-22084-thickbox/szena-ragcsaloknak-500-g.jpg",
+        "goodFor": "Hörcsög, Tengerimalac, Csincsilla",
+        "price": 619,
+        "weight": 500,
+        "active": true,
+        "organic": true
+    },
+    {
+        "name": "Cavia Complete",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/2397-23348-thickbox/cavia-complete-500-g-tengerimalac-eledel.jpg",
+        "goodFor": "Tengerimalac",
+        "price": 1829,
+        "weight": 500,
+        "active": false,
+        "organic": false
+    },
+    {
+        "name": "Crispy Muesli Hamsters & Co",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/2387-21729-thickbox/crispy-muesli-hamsters-co-ragcsalotap-1-kg.jpg",
+        "goodFor": "Hörcsög, Tengerimalac",
+        "price": 1369,
+        "weight": 1000,
+        "active": true,
+        "organic": false
+    },
+    {
+        "name": "KIKI EXCELLENT MAX MENU - COBAYAS",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/15462-33181-thickbox/kiki-excellent-max-menu-tap-tengeri-malacoknak-1kg.jpg",
+        "goodFor": "Tengerimalac",
+        "price": 1449,
+        "weight": 1000,
+        "active": true,
+        "organic": false
+    },
+    {
+        "name": "KIKI EXCELLENT MAX MENU - HAMSTERS",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/15463-33180-thickbox/kiki-excellent-max-menu-tap-horcsogoknek-1kg.jpg",
+        "goodFor": "Hörcsög",
+        "price": 1449,
+        "weight": 1000,
+        "active": true,
+        "organic": false
+    },
+    {
+        "name": "KIKI EXCELLENT MAX MENU - CHINCHILLAS",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/18992-41647-thickbox/kiki-excellent-max-menu-csincsillatap-800-g.jpg",
+        "goodFor": "Hörcsög",
+        "price": 1449,
+        "weight": 800,
+        "active": true,
+        "organic": false
+    },
+    {
+        "name": "Versele-Laga Parrots",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/2404-33326-thickbox/parrots-1-kg-taplalek-papagajok-reszere.jpg",
+        "goodFor": "Papagáj",
+        "price": 1868,
+        "weight": 1000,
+        "active": true,
+        "organic": true
+    },
+    {
+        "name": "Canaries",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/2411-21855-thickbox/canaries-1-kg-eledel-kanarinak.jpg",
+        "goodFor": "Kanári",
+        "price": 1487,
+        "weight": 1000,
+        "active": true,
+        "organic": true
+    },
+    {
+        "name": "Tropical finches",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/2409-21857-thickbox/tropical-finches-1-kg-egzotikus-madar-eleseg.jpg",
+        "goodFor": "Kanári, Papagáj",
+        "price": 1487,
+        "weight": 1000,
+        "active": false,
+        "organic": true
+    },
+    {
+        "name": "TROPICAL Vitality colour flake",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/516-18965-thickbox/tropical-vitality-colour-flake-taplalek-112-l-2-kg.jpg",
+        "goodFor": "Hal",
+        "price": 24199,
+        "weight": 2000,
+        "active": true,
+        "organic": false
+    },
+    {
+        "name": "Sera FD Krill",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/232-19173-thickbox/sera-fd-krill-hal-eledel-250-ml.jpg",
+        "goodFor": "Hal",
+        "price": 4720,
+        "weight": 250,
+        "active": false,
+        "organic": true
+    },
+    {
+        "name": "Sera VIFORMO TABS",
+        "category": "eledel",
+        "img": "https://abc-zoo.hu/299-19153-thickbox/sera-viformo-tabs-eleseg-halaknak-2000-ml-14-kg.jpg",
+        "goodFor": "Hal",
+        "price": 31165,
+        "weight": 1200,
+        "active": true,
+        "organic": true
+    },
+    {
+        "name": "KANAREK mini",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/1916-20379-thickbox/kalitka-kanarinak-kanarek-mini-30-x-20-x-24-cm.jpg",
+        "goodFor": "Kanári",
+        "size": "30 x 20 x 24",
+        "price": 8230,
+        "active": true
+    },
+    {
+        "name": "IZA III",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/4361-29497-thickbox/iza-iii-papagaj-kalitka-585-x-38-x-65-cm.jpg",
+        "goodFor": "Papagáj, Kanári",
+        "size": "58,5 x 38 x 65",
+        "price": 20955,
+        "active": true
+    },
+    {
+        "name": "JBL AutoFood",
+        "category": "felszerelés",
+        "img": "https://abc-zoo.hu/16324-35383-thickbox/jbl-autofood-black-automata-etet.jpg",
+        "goodFor": "Hal",
+        "price": 15555,
+        "active": true
+    }
+]

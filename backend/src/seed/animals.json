@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Szíriai aranyhörcsög",
+        "category": "Rágcsáló",
+        "description": "Az aranyhörcsögök az egyik leggyakrabban tartott rágcsálók, hiszen könnyen megszelídíthetőek és szinte biztos, hogy elérhetőek minden kisállat kereskedésben. Általában 4 évig élnek, körülbelül 17 cm-esre nőnek meg és 200 grammot nyomnak. Kíváncsi természetük miatt igénylik az ingereket, és hogy sokat foglalkozzunk velük. Igazi kis szabadulóművészek, ezért nagyon ügyelnünk kell arra, hogy kellően magas legyen a terrárium, vagy, hogy elég sűrűn legyenek a ketrec rácsai. Fontos tudni róluk, hogy magányosan szeretnek élni, nem szívesen osztják meg a területüket más hörcsögökkel. Ha mégis két kisemlőst szeretnénk, akkor kicsi koruktól kezdve együtt élő párt kell választanunk, különben halálos sérülésekkel járó verekedések szemtanúi lehetünk.",
+        "img": "assets/img/sziriaiarany.jpg",
+        "price": 700,
+        "active": true
+    },
+    {
+        "name": "Dzsungáriai törpehörcsög",
+        "category": "Rágcsáló",
+        "description": "A törpehörcsög kifejezés több faj esetében is használható, az egyik közülük a Dzsungáriai törpehörcsög. Ők sokkal inkább kijönnek egymással, mint az aranyhörcsögök, ennek köszönhetően tarthatóak párban vagy többedmagukkal is. Könnyen kezelhetőek és nem igényelnek túl sok gondozást. Azt viszont fontos észben tartanunk, hogy ezek az apróságok jellemzően harapósak. Rendszeres foglalkozással viszont leszoktathatóak róla. Maximum 7-8 centisre nőnek, és 50-60 gramm súlyúak.",
+        "img": "assets/img/dzsungariaitorpe.jpg",
+        "price": 900,
+        "active": false
+    },
+    {
+        "name": "Roborovszki törpehörcsög",
+        "category": "Rágcsáló",
+        "description": "A Roborovszki törpehörcsögök a legkisebbek és leggyorsabbak a hörcsögök közül. Csak a saját fajtájukkal képesek kijönni, és nem szeretik, ha kézbe vesszük és babusgatjuk őket. Nézni viszont szabad. Egyszerre félénk és kíváncsi természetűek. Szelídek, ritkán harapnak. A felnőttek sem nagyobbak, mint egy emberi hüvelykujj, így a szökésbiztos rágcsálólakra nagy figyelmet kell fordítanunk.",
+        "img": "assets/img/roborovszkitorpe.jpg",
+        "price": 1000,
+        "active": true
+    },
+    {
+        "name": "Kínai csíkos törpehörcsög",
+        "category": "Rágcsáló",
+        "description": "Nevükkel ellentétben a kínai törpehörcsögök valójában nem törpék. Ami viszont valós, hogy Kínából származnak. Kevesen tenyésztik őket, ezért ritkábban bukkanhatunk rájuk, mint a többi hörcsögfajtára. Több színkombinációban is léteznek, de minden esetben jellemző járjuk a hátukon lévő sötétbarna csík. Éjszakai állatok, napközben ritkán aktívak. Félénk kis rágcsálók, de csak akkor harapnak, ha provokálják őket. Kevesebb _ideig élnek és kisebbek is, mint az aranyhörcsögök, általában nem nőnek nagyobbra, mint 10 cm. Rendkívül fürgék, ezért, ha sikerül meglépniük, nagyon nehéz elkapni őket.",
+        "img": "assets/img/kinaicsikos.jpg",
+        "price": 1150,
+        "active": false
+    },
+    {
+        "name": "Angol rövidszőrű tengerimalac",
+        "category": "Rágcsáló",
+        "description": "Szőre teljesen sima, rövid, egyenletes hosszúságú, valamint fényes és dús. Nincsenek forgók, rozetták és választékok.",
+        "img": "assets/img/angolrovidszoru.jpg",
+        "price": 650,
+        "active": true
+    },
+    {
+        "name": "Amerikai bóbitás tengerimalac",
+        "category": "Rágcsáló",
+        "description": "A malac homlokán rozettaszerű szőrkorona látható. A korona színe fehér, kontrasztban áll a testen látható színnel.",
+        "img": "assets/img/amerikaibobitas.jpg",
+        "price": 850,
+        "active": false
+    },
+    {
+        "name": "Hosszúszőrű bóbitás tengerimalac",
+        "category": "Rágcsáló",
+        "description": "Szőre hosszú, dús, a fejtetőn egy rozetta található. Sörénye hátrafele nő, így nem fedi a fejet. Az oldalakon lévő szőr egyenletesen hosszú, az uszálya pedig még ennél is hosszabb.",
+        "img": "assets/img/hosszuszorubobitas.jpg",
+        "price": 990,
+        "active": true
+    },
+    {
+        "name": "Perui tengerimalac",
+        "category": "Rágcsáló",
+        "description": "Szőre hosszú és selymes. Fején a szőr előrelógó, a faron pedig két rozetta található. A sörényt alkotó szőr a vállakból indul ki, és egyenletesen fedi a fejet. Az oldalán és a vállán lévő szőrzet valóságos függönyt alkot teste körül, és sehol sem hézagos. Uszályát a faron megfelelően elhelyezkedő forgók teszik sűrűvé.",
+        "img": "assets/img/perui.jpg",
+        "price": 1490,
+        "active": true
+    },
+    {
+        "name": "Csincsilla",
+        "category": "Rágcsáló",
+        "description": "A csincsilla bundája sűrű, puha és jól védi a hidegtől. Szőre szürke színű, selymes tapintású, puha. Testének felső része gyöngyszínű szürkésfehér vagy ezüstszürke, a hasoldal kissé világosabb.Nagy fején, széles pofa és nagy fekete szemek vannak. A hosszú serteszerű bajusz lehet fekete vagy fehér. Füle lekerekített hegyű és elálló, kiváló hallást biztosít az állatnak. A hátsó végtagok hosszúak és izmosak. Farka hosszú és bozontos. A farkot borító szőrszálak hosszabbak és durvábbak, mint a bunda többi részén levők.",
+        "img": "assets/img/csincsilla.jpg",
+        "price": 1250,
+        "active": true
+    },
+    {
+        "name": "Hullámos papagáj",
+        "category": "Madár",
+        "description": "Vékony, reszelős hangjuk van, de meg tudnak tanulni annyi szót és kifejezést, mint a nagyobb papagájok.Sokkal szelídebbek, mint a kis termetű (vad alakú) fajtársaik, melyeknek kézre szoktatásához sokszor csak a csípések elviselésén át vezet az út. Élettartama általában 10 év, de vannak 15-17 éves példányok is.",
+        "img": "assets/img/hullamos.jpg",
+        "price": 1970,
+        "active": true
+    },
+    {
+        "name": "Sárga-kék arapapagáj",
+        "category": "Madár",
+        "description": "Értelmes, társaságkedvelő, és ha gazdája elkötelezett, felelősségteljes, és jól ismeri a madár szükségleteit, általában nagyon jó háziállat. Nagyméretű madár, ennélfogva rendkívül hangosan képes rikácsolni. Éppen ezért talán nem a legjobb választás azok számára, akik társasházban élnek, vagy ahol kicsi gyerek van.",
+        "img": "assets/img/sargakekara.jpg",
+        "price": 2200,
+        "active": false
+    },
+    {
+        "name": "Örvös sándorpapagáj",
+        "category": "Madár",
+        "description": "Az örvös sándorpapagáj annyira tisztán beszél, hogy a szerzetesek szentként tartották számon, miután meghallották, hogy az egyik madár elismételte az imájukat, amit minden nap a kolostor kertjében mondtak. Sok online videót lehet találni a sándorpapagájokról, amint bonyolult és hosszas részleteket szavalnak könyvekből, versekből és a Bibliából. Ha szeretnél egy nagyszájú madarat, amelyik nem olyan nagyméretű, akkor ez a közepes méretű papagáj a neked való madár.",
+        "img": "assets/img/orvossandor.jpg",
+        "price": 1990,
+        "active": true
+    },
+    {
+        "name": "Vadkanári",
+        "category": "Madár",
+        "description": "A kanárikat legalább párosával, de legideálisabb esetben csoportosan érdemes tartani. Soha ne tartsunk csupán egy madarat! A csoportban egy hím és több tojó legyen. Természetesen ehhez megfelelő méretű kalitkát kell beszerezni, hogy a madarak tudjanak benne repkedni. Ennek ellenére ajánlott naponta legalább egyszer a lakásban szabadon repkedni.",
+        "img": "assets/img/vadkanari.jpg",
+        "price": 990,
+        "active": true
+    },
+    {
+        "name": "Kék királylazac",
+        "category": "Hal",
+        "description": "A Királylazac egy színváltozata, de annál valamivel kisebb is. Indigókék színével igazi ínyencségnek számít a csapathalak között. A nőstény kevésbé színes, de a zsírúszója piros, vagy narancssárga színű, így könnyen megkülönböztethetjük a hímektől.",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/i/n/inpaichthys_kerri.jpg",
+        "price": 490,
+        "active": true
+    },
+    {
+        "name": "Ferdénúszó pontylazac",
+        "category": "Hal",
+        "description": "Ismertetőjele a fekete csík, amely egész testén végig húzódik. Valamint az enyhén ferde testtartása, amivel kitűnik a legtöbb csapathal közül. Nagyobb mérete miatt ügyeljünk arra, hogy a sűrű növényzet mellett biztosítsunk megfelelő úszóteret is számára. Aki egyedi látványt nyújtó csapathalat keres, annak bátran ajánlható.",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/f/e/ferdenuszo_01.jpg",
+        "price": 450,
+        "active": false
+    },
+    {
+        "name": "Vitorláshal",
+        "category": "Hal",
+        "description": "Az akvaristák által talán az egyik legjobban kedvelt nagy testű díszhal. Magas testfelépítésű kecses hal, mely igazán szépre nagyméretű akváriumban fejlődik. Sajnos sokan tartják túl kis akváriumokban, pedig ajánlott a minimum 120-150 literes medence számukra. Mivel territoriális hal ezért nem érdemes 3 - 4 darabnál kevesebbet tartani belőle, ellenkező esetben az egész akváriumot kisajátíthatja magának.",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/p/t/pterophyllum-scalare.jpg",
+        "price": 1290,
+        "active": true
+    },
+    {
+        "name": "Arany Kolibrihal",
+        "category": "Hal",
+        "description": "Egy igen látványos és jól tartható kis termetű pontyféle. Könnyű tartása, látványos színezete, élénk mozgása miatt igen közkedvelt hal az akváriumokban. Kiváló \"kezdő hal\" az akvarisztikával még csak ismerkedőknek. Élénk színei a neonhaléval vetekszenek. Szaporítása nem nehéz. 4 cm-es mérete lehetővé teszi kisebb 40-50 literes akváriumokban való tartásra. Csapatban (min. 5-6 db) érzi jól magát.",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/a/r/arany_kolibri_01_1.jpg",
+        "price": 390,
+        "active": true
+    },
+    {
+        "name": "Violaszínű páncélosharcsa",
+        "category": "Hal",
+        "description": "A test alapszíne világosbarna, aranysárga csillogással. A hasi rész kivételével a test apró foltokkal fedett, amelyek a fejen élénkek, színesek. A test hátsó része, a hátúszó végétől a farokúszóig kékes színű, melynek intenzítása a farokúszó felé haladva fokozatosan erősödik. Rajhal, minél nagyobb csapatban tartjuk, annál jobban érzi magát. Fontos, hogy a talaj éles szemcséktől mentes legyen, különben hasa és a szája sérülhetnek. Nagy segítségünkre lehet a lehullott és el nem fogyasztott eleség összeszedésében, a talaj tisztán tartásában.",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/38477fa0e8f278933b923d30d360ffa4/c/o/corydoras-similis.jpg",
+        "price": 1990,
+        "active": true
+    },
+    {
+        "name": "Kék szemű villásfarkú kalászhal",
+        "category": "Hal",
+        "description": "Két hátúszója van és az első sokkal kisebb, mint a második. A testük színe sárgás-zöld. A hímek hát- és farok alatti úszója a tövénél átlátszó, de a szélei sárga színűek, míg a mell- és has alatti úszók pirosas árnyalatúak. A farok is sárgás színű és villás. A nőstényeken a mell- és has alatti úszók átlátszóak. A szemük gyönyörű kék színű.",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/p/o/popondetta_furcata_2.jpg",
+        "price": 790,
+        "active": false
+    },
+    {
+        "name": "Törpe szívóharcsa",
+        "category": "Hal",
+        "description": "Minden haltartó számára igen hasznos és érdekes hal lehet, mert nagyon sokféle algát ”lelegel”, szorgalmas munkás. Több példányt ajánlatos együtt tartani, egyedül állítólag nem él annyit… Nano akváriumokba is minden gond nélkül tarthatjuk, kicsiny mérete miatt.",
+        "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/o/t/ottocinclus-affinis-torpe-szivoharcsa.jpg",
+        "price": 990,
+        "active": true
+    }
+]

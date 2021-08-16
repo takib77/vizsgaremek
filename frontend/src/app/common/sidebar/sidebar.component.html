@@ -3,7 +3,7 @@
         <div class="sb-sidenav-menu">
             <div class="nav">
                 <div>
-                    <div class="sb-sidenav-menu-heading"></div>
+                    <div class="sb-sidenav-menu-heading pt-0"></div>
                     <a class="nav-link" routerLink="/">
                         <div class="sb-nav-link-icon"><i class="fas fa-home"></i>
                         </div> Kezdőlap
@@ -25,12 +25,12 @@
                 <div *ngIf="user">
                     <div class="sb-sidenav-menu-heading">Adatlisták</div>
                     <a class="nav-link" routerLink="/animals">
-                        <div class="sb-nav-link-icon"><i class="fas fa-fish"></i></div>
-                        Kisállatok
+                        <div class="sb-nav-link-icon"><i class="fas fa-fish"></i>
+                        </div> Kisállatok
                     </a>
                     <a class="nav-link" routerLink="/orders">
-                        <div class="sb-nav-link-icon"><i class="fas fa-credit-card"></i></div>
-                        Rendelések
+                        <div class="sb-nav-link-icon"><i class="fas fa-credit-card"></i>
+                        </div> Rendelések
                     </a>
                     <a class="nav-link" routerLink="/products">
                         <div class="sb-nav-link-icon"><i class="fas fa-shopping-bag"></i>
@@ -41,8 +41,12 @@
                         </div> Felhasználók
                     </a>
                     <a class="nav-link" routerLink="/address">
-                        <div class="sb-nav-link-icon"><i class="fas fa-mail"></i>
+                        <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i>
                         </div> Címek
+                    </a>
+                    <a class="nav-link" routerLink="/events">
+                        <div class="sb-nav-link-icon"><i class="fab fa-elementor"></i>
+                        </div> Események
                     </a>
                 </div>
             </div>

@@ -46,6 +46,13 @@ export class ConfigService {
     { key: 'price', title: 'ÁR' }
   ];
 
+  eventTable: IDataDisplayer[] = [
+    { key: 'city', title: 'VÁROS' },
+    { key: 'place', title: 'HELY' },
+    { key: 'date', title: 'DÁTUM' },
+    { key: 'time', title: 'IDŐPONT' },
+  ];
+
   orderTable: IDataDisplayer[] = [
     { key: 'user', title: 'MEGRENDELŐ AZ.' },
     { key: 'products', title: 'TERMÉK(EK) AZ.' },

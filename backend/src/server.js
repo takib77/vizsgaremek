@@ -45,6 +45,7 @@ app.post('/logout', authHandler.logout);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use('/animals', require('./controllers/animal/animal.routes'));
+app.use('/events', require('./controllers/event/event.routes'));
 app.use('/products', require('./controllers/product/product.routes'));
 app.use('/orders', require('./controllers/order/order.routes'));
 app.use('/users', authenticateJwt, require('./controllers/user/user.routes'));

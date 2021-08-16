@@ -140,7 +140,7 @@ A kategória kiválasztásával és a kulcsszónak megfelelően frissül a lista
 > _A termékek oldalon megjelnnek a kisállatok ellátáshoz és tartásához szükséges termékek._
 
 **Elfogadási kritérium:**  
-Az aloldal megjeleníti az összes termék adatait lista formátumban. Ezek az adatok a következők lehetnek: név, kategória, mely állatokhoz ideáli, tömeg, méret, egységár, elérhető-e, természetes-e.
+Az aloldal megjeleníti az összes termék adatait lista formátumban. Ezek az adatok a következők lehetnek: név, kategória, mely állatokhoz ideális, tömeg, méret, egységár, elérhető-e, természetes-e.
 
 ---
 
@@ -185,11 +185,11 @@ A kategória kiválasztásával és a kulcsszónak megfelelően frissül a lista
 
 **6. agilis felhasználói történet:**
 
-> _Különbözőképpen sorrendbe rendezhetőek a kisállatok egyes kategóriái._
+> _Különbözőképpen sorrendbe rendezhetőek a termékek egyes kategóriái._
 
 **Elfogadási kritérium:**  
-- A szám típusú adatok alapján növekvő és csökkenő sorrendben lehet rendezni a kisállatokat.
-- A szöveges adatok alapján abc-szerinti és fordított sorrendben lehet rendezni a kisállatokat.
+- A szám típusú adatok alapján növekvő és csökkenő sorrendben lehet rendezni a termékeket.
+- A szöveges adatok alapján abc-szerinti és fordított sorrendben lehet rendezni a termékeket.
 
 ---
 
@@ -220,7 +220,7 @@ Az aloldal megjeleníti az összes felhasználó adatait lista formátumban. Eze
 > _A felhasználó adatai szerkeszthetők._
 
 **Elfogadási kritérium:**  
-- Minden kisállatnál lehetőség van a kiválasztott elem adatainak szerkesztésére. A módosítás megjelenik a listázó oldalon és a felhasználó adatlapján is.
+- Minden felhasználónál lehetőség van a kiválasztott elem adatainak szerkesztésére. A módosítás megjelenik a listázó oldalon és a felhasználó adatlapján is.
 - Az oldalon lehetőség van arra, hogy az összes felhasználót listázó oldalra navigáljon vissza az alkalmazás.
 
 ---
@@ -246,15 +246,76 @@ A kategória kiválasztásával és a kulcsszónak megfelelően frissül a lista
 
 **6. agilis felhasználói történet:**
 
-> _Különbözőképpen sorrendbe rendezhetőek a kisállatok egyes kategóriái._
+> _Különbözőképpen sorrendbe rendezhetőek a felhasználók egyes kategóriái._
 
 **Elfogadási kritérium:**  
-- A szám típusú adatok alapján növekvő és csökkenő sorrendben lehet rendezni a kisállatokat.
-- A szöveges adatok alapján abc-szerinti és fordított sorrendben lehet rendezni a kisállatokat.
+- A szám típusú adatok alapján növekvő és csökkenő sorrendben lehet rendezni a felhasználókat.
+- A szöveges adatok alapján abc-szerinti és fordított sorrendben lehet rendezni a felhasználókat.
 
 ---
 
-## _**8. Címek**_
+## _**8. Események**_
+
+---
+
+**1. agilis felhasználói történet:**
+> _Az események oldalon megjelnnek az események adatai._
+
+**Elfogadási kritérium:**  
+Az aloldal megjeleníti az összes esemény adatait lista formátumban. Ezek az adatok a következők lehetnek: város, hely, dátum és időpont.
+
+---
+
+**2. agilis felhasználói történet:**
+
+> _Új esemény adatai vehetők fel._
+
+**Elfogadási kritérium:**  
+- A kötelező adatok megadásával egy új esemény adatait lehet felvinni, a módosítás megjelenik a listázó oldalon, létrejön az esemény adatlapja.
+- Az oldalon lehetőség van arra, hogy az összes eseményt listázó oldalra navigáljon vissza az alkalmazás.
+
+---
+
+**3. agilis felhasználói történet:**
+
+> _Az esemény adatai szerkeszthetők._
+
+**Elfogadási kritérium:**  
+- Minden eseménynél lehetőség van a kiválasztott elem adatainak szerkesztésére. A módosítás megjelenik a listázó oldalon és az esemény adatlapján is.
+- Az oldalon lehetőség van arra, hogy az összes eseményt listázó oldalra navigáljon vissza az alkalmazás.
+
+---
+
+**4. agilis felhasználói történet:**
+
+> _Az esemény törölhető._
+
+**Elfogadási kritérium:**  
+- Az esemény kiválasztásával törölhető az elem.
+- A törlést követően frissül a listaoldal, ahol a már törölt esemény nem érhető el.
+
+---
+
+**5. agilis felhasználói történet:**
+
+> _Bármilyen kulcsszóra lehet keresni egy választott kategórián belül._
+
+**Elfogadási kritérium:**  
+A kategória kiválasztásával és a kulcsszónak megfelelően frissül a listaoldal, ahol csak a szűrt adatok láthatók.
+
+---
+
+**6. agilis felhasználói történet:**
+
+> _Különbözőképpen sorrendbe rendezhetőek az események egyes kategóriái._
+
+**Elfogadási kritérium:**  
+- A szám típusú adatok alapján növekvő és csökkenő sorrendben lehet rendezni az eseményeket.
+- A szöveges adatok alapján abc-szerinti és fordított sorrendben lehet rendezni az eseményeket.
+
+---
+
+## _**9. Címek**_
 
 ---
 
@@ -280,12 +341,12 @@ A kategória kiválasztásával és a kulcsszónak megfelelően frissül a lista
 > _Különbözőképpen sorrendbe rendezhetőek a kisállatok egyes kategóriái._
 
 **Elfogadási kritérium:**  
-- A szám típusú adatok alapján növekvő és csökkenő sorrendben lehet rendezni a kisállatokat.
-- A szöveges adatok alapján abc-szerinti és fordított sorrendben lehet rendezni a kisállatokat.
+- A szám típusú adatok alapján növekvő és csökkenő sorrendben lehet rendezni a címeket.
+- A szöveges adatok alapján abc-szerinti és fordított sorrendben lehet rendezni a címeket.
 
 ---
 
-## _**9. Profil**_
+## _**10. Profil**_
 
 ---
 

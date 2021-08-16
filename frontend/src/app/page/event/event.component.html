@@ -1,0 +1,73 @@
+<div class="card mb-4">
+    <div class="card-header">
+        <div>
+            <i class="fas fa-table me-1"></i>
+            {{eventTitle}}
+        </div>
+        <div class="col-10 col-md-8 col-xl-6 offset-1 offset-md-2 offset-xl-3 my-3 alert-primary">
+            <form>
+                <div class="row">
+                    <i class="text-center mt-1">A kereséshez válasszon egy kategóriát a lenyíló menüben!</i>
+                    <div class="col-12 col-lg-6 mt-3 my-lg-3">
+                        <div class="mb-3 mb-lg-0">
+                            <select [(ngModel)]="filterKey" class="form-select">
+                                <option selected disabled>Válasszon kategóriát!</option>
+                                <option *ngFor="let item of eventTable" [value]="item.key">{{ item.title }}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 my-lg-3">
+                        <div class="">
+                            <input (keyup)="onSearch($event)" class="form-control" type="text" name="search"
+                                placeholder="Keresés...">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="col-12 px-0">
+            <button class="btn btn-success btn-large btn-block" [routerLink]="'edit/0'">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-successs text-center">
+                <thead>
+                    <tr>
+                        <th *ngFor="let thead of eventTable" (click)="onColumnSelect(thead.key)"
+                            class="align-middle select">
+                            {{thead.title}}
+                        </th>
+                        <th class="align-middle">MŰVELETEK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let event of eventList$ | async | search: filterKey: phrase | sort: columnKey: sortDir">
+                        <td class="align-middle">{{event.city}}</td>
+                        <td class="align-middle">{{event.place}}</td>
+                        <td class="align-middle">{{event.date}}</td>
+                        <td class="align-middle">{{event.time}} óra</td>
+                        <td class="align-middle">
+                            <div class="btn-group">
+                                <button (click)="onSelectOne(event)" class="btn btn-primary mr-1">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button (click)="onDeleteOne(event)" class="btn btn-danger ml-1">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th class="align-middle" *ngFor="let thead of eventTable">{{thead.title}}</th>
+                        <th class="align-middle">MŰVELETEK</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<h3 class="text-center my-3">{{title}}</h3>
+<div class="row">
+    <div *ngIf="event" class="col-10 col-md-8 col-xl-6 offset-1 offset-md-2 offset-xl-3 my-3">
+        <label *ngIf="event._id" class="d-block text-muted text-right mb-3">{{'AZONOSÍTÓ: '+ event._id}}</label>
+        <form #eventForm="ngForm" (ngSubmit)="onSubmit(event)">
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3 mb-lg-0">
+                        <input id="city" name="city" [(ngModel)]="event.city" type="text"
+                            class="form-control alert-warning" required
+                            pattern="^[A-Z,ÁÉÍÓÖŐÚÜŰ]{1}[A-Z,ÁÉÍÓÖŐÚÜŰ,a-z,áéíóöőúüű ]{1,}">
+                        <label for="city">VÁROS*</label>
+                        <div [hidden]="eventForm.controls.city?.valid || eventForm.controls.city?.pristine"
+                            class="error-message">
+                            A városnévnek nagy betűvel kell kezdődnie!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating">
+                        <input id="place" name="place" [(ngModel)]="event.place" type="text"
+                            class="form-control alert-warning" required
+                            pattern="^[A-Z,ÁÉÍÓÖŐÚÜŰ]{1}[A-Z,ÁÉÍÓÖŐÚÜŰ,a-z,áéíóöőúüű ]{1,}">
+                        <label for="place">HELY*</label>
+                        <div [hidden]="eventForm.controls.place?.valid || eventForm.controls.place?.pristine"
+                            class="error-message">
+                            A helynek nagy betűvel kell kezdődnie!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3 mb-lg-0">
+                        <input id="date" name="date" [(ngModel)]="event.date" type="text"
+                            class="form-control alert-info">
+                        <label for="date">DÁTUM</label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="form-floating mb-3 mb-lg-0">
+                        <input id="time" name="time" [(ngModel)]="event.time" type="number"
+                            class="form-control alert-info">
+                        <label for="time">IDŐPONT (óra)</label>
+                    </div>
+                </div>
+            </div>
+            <i class="text-danger">*Kötelező megadni</i>
+            <div class="d-grid mx-auto my-5">
+                <div class="btn-group">
+                    <button class="btn btn-secondary mx-3" routerLink="/events">
+                        <i class="fas fa-window-close"></i>
+                    </button>
+                    <button [disabled]="eventForm.invalid" type="submit" class="btn btn-primary mx-3">
+                        <i class="far fa-save"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

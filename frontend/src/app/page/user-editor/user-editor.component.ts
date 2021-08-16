@@ -62,28 +62,4 @@ export class UserEditorComponent implements OnInit {
     }
   }
 
-  onSubmit2(user: User): void {
-    try {
-      if (!user._id) {
-        this.userservice.create(user).subscribe(() => {
-          this.router.navigate(['/users']);
-          this.toastr.info('Az adatok mentése sikerrel zárult!', 'Mentve', { timeOut: 3000 });
-        });
-
-      } else {
-        this.userservice.update(user).subscribe(() => {
-          this.router.navigate(['/users']);
-          this.toastr.info('Az adatok módosítása sikerrel zárult!!', 'Módosítva', { timeOut: 3000 });
-        });
-      }
-
-    } catch (error) {
-      this.serverError = 'A megadott email cím már létezik!';
-      const to = setTimeout(() => {
-        clearTimeout(to);
-        this.serverError = '';
-      }, 3000);
-    }
-  }
-
 }

@@ -50,7 +50,7 @@ A belépéshez egy érvényes e-mail-cím és jelszó páros (példa):
 
 E-mail | Jelszó
 ------------ | -------------
-admin@gmail.com | password_pw
+admin@gmail.com | admin_pw
 
 ## **5. A végpontok dokumentációja**
 

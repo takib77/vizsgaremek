@@ -1,5 +1,6 @@
 const fsp = require('fs').promises;
 const animal = require('../models/animal.model');
+const event = require('../models/event.model');
 const order = require('../models/order.model');
 const product = require('../models/product.model');
 const user = require('../models/user.model');
@@ -25,6 +26,7 @@ const seedCollection = async (model, fileName) => {
 (async () => {
 
     seedCollection(animal, 'animals');
+    seedCollection(event, 'events');
     seedCollection(order, 'orders');
     seedCollection(product, 'products');
     seedCollection(user, 'users');

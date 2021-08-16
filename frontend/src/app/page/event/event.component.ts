@@ -2,21 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
-import { User } from 'src/app/model/user';
+import { MyEvent } from 'src/app/model/event';
 import { ConfigService, IDataDisplayer } from 'src/app/service/config.service';
-import { UserService } from 'src/app/service/user.service';
+import { EventService } from 'src/app/service/event.service';
 
 @Component({
-  selector: 'app-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.scss']
+  selector: 'app-event',
+  templateUrl: './event.component.html',
+  styleUrls: ['./event.component.scss']
 })
-export class UserComponent implements OnInit {
+export class EventComponent implements OnInit {
 
-  userList$: Observable<User[]> = this.userservice.getAll();
-  userTable: IDataDisplayer[] = this.config.userTable;
-  userTitle: string = 'Felhasználók listája';
-  pageName: string = 'users';
+  eventList$: Observable<MyEvent[]> = this.eventservice.getAll();
+  eventTable: IDataDisplayer[] = this.config.eventTable;
+  eventTitle: string = 'Események listája';
+  pageName: string = 'events';
 
   filterKey: string = '';
   phrase: string = '';
@@ -25,7 +25,7 @@ export class UserComponent implements OnInit {
   sortDir: number = -1;
 
   constructor(
-    private userservice: UserService,
+    private eventservice: EventService,
     private config: ConfigService,
     private router: Router,
     private toastr: ToastrService,
@@ -34,14 +34,14 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSelectOne(user: User): void {
-    this.router.navigate(['/users/edit', user._id])
+  onSelectOne(myEvent: MyEvent): void {
+    this.router.navigate(['/events/edit', myEvent._id])
   }
 
-  onDeleteOne(user: User): void {
-    if (confirm(`Biztos hogy törli a(z) \"${user.first_name} ${user.last_name}\" nevű felhasználót?`)) {
-      this.userservice.delete(user).subscribe(
-        () => this.userList$ = this.userservice.getAll());
+  onDeleteOne(myEvent: MyEvent): void {
+    if (confirm(`Biztos hogy törli az eseményt?`)) {
+      this.eventservice.delete(myEvent).subscribe(
+        () => this.eventList$ = this.eventservice.getAll());
       this.toastr.warning('Az adat törölve lett!', 'Törölve', { timeOut: 3000 });
     }
   }

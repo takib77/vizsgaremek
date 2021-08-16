@@ -5,6 +5,8 @@ import { AnimalCardComponent } from './page/animal-card/animal-card.component';
 import { AnimalEditorComponent } from './page/animal-editor/animal-editor.component';
 import { AnimalComponent } from './page/animal/animal.component';
 import { EquipmentCardComponent } from './page/equipment-card/equipment-card.component';
+import { EventEditorComponent } from './page/event-editor/event-editor.component';
+import { EventComponent } from './page/event/event.component';
 import { FoodCardComponent } from './page/food-card/food-card.component';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { HomeComponent } from './page/home/home.component';
@@ -51,6 +53,18 @@ const routes: Routes = [
   {
     path: 'animals/edit/:id',
     component: AnimalEditorComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: { expectedRole: 2 }
+  },
+  {
+    path: 'events',
+    component: EventComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: { expectedRole: 2 }
+  },
+  {
+    path: 'events/edit/:id',
+    component: EventEditorComponent,
     canActivate: [AuthGuardService, RoleGuardService],
     data: { expectedRole: 2 }
   },

@@ -199,7 +199,7 @@
       "category": "felszerelés",
       "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/c/u/cube_garden_f_086a3439_1_2.jpg",
       "goodFor": "Hal",
-      "size": "45*27*30",
+      "size": "45 x 27 x 30",
       "price": 32690,
       "active": true,
       "organic": ""
@@ -221,7 +221,7 @@
       "category": "felszerelés",
       "img": "https://i3x7x2h3.stackpathcdn.com/media/catalog/product/cache/6e4af93825cd0fe2145288fcbddaa923/5/5/5592-44_3_dennerle-scaper-s-tank-basic-led-akvarium-szett-szurovel-led-5-0-vilagitassal-35l.jpg",
       "goodFor": "Hal",
-      "size": "40*32*28",
+      "size": "40 x 32 x 28",
       "price": 54790,
       "active": true,
       "organic": ""
@@ -360,7 +360,7 @@
       "active": true
     },
     {
-      "_id": "11rr",
+      "_id": "11rr2",
       "name": "Rágcsáló kalitka CSINCSILLA 80",
       "category": "felszerelés",
       "img": "https://abc-zoo.hu/5845-20223-thickbox/ragcsalo-kalitka-csincsilla-80-krom-new.jpg",
@@ -1197,15 +1197,6 @@
       "email": "wconfait2k@taobao.com",
       "password": "$2a$10$dvTSLDGdvaVlR5YPaRPRI.qd160oqiA8LQKzNNTOioH.xZtlTt3iS",
       "role": 1
-    },
-    {
-      "_id": "2r",
-      "first_name": "Austin",
-      "last_name": "Boij",
-      "address": {},
-      "email": "aboij2l@naver.com",
-      "password": "$2a$10$L66WWwDnbEdq7cT9onS1beAilFVK9HeEnHdMm0bfl2la4CuUJf7vi",
-      "role": 3
     },
     {
       "_id": "2s",

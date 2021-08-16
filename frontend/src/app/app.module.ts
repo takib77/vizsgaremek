@@ -35,6 +35,7 @@ import { ProfileComponent } from './page/profile/profile.component';
 import { JwtinterceptorService } from './service/jwt-interceptor.service';
 import { UserRolePipe } from './pipe/user-role.pipe';
 import { BooleanSignPipe } from './pipe/boolean-sign.pipe';
+import { AddressComponent } from './page/address/address.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { BooleanSignPipe } from './pipe/boolean-sign.pipe';
     ProfileComponent,
     UserRolePipe,
     BooleanSignPipe,
+    AddressComponent
   ],
 
   imports: [

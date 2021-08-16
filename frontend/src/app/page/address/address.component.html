@@ -1,0 +1,63 @@
+<div class="card mb-4">
+    <div class="card-header">
+        <div>
+            <i class="fas fa-table me-1"></i>
+            {{addressTitle}}
+        </div>
+        <div class="col-10 col-md-8 col-xl-6 offset-1 offset-md-2 offset-xl-3 my-3 alert-primary">
+            <form>
+                <div class="row">
+                    <i class="text-center mt-1">A kereséshez válasszon egy kategóriát a lenyíló menüben!</i>
+                    <div class="col-12 col-lg-6 mt-3 my-lg-3">
+                        <div class="mb-3 mb-lg-0">
+                            <select [(ngModel)]="filterKey" class="form-select">
+                                <option selected disabled>Válasszon kategóriát!</option>
+                                <option *ngFor="let item of addressTable" [value]="item.key">{{ item.title }}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 my-lg-3">
+                        <div class="">
+                            <input (keyup)="onSearch($event)" class="form-control" type="text" name="search"
+                                placeholder="Keresés...">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="col-12 px-0">
+            <i class="btn btn-success btn-large btn-block" [routerLink]="'/users'">
+                A címadatok változtatására a Felhasználókon keresztül van lehetőség!
+            </i>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-successs text-center">
+                <thead>
+                    <tr>
+                        <th *ngFor="let thead of addressTable" (click)="onColumnSelect(thead.key)"
+                            class="align-middle select">
+                            {{thead.title}}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        *ngFor="let address of addressList$ | async | search: filterKey: phrase | sort: columnKey: sortDir">
+                        <td class="align-middle">{{address.country}}</td>
+                        <td class="align-middle">{{address.zip}}</td>
+                        <td class="align-middle">{{address.city}}</td>
+                        <td class="align-middle">{{address.street}}</td>
+                        <td class="align-middle">{{address.houseNumber}}</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th class="align-middle" *ngFor="let thead of addressTable">{{thead.title}}</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AddressComponent } from './page/address/address.component';
 import { AnimalCardComponent } from './page/animal-card/animal-card.component';
 import { AnimalEditorComponent } from './page/animal-editor/animal-editor.component';
 import { AnimalComponent } from './page/animal/animal.component';
@@ -34,6 +35,12 @@ const routes: Routes = [
   {
     path: 'food-cards',
     component: FoodCardComponent
+  },
+  {
+    path: 'address',
+    component: AddressComponent,
+    canActivate: [AuthGuardService, RoleGuardService],
+    data: { expectedRole: 2 }
   },
   {
     path: 'animals',

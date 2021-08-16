@@ -5,20 +5,13 @@
         való barátot, hanem a számára ideális felszereléseket, tárolókat és eledeleket is beszerezheti egy helyen.
     </h5>
 </div>
-<div class="row d-flex">
+<div class="row m-1">
     <div *ngFor="let card of cardData" class="col-12 col-md-4 col-offset-1 col-md-offset-4 p-3">
-        <div class="card mb-3 alert alert-warning mx-auto cursor" [routerLink]="card.link"
-            style="max-width: 540px; min-height: 250px;">
-            <div class="row g-0 my-auto">
-                <div class="col-12">
-                    <img src="{{card.img}}" class="img-fluid rounded-start d-flex mx-auto" alt="{{card.img}}">
-                </div>
-                <div class="col-12">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">{{card.name.toUpperCase()}}</h5>
-                        <p class="card-text text-center text-danger">{{card.description}}</p>
-                    </div>
-                </div>
+        <div class="card alert-info shadow p-3 h-100 cursor" [routerLink]="card.link">
+            <img src="{{card.img}}" class="card-img-top rounded" alt="{{card.name}}">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center my-1">{{card.name.toUpperCase()}}</h5>
+                <p class="card-text text-center text-primary justify-content-center mt-auto">{{card.description}}</p>
             </div>
         </div>
     </div>

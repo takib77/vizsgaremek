@@ -4,26 +4,35 @@
         <label *ngIf="order._id" class="d-block text-muted text-right mb-3">{{'AZONOSÍTÓ: '+order._id}}</label>
         <form #orderForm="ngForm" (ngSubmit)="onSubmit(order)">
             <div class="form-floating mb-3">
-                <input id="user_id" name="user_id" [(ngModel)]="order.user" type="text" class="form-control" required>
+                <input id="user_id" name="user_id" [(ngModel)]="order.user" type="text"
+                    class="form-control alert-warning" required>
                 <label for="user_id">MEGRENDELŐ AZONOSÍTÓJA*</label>
             </div>
             <div class="form-floating mb-3">
-                <input id="products" name="products" [(ngModel)]="order.products" type="text" class="form-control">
-                <label for="products">TERMÉK(EK) AZONOSÍTÓJA</label>
+                <input id="products" name="products" [(ngModel)]="order.products" type="text"
+                    class="form-control alert-info">
+                <label for="products">TERMÉK(EK) AZONOSÍTÓJA (több estén vesszővel elválasztva)
+                </label>
             </div>
             <div *ngIf="order._id" class="form-floating mb-3">
-                <input id="time" name="time" [(ngModel)]="order.time" type="text" disabled class="form-control">
+                <input id="time" name="time" [(ngModel)]="order.time" type="text" disabled
+                    class="form-control alert-info">
                 <label for="time">DÁTUM</label>
             </div>
             <div class="form-floating mb-3">
-                <input id="note" name="note" [(ngModel)]="order.note" type="text" class="form-control">
+                <input id="note" name="note" [(ngModel)]="order.note" type="text" class="form-control alert-info">
                 <label for="note">MEGJEGYZÉS</label>
             </div>
             <i class="text-danger">*Kötelező megadni</i>
             <div class="d-grid mx-auto my-5">
-                <button [disabled]="orderForm.invalid" type="submit" class="btn btn-primary btn-block">
-                    <i class="far fa-save"></i>
-                </button>
+                <div class="btn-group">
+                    <button class="btn btn-secondary mx-3" routerLink="/orders">
+                        <i class="fas fa-window-close"></i>
+                    </button>
+                    <button [disabled]="orderForm.invalid" type="submit" class="btn btn-primary mx-3">
+                        <i class="far fa-save"></i>
+                    </button>
+                </div>
             </div>
         </form>
     </div>

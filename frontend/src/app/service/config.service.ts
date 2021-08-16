@@ -19,6 +19,14 @@ export class ConfigService {
   // public readonly apiUrl: string = 'http://localhost:3000/';
   public readonly apiUrl: string = 'http://127.0.0.1:3000/';
 
+  addressTable: IDataDisplayer[] = [
+    { key: 'country', title: 'ORSZÁG' },
+    { key: 'zip', title: 'IRÁNYÍTÓSZÁM' },
+    { key: 'city', title: 'TELEPÜLÉS' },
+    { key: 'street', title: 'KÖZTERÜLET' },
+    { key: 'houseNumber', title: 'HÁZSZÁM' }
+  ];
+
   animalTable: IDataDisplayer[] = [
     { key: 'name', title: 'NÉV' },
     { key: 'category', title: 'KATEGÓRIA' },

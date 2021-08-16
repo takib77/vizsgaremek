@@ -4,8 +4,8 @@
         <label *ngIf="animal._id" class="d-block text-muted text-right mb-3">{{'AZONOSÍTÓ: '+animal._id}}</label>
         <form #animalForm="ngForm" (ngSubmit)="onSubmit(animal)">
             <div class="form-floating mb-3">
-                <input id="name" name="name" [(ngModel)]="animal.name" type="text" class="form-control" required
-                    pattern="^[A-ZÁÉÍÓÖŐÚÜŰ]{1}.{1,}">
+                <input id="name" name="name" [(ngModel)]="animal.name" type="text" class="form-control alert-warning"
+                    required pattern="^[A-ZÁÉÍÓÖŐÚÜŰ]{1}.{1,}">
                 <label for="name">NÉV*</label>
                 <div [hidden]="animalForm.controls.name?.valid || animalForm.controls.name?.pristine"
                     class="error-message">
@@ -14,22 +14,17 @@
             </div>
             <div class="row mb-3">
                 <div class="col-12 col-lg-6">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-3 mb-lg-0">
                         <input id="category" name="category" [(ngModel)]="animal.category" type="text"
-                            class="form-control">
+                            class="form-control alert-info">
                         <label for="category">KATEGÓRIA</label>
                     </div>
-                    <!-- <div class="form-floating mb-3">
-                        <input id="img" name="img" [(ngModel)]="animal.img" type="text"
-                            class="form-control">
-                        <label for="category">KATEGÓRIA</label>
-                    </div> -->
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="form-floating mb-3">
-                        <input id="price" name="price" [(ngModel)]="animal.price" type="number" class="form-control"
-                            required pattern="\d{1,}">
-                        <label for="price">ÁR*</label>
+                    <div class="form-floating">
+                        <input id="price" name="price" [(ngModel)]="animal.price" type="number"
+                            class="form-control alert-warning" required pattern="\d{1,}">
+                        <label for="price">ÁR (forintban)*</label>
                     </div>
                     <div [hidden]="animalForm.controls.price?.valid || animalForm.controls.price?.pristine"
                         class="error-message">
@@ -38,19 +33,25 @@
                 </div>
             </div>
             <div class="form-floating mb-3">
-                <textarea id="description" name="description" [(ngModel)]="animal.description" class="form-control"
-                    style="height: 300px"></textarea>
+                <textarea id="description" name="description" [(ngModel)]="animal.description"
+                    class="form-control alert-info" style="height: 250px"></textarea>
                 <label for="description">LEÍRÁS</label>
             </div>
             <div class="form-check mb-3">
-                <input id="active" name="active" [(ngModel)]="animal.active" type="checkbox" class="form-check-input">
+                <input id="active" name="active" [(ngModel)]="animal.active" type="checkbox"
+                    class="form-check-input alert-info">
                 <label for="active" class="form-check-label">KAPHATÓ?</label>
             </div>
             <i class="text-danger">*Kötelező megadni</i>
             <div class="d-grid mx-auto my-5">
-                <button [disabled]="animalForm.invalid" type="submit" class="btn btn-primary btn-block">
-                    <i class="far fa-save"></i>
-                </button>
+                <div class="btn-group">
+                    <button class="btn btn-secondary mx-3" routerLink="/animals">
+                        <i class="fas fa-window-close"></i>
+                    </button>
+                    <button [disabled]="animalForm.invalid" type="submit" class="btn btn-primary mx-3">
+                        <i class="far fa-save"></i>
+                    </button>
+                </div>
             </div>
         </form>
     </div>

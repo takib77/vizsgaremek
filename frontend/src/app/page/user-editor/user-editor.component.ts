@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Observable, of } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
 
@@ -14,22 +13,16 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class UserEditorComponent implements OnInit {
 
-  // user$: Observable<User> = this.activatedRoute.params.pipe(
-  //   switchMap(params => {
-  //     if (params.id === '0') {
-  //       return of(new User());
-  //     }
-  //     return this.userservice.get(params.id);
-  //   }),
-  //   map(user => {
-  //     user.address = user.address || {};
-  //     return user;
-  //   })
-  // );
-
   user: User = new User();
   title: string = '';
+
   emailPattern: RegExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  serverError: string = '';
+
+  usersEmails: Observable<string[]> = this.userservice.getAll()
+    .pipe(map(items => items
+      .map(users => users.email))
+    )
 
   constructor(
     private userservice: UserService,
@@ -66,6 +59,30 @@ export class UserEditorComponent implements OnInit {
         this.router.navigate(['/users']);
         this.toastr.info('Az adatok módosítása sikerrel zárult!!', 'Módosítva', { timeOut: 3000 });
       });
+    }
+  }
+
+  onSubmit2(user: User): void {
+    try {
+      if (!user._id) {
+        this.userservice.create(user).subscribe(() => {
+          this.router.navigate(['/users']);
+          this.toastr.info('Az adatok mentése sikerrel zárult!', 'Mentve', { timeOut: 3000 });
+        });
+
+      } else {
+        this.userservice.update(user).subscribe(() => {
+          this.router.navigate(['/users']);
+          this.toastr.info('Az adatok módosítása sikerrel zárult!!', 'Módosítva', { timeOut: 3000 });
+        });
+      }
+
+    } catch (error) {
+      this.serverError = 'A megadott email cím már létezik!';
+      const to = setTimeout(() => {
+        clearTimeout(to);
+        this.serverError = '';
+      }, 3000);
     }
   }
 
